@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GIFMod_API" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GIFMod_API" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DAPI_version" />
+					<Add option="-DGIFMOD" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GIFMod_API" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DAPI_version" />
+					<Add option="-DGIFMOD" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-DARMA_USE_LAPACK" />
+			<Add option="-DGIFMOD" />
+			<Add option="-DAPI_version" />
+		</Compiler>
+		<Linker>
+			<Add library="../../../../usr/lib/libarmadillo.so" />
+			<Add library="../../../../usr/lib/libarpack.so" />
+			<Add library="../../../../usr/lib/libblas.so" />
+			<Add library="../../../../usr/lib/liblapack.so" />
+		</Linker>
+		<Unit filename="../GIFMod/src/GUI/BTC.cpp" />
+		<Unit filename="../GIFMod/src/GUI/BTC.h" />
+		<Unit filename="../GIFMod/src/GUI/BTCSet.cpp" />
+		<Unit filename="../GIFMod/src/GUI/BTCSet.h" />
+		<Unit filename="../GIFMod/src/GUI/Connection.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Connection.h" />
+		<Unit filename="../GIFMod/src/GUI/Constituent.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Constituent.h" />
+		<Unit filename="../GIFMod/src/GUI/Crxtterm.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Crxtterm.h" />
+		<Unit filename="../GIFMod/src/GUI/Distribution.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Distribution.h" />
+		<Unit filename="../GIFMod/src/GUI/DistributionNUnif.cpp" />
+		<Unit filename="../GIFMod/src/GUI/DistributionNUnif.h" />
+		<Unit filename="../GIFMod/src/GUI/MBBlock.cpp" />
+		<Unit filename="../GIFMod/src/GUI/MBBlock.h" />
+		<Unit filename="../GIFMod/src/GUI/Matrix.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Matrix.h" />
+		<Unit filename="../GIFMod/src/GUI/Matrix_arma.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Matrix_arma.h" />
+		<Unit filename="../GIFMod/src/GUI/Medium.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Medium.h" />
+		<Unit filename="../GIFMod/src/GUI/MediumSet.cpp" />
+		<Unit filename="../GIFMod/src/GUI/MediumSet.h" />
+		<Unit filename="../GIFMod/src/GUI/NormalDist.cpp" />
+		<Unit filename="../GIFMod/src/GUI/NormalDist.h" />
+		<Unit filename="../GIFMod/src/GUI/QuickSort.cpp" />
+		<Unit filename="../GIFMod/src/GUI/QuickSort.h" />
+		<Unit filename="../GIFMod/src/GUI/Reaction.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Reaction.h" />
+		<Unit filename="../GIFMod/src/GUI/RxnNetwork.cpp" />
+		<Unit filename="../GIFMod/src/GUI/RxnNetwork.h" />
+		<Unit filename="../GIFMod/src/GUI/StringOP.cpp" />
+		<Unit filename="../GIFMod/src/GUI/StringOP.h" />
+		<Unit filename="../GIFMod/src/GUI/Vector.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Vector.h" />
+		<Unit filename="../GIFMod/src/GUI/Vector_arma.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Vector_arma.h" />
+		<Unit filename="../GIFMod/src/GUI/utility_funcs.cpp" />
+		<Unit filename="../GIFMod/src/GUI/utility_funcs.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

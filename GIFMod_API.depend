@@ -1,0 +1,590 @@
+# depslib dependency file v1.0
+1515193389 source:/home/arash/Projects/GIFMod_API/main.cpp
+	<iostream>
+	"MediumSet.h"
+
+1519417719 source:/home/arash/Projects/GIFMod/src/GUI/BTC.cpp
+	"BTC.h"
+	"math.h"
+	"string.h"
+	<iostream>
+	<fstream>
+	"StringOP.h"
+	"NormalDist.h"
+	"qfile.h"
+	"qdatastream.h"
+
+1519418828 /home/arash/Projects/GIFMod/src/GUI/BTC.h
+	<map>
+	<string>
+	<vector>
+	"QuickSort.h"
+	"NormalDist.h"
+	"qlist.h"
+	"qmap.h"
+	"qvariant.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/QuickSort.h
+	<vector>
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/NormalDist.h
+	"Vector.h"
+	"Matrix.h"
+	"NormalDist.h"
+
+1519061567 /home/arash/Projects/GIFMod/src/GUI/Vector.h
+	<iostream>
+	<vector>
+	"QuickSort.h"
+	"armadillo"
+
+1519061567 /home/arash/Projects/GIFMod/src/GUI/Matrix.h
+	<vector>
+	<iostream>
+	<math.h>
+	"armadillo"
+	<QMap>
+	"Matrix_arma.h"
+	"Vector_arma.h"
+
+1519061567 /home/arash/Projects/GIFMod/src/GUI/Matrix_arma.h
+	"Vector_arma.h"
+	<iostream>
+	<math.h>
+	"armadillo"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Vector_arma.h
+	<iostream>
+	<vector>
+	"armadillo"
+
+1519061567 /home/arash/Projects/GIFMod/src/GUI/StringOP.h
+	<vector>
+	<string>
+	<sstream>
+
+1519427196 source:/home/arash/Projects/GIFMod/src/GUI/StringOP.cpp
+	"StringOP.h"
+	<string>
+	<iostream>
+	<fstream>
+	"math.h"
+	<algorithm>
+	"RxnNetwork.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/RxnNetwork.h
+	<vector>
+	"Reaction.h"
+	<string>
+	"BTCSet.h"
+	<iostream>
+	<fstream>
+	"BTCSet.h"
+	"Constituent.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Reaction.h
+	<vector>
+	"Crxtterm.h"
+	"StringOP.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Crxtterm.h
+	<vector>
+
+1519423396 /home/arash/Projects/GIFMod/src/GUI/BTCSet.h
+	"BTC.h"
+	<vector>
+	"Vector.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Constituent.h
+	<string>
+	<vector>
+	"BTC.h"
+	"StringOP.h"
+	"Solid_Phase.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Solid_Phase.h
+	"StringOP.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/NormalDist.cpp
+	"Vector.h"
+	"Matrix.h"
+	"NormalDist.h"
+	<cstdlib>
+	"math.h"
+
+1519427121 source:/home/arash/Projects/GIFMod/src/GUI/QuickSort.cpp
+	"QuickSort.h"
+	<iostream>
+	<algorithm>
+	<vector>
+	"time.h"
+	"qdebug.h"
+
+1519424062 source:/home/arash/Projects/GIFMod/src/GUI/Matrix.cpp
+	"Matrix.h"
+	"math.h"
+	<iostream>
+	"armadillo"
+	"StringOP.h"
+	"Vector.h"
+	"qstring.h"
+	"qmap.h"
+	"qvariant.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Matrix_arma.cpp
+	"Matrix_arma.h"
+	"Vector_arma.h"
+	"math.h"
+	<iostream>
+	"armadillo"
+	<vector>
+	"Vector.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Vector.cpp
+	"Vector.h"
+	"math.h"
+	"Matrix.h"
+	<cfloat>
+	"Vector_arma.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Vector_arma.cpp
+	"Vector_arma.h"
+	"math.h"
+	"Matrix_arma.h"
+	<cfloat>
+	"Vector.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Reaction.cpp
+	"Reaction.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/RxnNetwork.cpp
+	"RxnNetwork.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Constituent.cpp
+	"Constituent.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Crxtterm.cpp
+	"Crxtterm.h"
+
+1519423330 source:/home/arash/Projects/GIFMod/src/GUI/BTCSet.cpp
+	"BTCSet.h"
+	"string.h"
+	<fstream>
+	"StringOP.h"
+	"DistributionNUnif.h"
+	<iostream>
+	"Vector.h"
+	"Matrix.h"
+	"qdebug.h"
+	"qdatastream.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/DistributionNUnif.h
+	<vector>
+
+1519427058 source:/home/arash/Projects/GIFMod/src/GUI/Medium.cpp
+	"stdafx.h"
+	"Medium.h"
+	"BTCSet.h"
+	"Precipitation.h"
+	"MediumSet.h"
+	"Matrix_arma.h"
+	"Vector_arma.h"
+	"qmessagebox.h"
+	"Vector.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/stdafx.h
+	"targetver.h"
+	<stdio.h>
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/targetver.h
+
+1519426214 /home/arash/Projects/GIFMod/src/GUI/Medium.h
+	"Connection.h"
+	"MBBlock.h"
+	<vector>
+	"Vector.h"
+	"Matrix.h"
+	"BTCSet.h"
+	"string.h"
+	"LIDconfig.h"
+	"Precipitation.h"
+	"Solid_Phase.h"
+	"RxnNetwork.h"
+	"Buildup.h"
+	"RestoreInfo.h"
+	"Evaporation.h"
+	"Sensor.h"
+	"utility_funcs.h"
+	"ObjectiveFunction.h"
+	"Vector_arma.h"
+	"Matrix_arma.h"
+	"qstring.h"
+
+1519061567 /home/arash/Projects/GIFMod/src/GUI/Connection.h
+	"StringOP.h"
+	<vector>
+	"MBBlock.h"
+	"Solid_Phase.h"
+	"RxnNetwork.h"
+	"Controller.h"
+
+1519061567 /home/arash/Projects/GIFMod/src/GUI/MBBlock.h
+	<vector>
+	"StringOP.h"
+	"Matrix.h"
+	"Vector.h"
+	"Reaction.h"
+	"BTCSet.h"
+	"Function.h"
+	"Solid_Phase.h"
+	"RxnNetwork.h"
+	"Buildup.h"
+	"EnvExchange.h"
+	"Evaporation.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Function.h
+	"BTC.h"
+	"StringOP.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Buildup.h
+	<string>
+	<vector>
+	"StringOP.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/EnvExchange.h
+	<string>
+	<vector>
+	"StringOP.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Evaporation.h
+	<string>
+	<vector>
+	"StringOP.h"
+	"BTC.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Controller.h
+	"Sensor.h"
+	"utility_funcs.h"
+
+1519061567 /home/arash/Projects/GIFMod/src/GUI/Sensor.h
+	<string>
+	<vector>
+	<BTCSet.h>
+	"StringOP.h"
+
+1519426952 /home/arash/Projects/GIFMod/src/GUI/utility_funcs.h
+	<string>
+	<vector>
+	"qdatetime.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/LIDconfig.h
+	<vector>
+	<iostream>
+	"string.h"
+	"StringOP.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Precipitation.h
+	<vector>
+	<string>
+	"BTCSet.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/RestoreInfo.h
+	"Vector.h"
+	<vector>
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/ObjectiveFunction.h
+	"StringOP.h"
+
+1519425499 /home/arash/Projects/GIFMod/src/GUI/MediumSet.h
+	"Medium.h"
+	"Sensor.h"
+	"Controller.h"
+	"GWidget.h"
+	"qmap.h"
+	"StringOP.h"
+	"ObjectiveFunction.h"
+
+1519425394 /home/arash/Projects/GIFMod/src/GUI/GWidget.h
+	"qgraphicsview.h"
+	<enums.h>
+	"mProp.h"
+	<qstandarditemmodel.h>
+	"qtableview.h"
+	"logwindow.h"
+	"qcalendarwidget.h"
+	"mainwindow.h"
+	"qcombobox.h"
+	"PropModel.h"
+	"XString.h"
+	"colorScheme.h"
+	"Command.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/mProp.h
+	"XString.h"
+	"enums.h"
+
+1519248959 /home/arash/Projects/GIFMod/src/GUI/XString.h
+	<qstring.h>
+	"qstringlist.h"
+	"qmath.h"
+	"qdebug.h"
+	"enums.h"
+
+1519423970 /home/arash/Projects/GIFMod/src/GUI/enums.h
+	"qcolor.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/logwindow.h
+	<QDialog>
+	"qabstractbutton.h"
+	"Vector.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/mainwindow.h
+	<QMainWindow>
+	<QPaintEvent>
+	<QtGui>
+	<QtCore>
+	<QVBoxLayout>
+	<QDockWidget>
+	<QTreeView>
+	"treemodel.h"
+	<QProgressBar>
+	"qtableview.h"
+	"runtimeWindow.h"
+	"BTC.h"
+	"results.h"
+	<QDesktopWidget>
+	"ioc.h"
+	"JSMainWindow.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/treemodel.h
+	<QModelIndex>
+	<QVariant>
+	<QAbstractItemModel>
+	"node.h"
+	"qdebug.h"
+	"treeitem.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/node.h
+	<QGraphicsItem>
+	"PropModel.h"
+	"PropList.h"
+	"XString.h"
+	"enums.h"
+
+1514483136 /home/arash/Projects/GIFMod/src/GUI/PropModel.h
+	"qabstractitemmodel.h"
+	"mProplist.h"
+	"qstring.h"
+	"qfiledialog.h"
+	"qdir.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/mProplist.h
+	"mProp.h"
+	"enums.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/PropList.h
+	"qmap.h"
+	"PropListItem.h"
+	"multiValues.h"
+	"qvariant.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/PropListItem.h
+	"qmap.h"
+	"XString.h"
+	<QString>
+	<QVariant>
+
+1514483136 /home/arash/Projects/GIFMod/src/GUI/multiValues.h
+	"qvariant.h"
+	"Vector.h"
+	"qdebug.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/treeitem.h
+	<QList>
+	<QVariant>
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/runtimeWindow.h
+	<QMainWindow>
+	<QTimer>
+	"qcustomplot.h"
+	"qvector.h"
+	"BTCSet.h"
+	"qstring.h"
+	"plotWindow.h"
+	"slndetailswindow.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/qcustomplot.h
+	<QObject>
+	<QPointer>
+	<QWidget>
+	<QPainter>
+	<QPaintEvent>
+	<QMouseEvent>
+	<QPixmap>
+	<QVector>
+	<QString>
+	<QDateTime>
+	<QMultiMap>
+	<QFlags>
+	<QDebug>
+	<QVector2D>
+	<QStack>
+	<QCache>
+	<QMargins>
+	<qmath.h>
+	<limits>
+	<qnumeric.h>
+	<QPrinter>
+	<QPrintEngine>
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/plotWindow.h
+	<QMainWindow>
+	<QTimer>
+	"CustomPlotZoom.h"
+	"qvector.h"
+	"BTCSet.h"
+	"qstring.h"
+	"qnamespace.h"
+	"qvariant.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/CustomPlotZoom.h
+	<QPoint>
+	"qcustomplot.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/slndetailswindow.h
+	<QWidget>
+	<qdialog.h>
+	"ui_slndetailswindow.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/results.h
+	<QList>
+	<QMap>
+	<qvariant.h>
+	"BTCSet.h"
+	"GWidget.h"
+	"enums.h"
+	"GWA.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/GWA.h
+	"Distribution.h"
+	"Tracer.h"
+	<vector>
+	<string>
+	<iostream>
+	"StringOP.h"
+	"Well.h"
+	"LIDconfig.h"
+	"math.h"
+	"enums.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Distribution.h
+	<vector>
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Tracer.h
+	"BTCSet.h"
+	"Vector.h"
+	<vector>
+	"Distribution.h"
+	"QuickSort.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Well.h
+	"BTCSet.h"
+	"Vector.h"
+	<vector>
+	"Distribution.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/colorScheme.h
+	<QStringList>
+	<vector>
+	"qcolor.h"
+	"qrgb.h"
+	"BTC.h"
+	"qgraphicsview.h"
+	"qgraphicsscene.h"
+	"qgraphicsitem.h"
+	"qmainwindow.h"
+
+1510178342 /home/arash/Projects/GIFMod/src/GUI/Command.h
+	"qstring.h"
+	"qmap.h"
+	"XString.h"
+	"StringOP.h"
+
+1519427099 source:/home/arash/Projects/GIFMod/src/GUI/MediumSet.cpp
+	"MediumSet.h"
+
+1519061567 source:/home/arash/Projects/GIFMod/src/GUI/Connection.cpp
+	"stdafx.h"
+	"Connection.h"
+	"enums.h"
+
+1519061567 source:/home/arash/Projects/GIFMod/src/GUI/MBBlock.cpp
+	"stdafx.h"
+	"MBBlock.h"
+	"StringOP.h"
+	"Function.h"
+	"Medium.h"
+
+1519427308 source:/home/arash/Projects/GIFMod/src/GUI/utility_funcs.cpp
+	<qstring.h>
+	<qdatetime.h>
+	<qstringlist.h>
+	<qdebug.h>
+	<utility_funcs.h>
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Distribution.cpp
+	"Distribution.h"
+	"DistributionNUnif.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/DistributionNUnif.cpp
+	"DistributionNUnif.h"
+	"math.h"
+	<stdlib.h>
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Function.cpp
+	"stdafx.h"
+	"Function.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Buildup.cpp
+	"Buildup.h"
+	<string>
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/EnvExchange.cpp
+	"EnvExchange.h"
+	"MBBlock.h"
+
+1512075539 source:/home/arash/Projects/GIFMod/src/GUI/Evaporation.cpp
+	"Evaporation.h"
+	"MBBlock.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Solid_Phase.cpp
+	"Solid_Phase.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/RestoreInfo.cpp
+	"RestoreInfo.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/LIDconfig.cpp
+	"stdafx.h"
+	"LIDconfig.h"
+	<iostream>
+	<fstream>
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Precipitation.cpp
+	"Precipitation.h"
+	<iostream>
+	<fstream>
+	<string>
+	"BTC.h"
+	"StringOP.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Controller.cpp
+	"Controller.h"
+	"StringOP.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/ObjectiveFunction.cpp
+	"ObjectiveFunction.h"
+
+1510178342 source:/home/arash/Projects/GIFMod/src/GUI/Sensor.cpp
+	"Sensor.h"
+	"Distribution.h"
+
