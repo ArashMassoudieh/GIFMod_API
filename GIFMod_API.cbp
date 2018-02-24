@@ -58,6 +58,8 @@
 		<Unit filename="../GIFMod/src/GUI/Connection.h" />
 		<Unit filename="../GIFMod/src/GUI/Constituent.cpp" />
 		<Unit filename="../GIFMod/src/GUI/Constituent.h" />
+		<Unit filename="../GIFMod/src/GUI/Controller.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Controller.h" />
 		<Unit filename="../GIFMod/src/GUI/Crxtterm.cpp" />
 		<Unit filename="../GIFMod/src/GUI/Crxtterm.h" />
 		<Unit filename="../GIFMod/src/GUI/Distribution.cpp" />
@@ -84,6 +86,8 @@
 		<Unit filename="../GIFMod/src/GUI/MediumSet.h" />
 		<Unit filename="../GIFMod/src/GUI/NormalDist.cpp" />
 		<Unit filename="../GIFMod/src/GUI/NormalDist.h" />
+		<Unit filename="../GIFMod/src/GUI/ObjectiveFunction.cpp" />
+		<Unit filename="../GIFMod/src/GUI/ObjectiveFunction.h" />
 		<Unit filename="../GIFMod/src/GUI/Precipitation.cpp" />
 		<Unit filename="../GIFMod/src/GUI/Precipitation.h" />
 		<Unit filename="../GIFMod/src/GUI/QuickSort.cpp" />
