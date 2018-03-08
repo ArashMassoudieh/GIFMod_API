@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1519436708 source:/home/arash/Projects/GIFMod_API/main.cpp
+1520475584 source:/home/arash/Projects/GIFMod_API/main.cpp
 	<iostream>
 	"MediumSet.h"
 
@@ -58,12 +58,12 @@
 	<vector>
 	"armadillo"
 
-1519183342 /home/arash/Projects/GIFMod/src/GUI/StringOP.h
+1520472858 /home/arash/Projects/GIFMod/src/GUI/StringOP.h
 	<vector>
 	<string>
 	<sstream>
 
-1519431891 source:/home/arash/Projects/GIFMod/src/GUI/StringOP.cpp
+1520472858 source:/home/arash/Projects/GIFMod/src/GUI/StringOP.cpp
 	"StringOP.h"
 	<string>
 	<iostream>
@@ -147,7 +147,7 @@
 	<cfloat>
 	"Vector_arma.h"
 
-1519183342 source:/home/arash/Projects/GIFMod/src/GUI/Vector_arma.cpp
+1520306883 source:/home/arash/Projects/GIFMod/src/GUI/Vector_arma.cpp
 	"Vector_arma.h"
 	"math.h"
 	"Matrix_arma.h"
@@ -181,7 +181,7 @@
 1519183333 /home/arash/Projects/GIFMod/src/GUI/DistributionNUnif.h
 	<vector>
 
-1519438647 source:/home/arash/Projects/GIFMod/src/GUI/Medium.cpp
+1520476794 source:/home/arash/Projects/GIFMod/src/GUI/Medium.cpp
 	"stdafx.h"
 	"Medium.h"
 	"BTCSet.h"
@@ -198,7 +198,7 @@
 
 1519183342 /home/arash/Projects/GIFMod/src/GUI/targetver.h
 
-1519431891 /home/arash/Projects/GIFMod/src/GUI/Medium.h
+1520475863 /home/arash/Projects/GIFMod/src/GUI/Medium.h
 	"Connection.h"
 	"MBBlock.h"
 	<vector>
@@ -220,7 +220,7 @@
 	"Matrix_arma.h"
 	"qstring.h"
 
-1519183333 /home/arash/Projects/GIFMod/src/GUI/Connection.h
+1520472858 /home/arash/Projects/GIFMod/src/GUI/Connection.h
 	"StringOP.h"
 	<vector>
 	"MBBlock.h"
@@ -228,7 +228,7 @@
 	"RxnNetwork.h"
 	"Controller.h"
 
-1519183342 /home/arash/Projects/GIFMod/src/GUI/MBBlock.h
+1520472858 /home/arash/Projects/GIFMod/src/GUI/MBBlock.h
 	<vector>
 	"StringOP.h"
 	"Matrix.h"
@@ -266,10 +266,10 @@
 	"Sensor.h"
 	"utility_funcs.h"
 
-1519183342 /home/arash/Projects/GIFMod/src/GUI/Sensor.h
+1520306883 /home/arash/Projects/GIFMod/src/GUI/Sensor.h
 	<string>
 	<vector>
-	<BTCSet.h>
+	"BTCSet.h"
 	"StringOP.h"
 
 1519437762 /home/arash/Projects/GIFMod/src/GUI/utility_funcs.h
@@ -295,7 +295,7 @@
 1519183342 /home/arash/Projects/GIFMod/src/GUI/ObjectiveFunction.h
 	"StringOP.h"
 
-1519431891 /home/arash/Projects/GIFMod/src/GUI/MediumSet.h
+1520474681 /home/arash/Projects/GIFMod/src/GUI/MediumSet.h
 	"Medium.h"
 	"Sensor.h"
 	"Controller.h"
@@ -364,7 +364,7 @@
 	"qdebug.h"
 	"treeitem.h"
 
-1519183342 /home/arash/Projects/GIFMod/src/GUI/node.h
+1519615160 /home/arash/Projects/GIFMod/src/GUI/node.h
 	<QGraphicsItem>
 	"PropModel.h"
 	"PropList.h"
@@ -510,15 +510,16 @@
 	"XString.h"
 	"StringOP.h"
 
-1519431891 source:/home/arash/Projects/GIFMod/src/GUI/MediumSet.cpp
+1520477435 source:/home/arash/Projects/GIFMod/src/GUI/MediumSet.cpp
 	"MediumSet.h"
 
-1519183333 source:/home/arash/Projects/GIFMod/src/GUI/Connection.cpp
+1520472858 source:/home/arash/Projects/GIFMod/src/GUI/Connection.cpp
 	"stdafx.h"
 	"Connection.h"
 	"enums.h"
+	"Medium.h"
 
-1519183342 source:/home/arash/Projects/GIFMod/src/GUI/MBBlock.cpp
+1520472858 source:/home/arash/Projects/GIFMod/src/GUI/MBBlock.cpp
 	"stdafx.h"
 	"MBBlock.h"
 	"StringOP.h"
@@ -581,7 +582,7 @@
 	"Controller.h"
 	"StringOP.h"
 
-1510178342 source:/home/arash/Projects/GIFMod/src/GUI/ObjectiveFunction.cpp
+1519183342 source:/home/arash/Projects/GIFMod/src/GUI/ObjectiveFunction.cpp
 	"ObjectiveFunction.h"
 
 1519183342 source:/home/arash/Projects/GIFMod/src/GUI/Sensor.cpp
