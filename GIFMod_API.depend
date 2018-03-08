@@ -643,7 +643,7 @@
 	<vector>
 	"armadillo"
 
-1520438238 /home/arash/GIFMod/src/GUI/StringOP.h
+1520467100 /home/arash/GIFMod/src/GUI/StringOP.h
 	<vector>
 	<string>
 	<sstream>
@@ -677,7 +677,7 @@
 	<vector>
 	"StringOP.h"
 
-1520451076 source:/home/arash/GIFMod/src/GUI/Connection.cpp
+1520469184 source:/home/arash/GIFMod/src/GUI/Connection.cpp
 	"stdafx.h"
 	"Connection.h"
 	"enums.h"
@@ -689,7 +689,7 @@
 
 1510104715 /home/arash/GIFMod/src/GUI/targetver.h
 
-1520450909 /home/arash/GIFMod/src/GUI/Connection.h
+1520467100 /home/arash/GIFMod/src/GUI/Connection.h
 	"StringOP.h"
 	<vector>
 	"MBBlock.h"
@@ -697,7 +697,7 @@
 	"RxnNetwork.h"
 	"Controller.h"
 
-1520440292 /home/arash/GIFMod/src/GUI/MBBlock.h
+1520467100 /home/arash/GIFMod/src/GUI/MBBlock.h
 	<vector>
 	"StringOP.h"
 	"Matrix.h"
@@ -758,10 +758,10 @@
 	"Sensor.h"
 	"utility_funcs.h"
 
-1518967661 /home/arash/GIFMod/src/GUI/Sensor.h
+1520466519 /home/arash/GIFMod/src/GUI/Sensor.h
 	<string>
 	<vector>
-	<BTCSet.h>
+	"BTCSet.h"
 	"StringOP.h"
 
 1519480543 /home/arash/GIFMod/src/GUI/utility_funcs.h
@@ -838,14 +838,14 @@
 	<vector>
 	"Vector.h"
 
-1520455322 source:/home/arash/GIFMod/src/GUI/MBBlock.cpp
+1520469137 source:/home/arash/GIFMod/src/GUI/MBBlock.cpp
 	"stdafx.h"
 	"MBBlock.h"
 	"StringOP.h"
 	"Function.h"
 	"Medium.h"
 
-1520460137 /home/arash/GIFMod/src/GUI/Medium.h
+1520469519 /home/arash/GIFMod/src/GUI/Medium.h
 	"Connection.h"
 	"MBBlock.h"
 	<vector>
@@ -879,7 +879,7 @@
 1510104715 /home/arash/GIFMod/src/GUI/ObjectiveFunction.h
 	"StringOP.h"
 
-1520461060 source:/home/arash/GIFMod/src/GUI/Medium.cpp
+1520469401 source:/home/arash/GIFMod/src/GUI/Medium.cpp
 	"stdafx.h"
 	"Medium.h"
 	"BTCSet.h"
@@ -890,7 +890,7 @@
 	"qmessagebox.h"
 	"Vector.h"
 
-1520454479 /home/arash/GIFMod/src/GUI/MediumSet.h
+1520467100 /home/arash/GIFMod/src/GUI/MediumSet.h
 	"Medium.h"
 	"Sensor.h"
 	"Controller.h"
@@ -1099,7 +1099,7 @@
 	"XString.h"
 	"StringOP.h"
 
-1520460350 source:/home/arash/GIFMod/src/GUI/MediumSet.cpp
+1520467466 source:/home/arash/GIFMod/src/GUI/MediumSet.cpp
 	"MediumSet.h"
 
 1510094645 source:/home/arash/GIFMod/src/GUI/NormalDist.cpp
@@ -1144,7 +1144,7 @@
 1510094410 source:/home/arash/GIFMod/src/GUI/Solid_Phase.cpp
 	"Solid_Phase.h"
 
-1520438245 source:/home/arash/GIFMod/src/GUI/StringOP.cpp
+1520467100 source:/home/arash/GIFMod/src/GUI/StringOP.cpp
 	"StringOP.h"
 	<string>
 	<iostream>
@@ -1167,7 +1167,7 @@
 	<cfloat>
 	"Vector_arma.h"
 
-1510094645 source:/home/arash/GIFMod/src/GUI/Vector_arma.cpp
+1520466519 source:/home/arash/GIFMod/src/GUI/Vector_arma.cpp
 	"Vector_arma.h"
 	"math.h"
 	"Matrix_arma.h"
