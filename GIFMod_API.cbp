@@ -29,6 +29,7 @@
 					<Add option="-O2" />
 					<Add option="-DAPI_version" />
 					<Add option="-DGIFMOD" />
+					<Add directory="../GIFMod/src/GUI" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />

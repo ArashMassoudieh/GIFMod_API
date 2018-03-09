@@ -1,69 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Release" />
-	<File name="../GIFMod/src/GUI/utility_funcs.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="319" topLine="282" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Matrix_arma.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="441" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/BTC.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3842" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/MediumSet.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="41348" topLine="898" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/RxnNetwork.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="163" topLine="32" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/utility_funcs.h" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="567" topLine="17" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Reaction.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
+<<<<<<< Updated upstream
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
 	<File name="../GIFMod/src/GUI/BTC.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="18765" topLine="1051" />
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/Medium.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../GIFMod/src/GUI/BTC.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="169717" topLine="5158" />
+			<Cursor1 position="3842" topLine="0" />
+=======
+	<ActiveTarget name="Debug" />
+	<File name="../GIFMod/src/GUI/RxnNetwork.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="163" topLine="32" />
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/BTCSet.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../GIFMod/src/GUI/Constituent.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="22234" topLine="0" />
+			<Cursor1 position="0" topLine="0" />
+>>>>>>> Stashed changes
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/Constituent.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../GIFMod/src/GUI/BTC.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3842" topLine="0" />
+		</Cursor>
+	</File>
+<<<<<<< Updated upstream
+	<File name="../GIFMod/src/GUI/MBBlock.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1126" topLine="39" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/utility_funcs.cpp" open="0" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6097" topLine="230" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/Medium.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6636" topLine="190" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/Constituent.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../GIFMod/src/GUI/Medium.cpp" open="1" top="1" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="20" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/MediumSet.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5487" topLine="131" />
+			<Cursor1 position="496" topLine="117" />
 		</Cursor>
 	</File>
 	<File name="../GIFMod/src/GUI/RxnNetwork.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -71,29 +60,153 @@
 			<Cursor1 position="2124" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="../GIFMod/src/GUI/Connection.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1204" topLine="17" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/MediumSet.cpp" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="43359" topLine="1041" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/StringOP.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1711" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/Constituent.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/MBBlock.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1158" topLine="22" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/Connection.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1085" topLine="30" />
+=======
+	<File name="main.cpp" open="1" top="1" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="20" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/utility_funcs.h" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1466" topLine="31" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/Medium.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13516" topLine="369" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/MediumSet.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5487" topLine="131" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/Medium.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="69458" topLine="2027" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/QuickSort.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="194" topLine="48" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/MediumSet.cpp" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="41348" topLine="898" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/MBBlock.cpp" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7903" topLine="271" />
+>>>>>>> Stashed changes
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/utility_funcs.cpp" open="0" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6097" topLine="230" />
+		</Cursor>
+	</File>
+<<<<<<< Updated upstream
+	<File name="main.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="312" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/Reaction.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="../GIFMod/src/GUI/RxnNetwork.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2124" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/BTCSet.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> Stashed changes
+		<Cursor>
+			<Cursor1 position="22234" topLine="0" />
+		</Cursor>
+	</File>
+<<<<<<< Updated upstream
+	<File name="../GIFMod/src/GUI/StringOP.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18106" topLine="750" />
+		</Cursor>
+	</File>
 	<File name="../GIFMod/src/GUI/Matrix.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="../GIFMod/src/GUI/BTC.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18765" topLine="1051" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/Matrix.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> Stashed changes
 		<Cursor>
 			<Cursor1 position="17432" topLine="968" />
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/StringOP.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+<<<<<<< Updated upstream
+	<File name="../GIFMod/src/GUI/MediumSet.h" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="12919" topLine="533" />
+			<Cursor1 position="5696" topLine="139" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/Matrix_arma.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="441" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/BTCSet.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="20772" topLine="937" />
 		</Cursor>
 	</File>
 	<File name="../GIFMod/src/GUI/QuickSort.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="194" topLine="48" />
+=======
+	<File name="../GIFMod/src/GUI/Reaction.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/Medium.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../GIFMod/src/GUI/StringOP.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="13516" topLine="369" />
+			<Cursor1 position="12919" topLine="533" />
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/MBBlock.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../GIFMod/src/GUI/Matrix_arma.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7903" topLine="271" />
+			<Cursor1 position="441" topLine="0" />
+>>>>>>> Stashed changes
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
