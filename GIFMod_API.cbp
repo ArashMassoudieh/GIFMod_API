@@ -12,9 +12,12 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++0x" />
 					<Add option="-g" />
 					<Add option="-DAPI_version" />
 					<Add option="-DGIFMOD" />
+					<Add option="-DDebug_API" />
+					<Add directory="../GIFMod/src/GUI" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -33,14 +36,16 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-std=c++11" />
 			<Add option="-Wall" />
+			<Add option="-std=c++11" />
 			<Add option="-fexceptions" />
 			<Add option="-DARMA_USE_LAPACK" />
 			<Add option="-DGIFMOD" />
 			<Add option="-DAPI_version" />
 		</Compiler>
 		<Linker>
+			<Add option="-lgomp" />
+			<Add option="-pthread" />
 			<Add library="../../../../usr/lib/libarmadillo.so" />
 			<Add library="../../../../usr/lib/libarpack.so" />
 			<Add library="../../../../usr/lib/libblas.so" />
@@ -50,16 +55,28 @@
 		<Unit filename="../GIFMod/src/GUI/BTC.h" />
 		<Unit filename="../GIFMod/src/GUI/BTCSet.cpp" />
 		<Unit filename="../GIFMod/src/GUI/BTCSet.h" />
+		<Unit filename="../GIFMod/src/GUI/Buildup.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Buildup.h" />
 		<Unit filename="../GIFMod/src/GUI/Connection.cpp" />
 		<Unit filename="../GIFMod/src/GUI/Connection.h" />
 		<Unit filename="../GIFMod/src/GUI/Constituent.cpp" />
 		<Unit filename="../GIFMod/src/GUI/Constituent.h" />
+		<Unit filename="../GIFMod/src/GUI/Controller.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Controller.h" />
 		<Unit filename="../GIFMod/src/GUI/Crxtterm.cpp" />
 		<Unit filename="../GIFMod/src/GUI/Crxtterm.h" />
 		<Unit filename="../GIFMod/src/GUI/Distribution.cpp" />
 		<Unit filename="../GIFMod/src/GUI/Distribution.h" />
 		<Unit filename="../GIFMod/src/GUI/DistributionNUnif.cpp" />
 		<Unit filename="../GIFMod/src/GUI/DistributionNUnif.h" />
+		<Unit filename="../GIFMod/src/GUI/EnvExchange.cpp" />
+		<Unit filename="../GIFMod/src/GUI/EnvExchange.h" />
+		<Unit filename="../GIFMod/src/GUI/Evaporation.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Evaporation.h" />
+		<Unit filename="../GIFMod/src/GUI/Function.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Function.h" />
+		<Unit filename="../GIFMod/src/GUI/LIDconfig.cpp" />
+		<Unit filename="../GIFMod/src/GUI/LIDconfig.h" />
 		<Unit filename="../GIFMod/src/GUI/MBBlock.cpp" />
 		<Unit filename="../GIFMod/src/GUI/MBBlock.h" />
 		<Unit filename="../GIFMod/src/GUI/Matrix.cpp" />
@@ -72,12 +89,22 @@
 		<Unit filename="../GIFMod/src/GUI/MediumSet.h" />
 		<Unit filename="../GIFMod/src/GUI/NormalDist.cpp" />
 		<Unit filename="../GIFMod/src/GUI/NormalDist.h" />
+		<Unit filename="../GIFMod/src/GUI/ObjectiveFunction.cpp" />
+		<Unit filename="../GIFMod/src/GUI/ObjectiveFunction.h" />
+		<Unit filename="../GIFMod/src/GUI/Precipitation.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Precipitation.h" />
 		<Unit filename="../GIFMod/src/GUI/QuickSort.cpp" />
 		<Unit filename="../GIFMod/src/GUI/QuickSort.h" />
 		<Unit filename="../GIFMod/src/GUI/Reaction.cpp" />
 		<Unit filename="../GIFMod/src/GUI/Reaction.h" />
+		<Unit filename="../GIFMod/src/GUI/RestoreInfo.cpp" />
+		<Unit filename="../GIFMod/src/GUI/RestoreInfo.h" />
 		<Unit filename="../GIFMod/src/GUI/RxnNetwork.cpp" />
 		<Unit filename="../GIFMod/src/GUI/RxnNetwork.h" />
+		<Unit filename="../GIFMod/src/GUI/Sensor.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Sensor.h" />
+		<Unit filename="../GIFMod/src/GUI/Solid_Phase.cpp" />
+		<Unit filename="../GIFMod/src/GUI/Solid_Phase.h" />
 		<Unit filename="../GIFMod/src/GUI/StringOP.cpp" />
 		<Unit filename="../GIFMod/src/GUI/StringOP.h" />
 		<Unit filename="../GIFMod/src/GUI/Vector.cpp" />
@@ -90,6 +117,7 @@
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

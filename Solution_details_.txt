@@ -1,0 +1,356 @@
+Experiment :
+dt:, 0.000000, 1.000000e-01, 1.000000e-01(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-01, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 5.050000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 3.700000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-05, 1.000000e-05(0), 2.800000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-06, 1.000000e-06(0), 2.242000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-05, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-07, 1.000000e-07(0), 1.868500e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-06, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-08, 1.000000e-08(0), 1.601586e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-07, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-09, 1.000000e-09(0), 1.401389e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-08, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-10
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-10, 1.000000e-10(0), 1.245679e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-09, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-11
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-11, 1.000000e-11(0), 1.121111e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-10, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-12
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-12, 1.000000e-12(0), 1.019192e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-11, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-13
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-13, 1.000000e-13(0), 9.342593e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-12, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-14
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-14, 1.000000e-14(0), 8.623932e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-13, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-15
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-15, 1.000000e-15(0), 8.007937e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-14, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-16
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-16, 1.000000e-16(0), 7.474074e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-15, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-17
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-17, 1.000000e-17(0), 7.006944e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-16, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-18
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-18, 1.000000e-18(0), 6.594771e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-17, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-19
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-19, 1.000000e-19(0), 6.228395e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-18, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-20
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-20, 1.000000e-20(0), 5.900585e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-19, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-21
+Redoing! Failed with three attempts
+dt = 1e-21 too small, epoch = 0 average_dt = -nan
+Experiment :
+dt:, 0.000000, 1.000000e-01, 1.000000e-01(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-01, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 5.050000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 3.700000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-05, 1.000000e-05(0), 2.800000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-06, 1.000000e-06(0), 2.242000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-05, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-07, 1.000000e-07(0), 1.868500e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-06, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-08, 1.000000e-08(0), 1.601586e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-07, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-09, 1.000000e-09(0), 1.401389e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-08, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-10
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-10, 1.000000e-10(0), 1.245679e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-09, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-11
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-11, 1.000000e-11(0), 1.121111e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-10, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-12
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-12, 1.000000e-12(0), 1.019192e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-11, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-13
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-13, 1.000000e-13(0), 9.342593e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-12, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-14
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-14, 1.000000e-14(0), 8.623932e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-13, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-15
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-15, 1.000000e-15(0), 8.007937e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-14, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-16
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-16, 1.000000e-16(0), 7.474074e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-15, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-17
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-17, 1.000000e-17(0), 7.006944e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-16, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-18
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-18, 1.000000e-18(0), 6.594771e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-17, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-19
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-19, 1.000000e-19(0), 6.228395e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-18, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-20
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-20, 1.000000e-20(0), 5.900585e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-19, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-21
+Redoing! Failed with three attempts
+dt = 1e-21 too small, epoch = 0 average_dt = -nan
+Experiment :
+dt:, 0.000000, 1.000000e-01, 1.000000e-01(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-01, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 5.050000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 3.700000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-05, 1.000000e-05(0), 2.800000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-06, 1.000000e-06(0), 2.242000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-05, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-07, 1.000000e-07(0), 1.868500e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-06, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-08, 1.000000e-08(0), 1.601586e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-07, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-09, 1.000000e-09(0), 1.401389e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-08, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-10
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-10, 1.000000e-10(0), 1.245679e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-09, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-11
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-11, 1.000000e-11(0), 1.121111e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-10, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-12
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-12, 1.000000e-12(0), 1.019192e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-11, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-13
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-13, 1.000000e-13(0), 9.342593e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-12, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-14
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-14, 1.000000e-14(0), 8.623932e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-13, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-15
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-15, 1.000000e-15(0), 8.007937e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-14, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-16
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-16, 1.000000e-16(0), 7.474074e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-15, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-17
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-17, 1.000000e-17(0), 7.006944e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-16, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-18
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-18, 1.000000e-18(0), 6.594771e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-17, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-19
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-19, 1.000000e-19(0), 6.228395e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-18, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-20
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-20, 1.000000e-20(0), 5.900585e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-19, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-21
+Redoing! Failed with three attempts
+dt = 1e-21 too small, epoch = 0 average_dt = -nan
+Experiment :
+dt:, 0.000000, 1.000000e-01, 1.000000e-01(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-01, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 5.050000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 3.700000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-05, 1.000000e-05(0), 2.800000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-06, 1.000000e-06(0), 2.242000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-05, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-07, 1.000000e-07(0), 1.868500e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-06, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-08, 1.000000e-08(0), 1.601586e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-07, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-09, 1.000000e-09(0), 1.401389e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-08, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-10
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-10, 1.000000e-10(0), 1.245679e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-09, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-11
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-11, 1.000000e-11(0), 1.121111e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-10, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-12
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-12, 1.000000e-12(0), 1.019192e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-11, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-13
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-13, 1.000000e-13(0), 9.342593e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-12, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-14
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-14, 1.000000e-14(0), 8.623932e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-13, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-15
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-15, 1.000000e-15(0), 8.007937e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-14, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-16
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-16, 1.000000e-16(0), 7.474074e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-15, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-17
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-17, 1.000000e-17(0), 7.006944e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-16, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-18
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-18, 1.000000e-18(0), 6.594771e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-17, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-19
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-19, 1.000000e-19(0), 6.228395e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-18, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-20
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-20, 1.000000e-20(0), 5.900585e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-19, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-21
+Redoing! Failed with three attempts
+dt = 1e-21 too small, epoch = 0 average_dt = -nan
+Experiment :
+dt:, 0.000000, 1.000000e-01, 1.000000e-01(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-01, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 5.050000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 3.700000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-05, 1.000000e-05(0), 2.800000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-06, 1.000000e-06(0), 2.242000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-05, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-07, 1.000000e-07(0), 1.868500e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-06, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-08, 1.000000e-08(0), 1.601586e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-07, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-09, 1.000000e-09(0), 1.401389e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-08, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-10
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-10, 1.000000e-10(0), 1.245679e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-09, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-11
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-11, 1.000000e-11(0), 1.121111e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-10, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-12
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-12, 1.000000e-12(0), 1.019192e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-11, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-13
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-13, 1.000000e-13(0), 9.342593e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-12, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-14
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-14, 1.000000e-14(0), 8.623932e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-13, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-15
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-15, 1.000000e-15(0), 8.007937e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-14, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-16
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-16, 1.000000e-16(0), 7.474074e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-15, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-17
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-17, 1.000000e-17(0), 7.006944e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-16, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-18
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-18, 1.000000e-18(0), 6.594771e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-17, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-19
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-19, 1.000000e-19(0), 6.228395e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-18, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-20
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-20, 1.000000e-20(0), 5.900585e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-19, 0, indefinite X or F in hydro @myBlock1,myBlock2,Head not a number @ myBlock1,Head not a number @ myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-21
+Redoing! Failed with three attempts
+dt = 1e-21 too small, epoch = 0 average_dt = -nan
+Experiment :
+dt:, 0.000000, 1.000000e-01, 1.000000e-01(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-01, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 1.000000e-01, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-02, 1.000000e-02(0), 1.000000e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-03, 1.000000e-03(0), 5.050000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-02, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-04, 1.000000e-04(0), 3.700000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-03, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-05, 1.000000e-05(0), 2.800000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-04, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-06, 1.000000e-06(0), 2.242000e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-05, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-07, 1.000000e-07(0), 1.868500e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-06, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-08, 1.000000e-08(0), 1.601586e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-07, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-09, 1.000000e-09(0), 1.401389e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-08, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-10
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-10, 1.000000e-10(0), 1.245679e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-09, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-11
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-11, 1.000000e-11(0), 1.121111e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-10, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-12
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-12, 1.000000e-12(0), 1.019192e-04, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-11, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-13
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-13, 1.000000e-13(0), 9.342593e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-12, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-14
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-14, 1.000000e-14(0), 8.623932e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-13, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-15
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-15, 1.000000e-15(0), 8.007937e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-14, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-16
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-16, 1.000000e-16(0), 7.474074e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-15, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-17
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-17, 1.000000e-17(0), 7.006944e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-16, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-18
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-18, 1.000000e-18(0), 6.594771e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-17, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-19
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-19, 1.000000e-19(0), 6.228395e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-18, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-20
+Redoing! Failed with three attempts
+dt:, 0.000000, 1.000000e-20, 1.000000e-20(0), 5.900585e-05, counters:, 0, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+00, 1.000000e+00, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e-19, 0, indefinite X or F in hydro @myBlock1,myBlock2,Flow not a number @ C,
+Redoing for small dt, dt = 1e-21
+Redoing! Failed with three attempts
+dt = 1e-21 too small, epoch = 0 average_dt = -nan
+Experiment :
+Experiment :
+dt:, 0.000000, 7.500000e-02, 7.500000e-02(22), 1.000000e-01, counters:, 22, 0, 0, J_updates:, 1, 1, 1, update_counts: 10, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
+dt:, 0.075000, 5.625000e-02, 5.625000e-02(22), 1.000000e-01, counters:, 26, 0, 0, J_updates:, 1, 1, 1, update_counts: 1, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
+dt:, 0.131250, 7.500000e-02, 7.500000e-02(21), 1.000000e-01, counters:, 1, 0, 0, J_updates:, 0, 0, 0, update_counts: 1, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
+Restore point: 1, dt = 0.075
+dt:, 0.206250, 1.000000e-01, 1.000000e-01(21), 1.000000e-01, counters:, 3, 0, 0, J_updates:, 0, 0, 0, update_counts: 0, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
+dt:, 0.306250, 7.500000e-02, 7.500000e-02(22), 1.000000e-01, counters:, 10, 0, 0, J_updates:, 1, 1, 1, update_counts: 0, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
+dt:, 0.381250, 1.000000e-01, 1.000000e-01(21), 1.000000e-01, counters:, 2, 0, 0, J_updates:, 0, 0, 0, update_counts: 1, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
+dt:, 0.481250, 1.333333e-01, 1.333333e-01(21), 1.000000e-01, counters:, 2, 0, 0, J_updates:, 0, 0, 0, update_counts: 0, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
+dt:, 0.614583, 1.333333e-01, 1.333333e-01(23), 1.000000e-01, counters:, 8, 0, 0, J_updates:, 1, 0, 0, update_counts: 0, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
+dt:, 0.747917, 1.777778e-01, 1.777778e-01(21), 1.000000e-01, counters:, 2, 0, 0, J_updates:, 0, 0, 0, update_counts: 1, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
+dt:, 0.925694, 2.370370e-01, 2.370370e-01(21), 1.000000e-01, counters:, 3, 0, 0, J_updates:, 0, 0, 0, update_counts: 0, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
+dt:, 1.162731, 2.370370e-01, 2.370370e-01(23), 1.000000e-01, counters:, 7, 0, 0, J_updates:, 1, 0, 0, update_counts: 0, 0, 0, multis: 1.000000e+04, 1.000000e+04, pos_defs: 0.000000e+00, 0.000000e+00, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, 0, none
