@@ -20,5 +20,5 @@ int main()
     cout<<M.Block("myBlock2")->tostring();
     M.write_details() = true;
     M.solve();
-    M.Results.ANS.writetofile("text.txt");
+    M.Results.ANS.writetofile(string("text.txt"));
 }
