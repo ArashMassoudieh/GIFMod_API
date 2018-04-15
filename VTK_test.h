@@ -9,6 +9,7 @@ class VTK_test
         virtual ~VTK_test();
         void TDPoints();
         void Point();
+
     protected:
 
     private:

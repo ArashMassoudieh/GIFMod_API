@@ -2,139 +2,69 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="../GIFMod/src/GUI/Matrix.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="VTK_test.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="15620" topLine="898" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/RxnNetwork.cpp" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../GIFMod/src/GUI/Medium.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="18424" topLine="633" />
+			<Cursor1 position="8847" topLine="267" />
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/Medium.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../GIFMod/src/GUI/MediumSet.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="11429" topLine="345" />
+			<Cursor1 position="242" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/MediumSet.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../GIFMod/src/GUI/MBBlock.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2227" topLine="69" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/MediumSet.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2698" topLine="83" />
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/LIDconfig.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../GIFMod/src/GUI/Connection.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="6545" topLine="237" />
+			<Cursor1 position="18861" topLine="735" />
 		</Cursor>
 	</File>
-	<File name="../GIFMod/src/GUI/BTC.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="VTK.h" open="1" top="1" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4386" topLine="139" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/BTC.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18765" topLine="1051" />
+		</Cursor>
+	</File>
+	<File name="VTK_test.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="181" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/Medium.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="195698" topLine="5639" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/MBBlock.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5884" topLine="186" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3438" topLine="31" />
+		</Cursor>
+	</File>
+	<File name="../GIFMod/src/GUI/BTC.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="3842" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/StringOP.cpp" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="21594" topLine="938" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/utility_funcs.cpp" open="1" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1931" topLine="81" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Buildup.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="811" topLine="18" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Vector.h" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2254" topLine="70" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Constituent.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3878" topLine="123" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Reaction.cpp" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/BTCSet.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="20933" topLine="955" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/DistributionNUnif.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4324" topLine="199" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/MediumSet.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="720" topLine="27" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Medium.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="53915" topLine="1627" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/BTC.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="15960" topLine="891" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/QuickSort.cpp" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3055" topLine="137" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Evaporation.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5485" topLine="143" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Precipitation.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1962" topLine="111" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Solid_Phase.cpp" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="6031" topLine="189" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Connection.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="8987" topLine="340" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/MBBlock.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="25416" topLine="875" />
-		</Cursor>
-	</File>
-	<File name="main.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="16" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/Vector.cpp" open="1" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2957" topLine="182" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/NormalDist.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="../GIFMod/src/GUI/MBBlock.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="890" topLine="17" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
