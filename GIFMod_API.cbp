@@ -40,6 +40,7 @@
 			<Add option="-Wall" />
 			<Add option="-std=c++11" />
 			<Add option="-fexceptions" />
+			<Add option="-fopenmp" />
 			<Add option="-DARMA_USE_LAPACK" />
 			<Add option="-DGIFMOD" />
 			<Add option="-DAPI_version" />
