@@ -75,6 +75,7 @@ int main()
     M.merge_to_snapshot(gr,"ks");
     #endif // USE_VTK
     M.write_grid_to_vtp(gr,"test_1.vtp");
+    M.write_grid_to_text(gr, "test_1.txt");
     M.solve();
 
 

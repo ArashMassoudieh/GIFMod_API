@@ -5802,3 +5802,11 @@ t: 9814.533095, 1.000000e+02, 1.559790e+02(21), 1.000000e+01, counters:, 3, 0, 0
 t: 9914.533095, 1.000000e+02, 1.715769e+02(21), 1.000000e+01, counters:, 3, 0, 0, J_updates:, 0, 0, 0, update_counts: 0, -833053164, 32764, multis: 1.000000e+04, 1.000000e+04, pos_defs: 6.952706e-310, 6.952706e-310, wiggle: 0.000000e+00, 4.000000e+00, 1.559790e+02, -1, none
 t: 10014.533095, 1.000000e+02, 1.887346e+02(21), 1.000000e+01, counters:, 3, 0, 0, J_updates:, 0, 0, 0, update_counts: 0, -833053164, 32764, multis: 1.000000e+04, 1.000000e+04, pos_defs: 6.952706e-310, 6.952706e-310, wiggle: 0.000000e+00, 4.000000e+00, 1.715769e+02, -1, none
 Experiment :
+Experiment :
+Experiment :
+Experiment :
+Experiment :
+t: 0.000000, 1.000000e+01, 1.000000e+01(0), 1.000000e+01, counters:, 5, 0, 0, J_updates:, 1, 1, 1, update_counts: 5, -1238352364, 32764, multis: 1.000000e+00, 1.000000e+00, pos_defs: 6.952709e-310, 6.952709e-310, wiggle: 0.000000e+00, 4.000000e+00, 1.000000e+04, -1, Expanding error in hydro , max error @ Soil(6.6.1), ini max error @ Soil(7.7.1)
+Experiment :
+Experiment :
+Experiment :

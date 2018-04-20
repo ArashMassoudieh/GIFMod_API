@@ -87,12 +87,13 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <vtkRenderWindow.h>
 #include <vtkRenderWindowInteractor.h>
 #include <vtkMath.h>
-
+#include <vtkXMLUnstructuredGridWriter.h>
 #include <vtkVersion.h>
 #include <vtkSmartPointer.h>
-
+#include <vtkDataSetMapper.h>
 #include <vtkActor.h>
 #include <vtkDelaunay2D.h>
+#include <vtkDelaunay3D.h>
 #include <vtkLookupTable.h>
 #include <vtkMath.h>
 #include <vtkPointData.h>
