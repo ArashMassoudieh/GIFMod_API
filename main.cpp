@@ -11,7 +11,7 @@ int main()
     //V.Point();
     int nx = 10;
     int ny = 10;
-    int nz = 3;
+    int nz = 2;
     //CMBBlock Soil("name=Soil, a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=4000, vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0= " + numbertostring(k*3) +", V=30000, ks=0.1");
 
     //cout<<Soil.tostring()<<endl;
@@ -74,7 +74,7 @@ int main()
     VTK_grid gr = M.VTK_get_snap_shot("z0",0,10);
     M.merge_to_snapshot(gr,"ks");
     #endif // USE_VTK
-    M.write_grid_to_vtp(gr,"test_1.vtp");
+    M.write_grid_to_vtp(gr,"test_1.vtu");
     M.write_grid_to_text(gr, "test_1.txt");
     M.solve();
 
@@ -92,7 +92,7 @@ int main()
     M.merge_to_snapshot(gr, "theta", 5000);
     M.merge_to_snapshot(gr, "theta", 10000);
     M.write_grid_to_text(gr, "grid_1.txt");
-    M.write_grid_to_vtp(gr,"test.vtp");
+    M.write_grid_to_vtp(gr,"test.vtu");
     #endif // USE_VTK
 
     M.Results.ANS.writetofile(string("text.txt"));
