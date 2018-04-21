@@ -3,7 +3,8 @@
 #include "vtkAutoInit.h"
 VTK_MODULE_INIT(vtkRenderingOpenGL2); // VTK was built with vtkRenderingOpenGL2
 VTK_MODULE_INIT(vtkInteractionStyle);
-
+#include <vector>
+#include <string>
 
 #include <vtkVersion.h>
 #include <vtkRenderer.h>
@@ -86,12 +87,13 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <vtkRenderWindow.h>
 #include <vtkRenderWindowInteractor.h>
 #include <vtkMath.h>
-
+#include <vtkXMLUnstructuredGridWriter.h>
 #include <vtkVersion.h>
 #include <vtkSmartPointer.h>
-
+#include <vtkDataSetMapper.h>
 #include <vtkActor.h>
 #include <vtkDelaunay2D.h>
+#include <vtkDelaunay3D.h>
 #include <vtkLookupTable.h>
 #include <vtkMath.h>
 #include <vtkPointData.h>
@@ -165,7 +167,5 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #ifdef vtkGenericDataArray_h
 #define InsertNextTupleValue InsertNextTypedTuple
 #endif
-
-
 
 #endif // VTK_INCLUDED

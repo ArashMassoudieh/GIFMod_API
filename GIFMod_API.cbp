@@ -27,13 +27,11 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add option="-std=c++0x" />
 					<Add option="-DAPI_version" />
 					<Add option="-DGIFMOD" />
 					<Add directory="../GIFMod/src/GUI" />
 				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
@@ -44,6 +42,9 @@
 			<Add option="-DARMA_USE_LAPACK" />
 			<Add option="-DGIFMOD" />
 			<Add option="-DAPI_version" />
+			<Add option="-DUSE_VTK" />
+			<Add directory="../../../../usr/local/include/vtk-8.1" />
+			<Add directory="/home/arash/Projects/GIFMod_API/" />
 		</Compiler>
 		<Linker>
 			<Add option="-lgomp" />
@@ -52,6 +53,120 @@
 			<Add library="../../../../usr/lib/libarpack.so" />
 			<Add library="../../../../usr/lib/libblas.so" />
 			<Add library="../../../../usr/lib/liblapack.so" />
+			<Add library="../../../../usr/local/lib/libvtkalglib-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkChartsCore-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkCommonColor-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkCommonComputationalGeometry-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkCommonCore-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkCommonDataModel-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkCommonExecutionModel-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkCommonMath-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkCommonMisc-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkCommonSystem-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkCommonTransforms-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkDICOMParser-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkDomainsChemistry-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkDomainsChemistryOpenGL2-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkexoIIc-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkexpat-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersAMR-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersCore-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersExtraction-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersFlowPaths-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersGeneral-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersGeneric-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersGeometry-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersHybrid-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersHyperTree-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersImaging-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersModeling-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersParallel-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersParallelImaging-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersPoints-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersProgrammable-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersSelection-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersSMP-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersSources-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersStatistics-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersTexture-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersTopology-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkFiltersVerdict-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkfreetype-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkGeovisCore-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkgl2ps-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkglew-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkhdf5-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkhdf5_hl-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkImagingColor-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkImagingCore-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkImagingFourier-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkImagingGeneral-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkImagingHybrid-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkImagingMath-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkImagingMorphological-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkImagingSources-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkImagingStatistics-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkImagingStencil-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkInfovisCore-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkInfovisLayout-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkInteractionImage-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkInteractionStyle-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkInteractionWidgets-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOAMR-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOCore-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOEnSight-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOExodus-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOExport-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOExportOpenGL2-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOGeometry-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOImage-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOImport-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOInfovis-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOLegacy-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOLSDyna-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOMINC-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOMovie-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIONetCDF-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOParallel-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOParallelXML-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOPLY-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOSQL-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOTecplotTable-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOVideo-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOXML-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkIOXMLParser-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkjpeg-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkjsoncpp-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtklibharu-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtklibxml2-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtklz4-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkmetaio-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkNetCDF-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtknetcdfcpp-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkoggtheora-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkParallelCore-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkpng-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkproj4-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingAnnotation-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingContext2D-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingContextOpenGL2-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingCore-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingFreeType-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingGL2PSOpenGL2-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingImage-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingLabel-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingLOD-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingOpenGL2-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingVolume-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkRenderingVolumeOpenGL2-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtksqlite-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtksys-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtktiff-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkverdict-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkViewsContext2D-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkViewsCore-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkViewsInfovis-8.1.so" />
+			<Add library="../../../../usr/local/lib/libvtkzlib-8.1.so" />
 		</Linker>
 		<Unit filename="../GIFMod/src/GUI/BTC.cpp" />
 		<Unit filename="../GIFMod/src/GUI/BTC.h" />
@@ -115,6 +230,9 @@
 		<Unit filename="../GIFMod/src/GUI/Vector_arma.h" />
 		<Unit filename="../GIFMod/src/GUI/utility_funcs.cpp" />
 		<Unit filename="../GIFMod/src/GUI/utility_funcs.h" />
+		<Unit filename="VTK.h" />
+		<Unit filename="VTK_test.cpp" />
+		<Unit filename="VTK_test.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
