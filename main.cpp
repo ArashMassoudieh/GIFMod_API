@@ -8,9 +8,12 @@ int main()
     //VTK_test V;
     //V.TDPoints();
     //V.Point();
-    int nx = 10;
-    int ny = 10;
-    int nz = 10;
+    int nx = 5;
+    int ny = 5;
+    int nz = 5;
+    double dx = 100;
+    double dy = 100;
+    double dz = 1;
     //CMBBlock Soil("name=Soil, a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=4000, vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0= " + numbertostring(k*3) +", V=30000, ks=0.1");
 
     //cout<<Soil.tostring()<<endl;
@@ -30,9 +33,10 @@ int main()
                     cout << "Block:" << i << j << k << "has been created" << endl;
                 #endif // Debug_API
                 if (k!=0)
-                    B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*0.3+0.01*100*i+0.02*100*j) + ", a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(2000+(2-k)*300+50*j+50*i)+", vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*0.3+0.01*100*i+0.02*100*j) +", V=30000, ks=20");
+                    B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*dz+0.01*dx*i+0.02*dy*j) + ", a= " + numbertostring(dx*dy) + ", type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(dx*dy*dz*(0.4-k/nz*0.2) )+" , vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*dz+0.01*dx*i+0.02*dy*j) +", V=" + numbertostring(dx*dy*dz) + ", ks=20");
+
                 else
-                    B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*0.3+0.01*100*i+0.02*100*j) + ",a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(12000)+", vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*0.3+0.01*100*i+0.02*100*j) +", V=30000, ks=20");
+                    B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*dz+0.01*dx*i+0.02*dy*j) + ",a= " + numbertostring(dx*dy) + ", type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(dx*dy*dz*0.4) + ", vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*dz+0.01*dx*i+0.02*dy*j) +", V= " + numbertostring(dx*dy*dz) + ", ks=20");
                 #ifdef Debug_API
                     cout << "Block:" << i << j << k << "Assigned!" << endl;
                 #endif // Debug_API
@@ -47,7 +51,7 @@ int main()
         for (int j=0; j<ny; j++)
             for (int k=0; k<nz-1; k++)
             {
-                CConnection C("a=10000,d=3,name=C("+numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k)+"-"+numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k+1)+")");
+                CConnection C("a=" + numbertostring(dx*dy) + " ,d= " + numbertostring(dz) + ",name=C("+numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k)+"-"+numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k+1)+")");
                 M.AddConnector("Soil(" + numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k)+")", "Soil(" + numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k+1)+")", C);
             }
 
@@ -56,7 +60,7 @@ int main()
         for (int j=0; j<ny-1; j++)
             for (int k=0; k<nz; k++)
             {
-                CConnection C("a=300,d=100,name=C("+numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k)+"-"+numbertostring(i)+"."+numbertostring(j+1)+"."+numbertostring(k)+")");
+                CConnection C("a=" + numbertostring(dx*dz)  + " ,d= " + numbertostring(dy) + ",name=C("+numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k)+"-"+numbertostring(i)+"."+numbertostring(j+1)+"."+numbertostring(k)+")");
                 M.AddConnector("Soil(" + numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k)+")", "Soil(" + numbertostring(i)+"."+numbertostring(j+1)+"."+numbertostring(k)+")", C);
             }
 
@@ -65,7 +69,7 @@ int main()
         for (int j=0; j<ny; j++)
             for (int k=0; k<nz; k++)
             {
-                CConnection C("a=300,d=100,name=C("+numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k)+"-"+numbertostring(i+1)+"."+numbertostring(j)+"."+numbertostring(k)+")");
+                CConnection C("a=" + numbertostring(dy*dz) + " ,d= " + numbertostring(dx) + ",name=C("+numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k)+"-"+numbertostring(i+1)+"."+numbertostring(j)+"."+numbertostring(k)+")");
                 M.AddConnector("Soil(" + numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k)+")", "Soil(" + numbertostring(i+1)+"."+numbertostring(j)+"."+numbertostring(k)+")", C);
             }
 
