@@ -702,7 +702,7 @@
 	"RxnNetwork.h"
 	"Controller.h"
 
-1523796753 /home/arash/GIFMod/src/GUI/MBBlock.h
+1524406361 /home/arash/GIFMod/src/GUI/MBBlock.h
 	<vector>
 	"StringOP.h"
 	"Matrix.h"
@@ -843,14 +843,14 @@
 	<vector>
 	"Vector.h"
 
-1520469137 source:/home/arash/GIFMod/src/GUI/MBBlock.cpp
+1524406174 source:/home/arash/GIFMod/src/GUI/MBBlock.cpp
 	"stdafx.h"
 	"MBBlock.h"
 	"StringOP.h"
 	"Function.h"
 	"Medium.h"
 
-1523799313 /home/arash/GIFMod/src/GUI/Medium.h
+1524360468 /home/arash/GIFMod/src/GUI/Medium.h
 	"Connection.h"
 	"MBBlock.h"
 	<vector>
@@ -885,7 +885,7 @@
 1510104715 /home/arash/GIFMod/src/GUI/ObjectiveFunction.h
 	"StringOP.h"
 
-1520469401 source:/home/arash/GIFMod/src/GUI/Medium.cpp
+1524362280 source:/home/arash/GIFMod/src/GUI/Medium.cpp
 	"stdafx.h"
 	"Medium.h"
 	"BTCSet.h"
@@ -1105,7 +1105,7 @@
 	"XString.h"
 	"StringOP.h"
 
-1522427160 source:/home/arash/GIFMod/src/GUI/MediumSet.cpp
+1524362204 source:/home/arash/GIFMod/src/GUI/MediumSet.cpp
 	"MediumSet.h"
 
 1510094645 source:/home/arash/GIFMod/src/GUI/NormalDist.cpp
@@ -1150,7 +1150,7 @@
 1520693422 source:/home/arash/GIFMod/src/GUI/Solid_Phase.cpp
 	"Solid_Phase.h"
 
-1522434497 source:/home/arash/GIFMod/src/GUI/StringOP.cpp
+1524361678 source:/home/arash/GIFMod/src/GUI/StringOP.cpp
 	"StringOP.h"
 	<string>
 	<iostream>
@@ -1180,7 +1180,7 @@
 	<cfloat>
 	"Vector.h"
 
-1520455601 source:/home/arash/GIFMod_API/main.cpp
+1524405524 source:/home/arash/GIFMod_API/main.cpp
 	<iostream>
 	"MediumSet.h"
 
@@ -2144,8 +2144,10 @@
 	"vtkAbstractArray.h"
 	"vtkStdString.h"
 
-1523802569 /home/arash/GIFMod_API/VTK.h
+1524352252 /home/arash/GIFMod_API/VTK.h
 	"vtkAutoInit.h"
+	<vector>
+	<string>
 	<vtkVersion.h>
 	<vtkRenderer.h>
 	<vtkRenderWindowInteractor.h>
@@ -2220,10 +2222,13 @@
 	<vtkRenderWindow.h>
 	<vtkRenderWindowInteractor.h>
 	<vtkMath.h>
+	<vtkXMLUnstructuredGridWriter.h>
 	<vtkVersion.h>
 	<vtkSmartPointer.h>
+	<vtkDataSetMapper.h>
 	<vtkActor.h>
 	<vtkDelaunay2D.h>
+	<vtkDelaunay3D.h>
 	<vtkLookupTable.h>
 	<vtkMath.h>
 	<vtkPointData.h>
@@ -2291,6 +2296,155 @@
 1523796905 source:/home/arash/GIFMod_API/VTK_test.cpp
 	"VTK_test.h"
 
-1523796905 /home/arash/GIFMod_API/VTK_test.h
+1523803349 /home/arash/GIFMod_API/VTK_test.h
 	"VTK.h"
+
+1524352252 /home/arash/GIFMod_API//VTK.h
+	"vtkAutoInit.h"
+	<vector>
+	<string>
+	<vtkVersion.h>
+	<vtkRenderer.h>
+	<vtkRenderWindowInteractor.h>
+	<vtkRenderWindow.h>
+	<vtkSmartPointer.h>
+	<vtkChartXY.h>
+	<vtkTable.h>
+	<vtkPlot.h>
+	<vtkFloatArray.h>
+	<vtkContextView.h>
+	<vtkContextScene.h>
+	<vtkPen.h>
+	<vtkPointSource.h>
+	<vtkNamedColors.h>
+	<vtkVersion.h>
+	<vtkSmartPointer.h>
+	<vtkInteractorStyleUser.h>
+	<vtkProperty.h>
+	<vtkOutlineFilter.h>
+	<vtkCommand.h>
+	<vtkSliderWidget.h>
+	<vtkSliderRepresentation.h>
+	<vtkSliderRepresentation3D.h>
+	<vtkImageData.h>
+	<vtkCellArray.h>
+	<vtkFloatArray.h>
+	<vtkPointData.h>
+	<vtkPolyDataMapper.h>
+	<vtkActor.h>
+	<vtkRenderer.h>
+	<vtkRenderWindow.h>
+	<vtkRenderWindowInteractor.h>
+	<vtkContourFilter.h>
+	<vtkXMLImageDataWriter.h>
+	"vtkCylinderSource.h"
+	"vtkPolyDataMapper.h"
+	"vtkActor.h"
+	"vtkRenderer.h"
+	"vtkRenderWindow.h"
+	"vtkRenderWindowInteractor.h"
+	"vtkProperty.h"
+	"vtkCamera.h"
+	"vtkSmartPointer.h"
+	<vtkSmartPointer.h>
+	<vtkXMLPolyDataReader.h>
+	<vtkAppendPolyData.h>
+	<vtkClipPolyData.h>
+	<vtkCleanPolyData.h>
+	<vtkContourFilter.h>
+	<vtkFloatArray.h>
+	<vtkCellData.h>
+	<vtkPointData.h>
+	<vtkScalarsToColors.h>
+	<vtkLookupTable.h>
+	<vtkPolyDataMapper.h>
+	<vtkProperty.h>
+	<vtkActor.h>
+	<vtkRenderer.h>
+	<vtkRenderWindow.h>
+	<vtkRenderWindowInteractor.h>
+	<vector>
+	<vtkVersion.h>
+	<vtkSmartPointer.h>
+	<vtkXMLPolyDataReader.h>
+	<vtkSphereSource.h>
+	<vtkPolyDataMapper.h>
+	<vtkPlane.h>
+	<vtkCutter.h>
+	<vtkProperty.h>
+	<vtkActor.h>
+	<vtkRenderer.h>
+	<vtkRenderWindow.h>
+	<vtkRenderWindowInteractor.h>
+	<vtkMath.h>
+	<vtkXMLUnstructuredGridWriter.h>
+	<vtkVersion.h>
+	<vtkSmartPointer.h>
+	<vtkDataSetMapper.h>
+	<vtkActor.h>
+	<vtkDelaunay2D.h>
+	<vtkDelaunay3D.h>
+	<vtkLookupTable.h>
+	<vtkMath.h>
+	<vtkPointData.h>
+	<vtkPoints.h>
+	<vtkPolyData.h>
+	<vtkPolyDataMapper.h>
+	<vtkProperty.h>
+	<vtkRenderWindow.h>
+	<vtkRenderWindowInteractor.h>
+	<vtkRenderer.h>
+	<vtkVertexGlyphFilter.h>
+	<vtkXMLPolyDataWriter.h>
+	<vtkSmartPointer.h>
+	<vtkLineSource.h>
+	<vtkPolyData.h>
+	<vtkPolyDataMapper.h>
+	<vtkActor.h>
+	<vtkProperty.h>
+	<vtkRenderWindow.h>
+	<vtkRenderer.h>
+	<vtkRenderWindowInteractor.h>
+	<vtkChartXY.h>
+	<vtkContextScene.h>
+	<vtkContextView.h>
+	<vtkFloatArray.h>
+	<vtkPlotPoints.h>
+	<vtkRenderWindow.h>
+	<vtkRenderWindowInteractor.h>
+	<vtkRenderer.h>
+	<vtkTable.h>
+	<vtkPNGWriter.h>
+	<vtkImageCast.h>
+	<vtkWindowToImageFilter.h>
+	<vtkVersion.h>
+	<vtkArrowSource.h>
+	<vtkCellArray.h>
+	<vtkGlyph2D.h>
+	<vtkPointData.h>
+	<vtkImageData.h>
+	<vtkImageSliceMapper.h>
+	<vtkImageSlice.h>
+	<vtkInteractorStyleImage.h>
+	<vtkPolyDataMapper.h>
+	<vtkPolyData.h>
+	<vtkPoints.h>
+	<vtkRenderer.h>
+	<vtkRenderWindow.h>
+	<vtkRenderWindowInteractor.h>
+	<vtkSmartPointer.h>
+	<vtkXMLPolyDataWriter.h>
+	<vtkVersion.h>
+	<vtkSmartPointer.h>
+	<vtkCellArray.h>
+	<vtkCellData.h>
+	<vtkDoubleArray.h>
+	<vtkPoints.h>
+	<vtkPolyLine.h>
+	<vtkPolyData.h>
+	<vtkPolyDataMapper.h>
+	<vtkActor.h>
+	<vtkRenderWindow.h>
+	<vtkRenderer.h>
+	<vtkRenderWindowInteractor.h>
 

@@ -1,6 +1,5 @@
 #include <iostream>
 #include "MediumSet.h"
-#include "VTK_test.h"
 
 using namespace std;
 
@@ -11,22 +10,32 @@ int main()
     //V.Point();
     int nx = 10;
     int ny = 10;
-    int nz = 2;
+    int nz = 10;
     //CMBBlock Soil("name=Soil, a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=4000, vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0= " + numbertostring(k*3) +", V=30000, ks=0.1");
 
     //cout<<Soil.tostring()<<endl;
 
-    cout<<"Blocks..."<< endl;
+
     CMedium M(true);
+    cout<<"Blocks..."<< endl;
     for (int i=0; i<nx; i++)
         for (int j=0; j<ny; j++)
             for (int k=0; k<nz; k++)
             {
+                #ifdef Debug_API
+                    cout << "Block:" << i << j << k << endl;
+                #endif // Debug_API
                 CMBBlock B1;
+                #ifdef Debug_API
+                    cout << "Block:" << i << j << k << "has been created" << endl;
+                #endif // Debug_API
                 if (k!=0)
-                    B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*3+0.01*100*i+0.02*100*j) + ", a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(2000+(2-k)*300+50*j+50*i)+", vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*3+0.01*100*i+0.02*100*j) +", V=30000, ks=10");
+                    B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*0.3+0.01*100*i+0.02*100*j) + ", a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(2000+(2-k)*300+50*j+50*i)+", vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*0.3+0.01*100*i+0.02*100*j) +", V=30000, ks=20");
                 else
-                    B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*3+0.01*100*i+0.02*100*j) + ",a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(12000)+", vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*3+0.01*100*i+0.02*100*j) +", V=30000, ks=10");
+                    B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*0.3+0.01*100*i+0.02*100*j) + ",a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(12000)+", vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*0.3+0.01*100*i+0.02*100*j) +", V=30000, ks=20");
+                #ifdef Debug_API
+                    cout << "Block:" << i << j << k << "Assigned!" << endl;
+                #endif // Debug_API
 
                 M.AddBlock(B1);
             }
@@ -71,11 +80,11 @@ int main()
     //cout<<M.Block("myBlock2")->tostring();
     M.write_details() = true;
     #ifdef USE_VTK
-    VTK_grid gr = M.VTK_get_snap_shot("z0",0,10);
+    VTK_grid gr = M.VTK_get_snap_shot("z0",0,1);
     M.merge_to_snapshot(gr,"ks");
-    #endif // USE_VTK
     M.write_grid_to_vtp(gr,"test_1.vtu");
     M.write_grid_to_text(gr, "test_1.txt");
+    #endif // USE_VTK
     M.solve();
 
 
