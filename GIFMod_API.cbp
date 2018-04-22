@@ -30,6 +30,7 @@
 					<Add option="-std=c++0x" />
 					<Add option="-DAPI_version" />
 					<Add option="-DGIFMOD" />
+					<Add option="-DDebug_API" />
 					<Add directory="../GIFMod/src/GUI" />
 				</Compiler>
 			</Target>
@@ -43,8 +44,10 @@
 			<Add option="-DGIFMOD" />
 			<Add option="-DAPI_version" />
 			<Add option="-DUSE_VTK" />
+			<Add option="-DDebug_Crash" />
 			<Add directory="../../../../usr/local/include/vtk-8.1" />
 			<Add directory="/home/arash/Projects/GIFMod_API/" />
+			<Add directory="/home/arash/GIFMod_API/" />
 		</Compiler>
 		<Linker>
 			<Add option="-lgomp" />

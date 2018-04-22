@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<VTKFile type="UnstructuredGrid" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <UnstructuredGrid>
+    <Piece NumberOfPoints="8" NumberOfCells="6">
+      <PointData>
+        <DataArray type="Float64" Name="z0" format="ascii" RangeMin="0" RangeMax="3.3">
+          0 0.3 2 2.3 1 1.3
+          3 3.3
+        </DataArray>
+        <DataArray type="Float64" Name="ks" format="ascii" RangeMin="20" RangeMax="20">
+          20 20 20 20 20 20
+          20 20
+        </DataArray>
+        <DataArray type="Float64" Name="theta_1" format="ascii" RangeMin="0.090624930358" RangeMax="0.38673111954">
+          0.38673111954 0.090624930358 0.38629197874 0.091793728782 0.38655189891 0.091995885721
+          0.38615214771 0.093191643574
+        </DataArray>
+        <DataArray type="Float64" Name="theta_5" format="ascii" RangeMin="0.14563531058" RangeMax="0.33365559772">
+          0.33365559772 0.14645798512 0.3314598937 0.14563531058 0.33275949454 0.14664609527
+          0.33076073854 0.14595821787
+        </DataArray>
+        <DataArray type="Float64" Name="theta_25" format="ascii" RangeMin="0.21268090827" RangeMax="0.26833109648">
+          0.26833109648 0.22299700328 0.25755516829 0.21523705641 0.26327189914 0.21932143068
+          0.25393877078 0.21268090827
+        </DataArray>
+        <DataArray type="Float64" Name="theta_50" format="ascii" RangeMin="0.2078876156" RangeMax="0.27690317398">
+          0.27690317398 0.22945022758 0.25364409673 0.21250588775 0.26510769827 0.22071597265
+          0.24711866078 0.2078876156
+        </DataArray>
+        <DataArray type="Float64" Name="theta_100" format="ascii" RangeMin="0.19916139252" RangeMax="0.29757578719">
+          0.29757578719 0.24561291753 0.24231601951 0.20454504489 0.26720480842 0.22230028731
+          0.23461707596 0.19916139252
+        </DataArray>
+        <DataArray type="Float64" Name="theta_200" format="ascii" RangeMin="0.17254388678" RangeMax="0.36077399431">
+          0.36077399431 0.30875641253 0.19543681472 0.17254388678 0.26050145217 0.21742918415
+          0.2133799544 0.18451163426
+        </DataArray>
+        <DataArray type="Float64" Name="theta_500" format="ascii" RangeMin="0.14966324723" RangeMax="0.39522469721">
+          0.39522469721 0.38046781089 0.16285582152 0.14966324723 0.27246823164 0.22613914855
+          0.17093101606 0.15558336024
+        </DataArray>
+        <DataArray type="Float64" Name="theta_1000" format="ascii" RangeMin="0.13080029553" RangeMax="0.39877174764">
+          0.39877174764 0.38854307434 0.17064869128 0.15510384314 0.29192996896 0.24117830422
+          0.13635740821 0.13080029553
+        </DataArray>
+        <DataArray type="Float64" Name="theta_2000" format="ascii" RangeMin="0.12929286028" RangeMax="0.39900699011">
+          0.39900699011 0.38893272241 0.17134492022 0.15562975503 0.29272980388 0.24181400324
+          0.13458227818 0.12929286028
+        </DataArray>
+        <DataArray type="Float64" Name="theta_5000" format="ascii" RangeMin="0.12929223278" RangeMax="0.39900742352">
+          0.39900742352 0.38893260392 0.17134530228 0.15563004259 0.29273007152 0.24181421542
+          0.13458144129 0.12929223278
+        </DataArray>
+        <DataArray type="Float64" Name="theta_10000" format="ascii" RangeMin="0.12929223278" RangeMax="0.39901075761">
+          0.39901075761 0.38892927114 0.17134530042 0.1556300438 0.29273006963 0.24181421666
+          0.13458144129 0.12929223278
+        </DataArray>
+      </PointData>
+      <CellData>
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="ascii" RangeMin="0" RangeMax="141.45985296">
+          0 0 0 0 0 0.30000001192
+          0 100 2 0 100 2.2999999523
+          100 0 1 100 0 1.2999999523
+          100 100 3 100 100 3.2999999523
+        </DataArray>
+      </Points>
+      <Cells>
+        <DataArray type="Int64" Name="connectivity" format="ascii" RangeMin="0" RangeMax="7">
+          2 1 0 4 2 5
+          4 6 3 1 2 5
+          1 4 2 5 3 5
+          2 6 6 3 5 7
+        </DataArray>
+        <DataArray type="Int64" Name="offsets" format="ascii" RangeMin="4" RangeMax="24">
+          4 8 12 16 20 24
+        </DataArray>
+        <DataArray type="UInt8" Name="types" format="ascii" RangeMin="10" RangeMax="10">
+          10 10 10 10 10 10
+        </DataArray>
+      </Cells>
+    </Piece>
+  </UnstructuredGrid>
+</VTKFile>
