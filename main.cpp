@@ -8,9 +8,9 @@ int main()
     //VTK_test V;
     //V.TDPoints();
     //V.Point();
-    int nx = 5;
-    int ny = 5;
-    int nz = 5;
+    int nx = 10;
+    int ny = 10;
+    int nz = 8;
     double dx = 100;
     double dy = 100;
     double dz = 1;
@@ -33,7 +33,7 @@ int main()
                     cout << "Block:" << i << j << k << "has been created" << endl;
                 #endif // Debug_API
                 if (k!=0)
-                    B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*dz+0.01*dx*i+0.02*dy*j) + ", a= " + numbertostring(dx*dy) + ", type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(dx*dy*dz*(0.4-k/nz*0.2) )+" , vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*dz+0.01*dx*i+0.02*dy*j) +", V=" + numbertostring(dx*dy*dz) + ", ks=20");
+                    B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*dz+0.01*dx*i+0.02*dy*j) + ", a= " + numbertostring(dx*dy) + ", type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(dx*dy*dz*(0.4-k/nz*0.3) )+" , vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*dz+0.01*dx*i+0.02*dy*j) +", V=" + numbertostring(dx*dy*dz) + ", ks=20");
 
                 else
                     B1 = CMBBlock("name=Soil(" + numbertostring(i) +"."+numbertostring(j) + "." + numbertostring(k) + "), x= " + numbertostring(i*100) + ", y=" + numbertostring(j*100) + ", z=" + numbertostring(k*dz+0.01*dx*i+0.02*dy*j) + ",a= " + numbertostring(dx*dy) + ", type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(dx*dy*dz*0.4) + ", vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(k*dz+0.01*dx*i+0.02*dy*j) +", V= " + numbertostring(dx*dy*dz) + ", ks=20");
@@ -89,6 +89,7 @@ int main()
     M.write_grid_to_vtp(gr,"test_1.vtu");
     M.write_grid_to_text(gr, "test_1.txt");
     #endif // USE_VTK
+    M.solution_method() = "Direct Solution";
     M.solve();
 
 
