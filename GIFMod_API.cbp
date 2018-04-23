@@ -28,11 +28,14 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-std=c++0x" />
+					<Add option="-pg" />
 					<Add option="-DAPI_version" />
 					<Add option="-DGIFMOD" />
-					<Add option="-DDebug_API" />
 					<Add directory="../GIFMod/src/GUI" />
 				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
@@ -41,13 +44,12 @@
 			<Add option="-fexceptions" />
 			<Add option="-fopenmp" />
 			<Add option="-DARMA_USE_LAPACK" />
+			<Add option="-DARMA_USE_BLAS" />
 			<Add option="-DGIFMOD" />
 			<Add option="-DAPI_version" />
 			<Add option="-DUSE_VTK" />
-			<Add option="-DDebug_Crash" />
 			<Add directory="../../../../usr/local/include/vtk-8.1" />
 			<Add directory="/home/arash/Projects/GIFMod_API/" />
-			<Add directory="/home/arash/GIFMod_API/" />
 		</Compiler>
 		<Linker>
 			<Add option="-lgomp" />
@@ -170,6 +172,7 @@
 			<Add library="../../../../usr/local/lib/libvtkViewsCore-8.1.so" />
 			<Add library="../../../../usr/local/lib/libvtkViewsInfovis-8.1.so" />
 			<Add library="../../../../usr/local/lib/libvtkzlib-8.1.so" />
+			<Add library="../../OpenBLAS/libopenblas.so" />
 		</Linker>
 		<Unit filename="../GIFMod/src/GUI/BTC.cpp" />
 		<Unit filename="../GIFMod/src/GUI/BTC.h" />
