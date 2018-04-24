@@ -8,9 +8,9 @@ int main()
     //VTK_test V;
     //V.TDPoints();
     //V.Point();
-    int nx = 10;
-    int ny = 10;
-    int nz = 5;
+    int nx = 5;
+    int ny = 5;
+    int nz = 3;
     double dx = 100;
     double dy = 100;
     double dz = 1;
