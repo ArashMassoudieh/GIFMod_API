@@ -8,8 +8,8 @@ int main()
     //VTK_test V;
     //V.TDPoints();
     //V.Point();
-    int nx = 5;
-    int ny = 5;
+    int nx = 10;
+    int ny = 10;
     int nz = 3;
     double dx = 100;
     double dy = 100;
@@ -18,9 +18,48 @@ int main()
 
     //cout<<Soil.tostring()<<endl;
 
-
+    CMatrix Topo("/home/arash/Projects/GIFMOD_API_results/Topo_info/GSurf.txt");
+    Topo.writetofile("/home/arash/Projects/GIFMOD_API_results/Topo_info/GSurf_out.txt");
     CMedium M(true);
     cout<<"Blocks..."<< endl;
+
+    for (int i=0; i<nx; i++)
+        for (int j=0; j<ny; j++)
+            {
+                #ifdef Debug_API
+                    cout << "Block:" << i << j << endl;
+                #endif // Debug_API
+                CMBBlock B1;
+                #ifdef Debug_API
+                    cout << "Block:" << i << j <<"has been created" << endl;
+                #endif // Debug_API
+
+                B1 = CMBBlock("name=Catchment(" + numbertostring(i) +"."+numbertostring(j) + "), x= " + numbertostring(i*dx) + ", y=" + numbertostring(j*dy) + ", z=" + numbertostring(Topo[i][j]) + ", a= " + numbertostring(dx*dy) + ", type=catchment, z0=" + numbertostring(Topo[i][j]) + ", manning=1e-6");
+
+                #ifdef Debug_API
+                    cout << "Block:" << i << j << "Assigned!" << endl;
+                #endif // Debug_API
+
+                M.AddBlock(B1);
+            }
+
+    cout<<"Connectors_s_2"<< endl;
+    for (int i=0; i<nx; i++)
+        for (int j=0; j<ny-1; j++)
+            {
+                CConnection C("w=" + numbertostring(dx)  + " ,d= " + numbertostring(dy) + ",name=C("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i)+"."+numbertostring(j+1)+")");
+                M.AddConnector("Catchment(" + numbertostring(i)+"."+numbertostring(j)+")", "Catchment(" + numbertostring(i)+"."+numbertostring(j+1)+")", C);
+            }
+
+    cout<<"Connectors_s_3"<< endl;
+    for (int i=0; i<nx-1; i++)
+        for (int j=0; j<ny; j++)
+            {
+                CConnection C("w=" + numbertostring(dy) + " ,d= " + numbertostring(dx) + ",name=C("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i+1)+"."+numbertostring(j)+")");
+                M.AddConnector("Catchment(" + numbertostring(i)+"."+numbertostring(j)+")", "Catchment(" + numbertostring(i+1)+"."+numbertostring(j)+")", C);
+            }
+
+/*
     for (int i=0; i<nx; i++)
         for (int j=0; j<ny; j++)
             for (int k=0; k<nz; k++)
@@ -73,6 +112,7 @@ int main()
                 M.AddConnector("Soil(" + numbertostring(i)+"."+numbertostring(j)+"."+numbertostring(k)+")", "Soil(" + numbertostring(i+1)+"."+numbertostring(j)+"."+numbertostring(k)+")", C);
             }
 
+  */
     //M.AddBlock(B2);
     //CConnection C("nmanning=0.00001, width=1, name=C, d=1");
     //M.AddConnector("myBlock1","myBlock2",C);
@@ -85,8 +125,9 @@ int main()
     M.write_details() = true;
     #ifdef USE_VTK
     VTK_grid gr = M.VTK_get_snap_shot("z0",0,1);
-    M.merge_to_snapshot(gr,"ks");
-    M.write_grid_to_vtp(gr,"/home/arash/Projects/GIFMOD_API_results/test_1.vtu");
+    //M.merge_to_snapshot(gr,"ks");
+    M.write_grid_to_vtp_surf(gr,"/home/arash/Projects/GIFMOD_API_results/surf.vtp");
+    //M.write_grid_to_vtp_surf(gr,"/home/arash/Projects/GIFMOD_API_results/test_1.vtu");
     M.write_grid_to_text(gr, "/home/arash/Projects/GIFMOD_API_results/test_1.txt");
     #endif // USE_VTK
     M.solution_method() = "Direct Solution";
