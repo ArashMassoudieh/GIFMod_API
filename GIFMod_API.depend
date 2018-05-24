@@ -1,9 +1,17 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1524751914 source:/home/arash/Projects/GIFMod_API/main.cpp
 	<iostream>
 	"MediumSet.h"
 
 1524691079 source:/home/arash/Projects/GIFMod/src/GUI/BTC.cpp
+=======
+1525746033 source:/home/arash/Projects/GIFMod_API/main.cpp
+	<iostream>
+	"MediumSet.h"
+
+1525827519 source:/home/arash/Projects/GIFMod/src/GUI/BTC.cpp
+>>>>>>> master
 	"BTC.h"
 	"math.h"
 	"string.h"
@@ -58,12 +66,20 @@
 	<vector>
 	"armadillo"
 
+<<<<<<< HEAD
 1524576595 /home/arash/Projects/GIFMod/src/GUI/StringOP.h
+=======
+1525055284 /home/arash/Projects/GIFMod/src/GUI/StringOP.h
+>>>>>>> master
 	<vector>
 	<string>
 	<sstream>
 
+<<<<<<< HEAD
 1524576595 source:/home/arash/Projects/GIFMod/src/GUI/StringOP.cpp
+=======
+1525055406 source:/home/arash/Projects/GIFMod/src/GUI/StringOP.cpp
+>>>>>>> master
 	"StringOP.h"
 	<string>
 	<iostream>
@@ -120,7 +136,11 @@
 	"time.h"
 	"qdebug.h"
 
+<<<<<<< HEAD
 1525055978 source:/home/arash/Projects/GIFMod/src/GUI/Matrix.cpp
+=======
+1525058043 source:/home/arash/Projects/GIFMod/src/GUI/Matrix.cpp
+>>>>>>> master
 	"Matrix.h"
 	"math.h"
 	<iostream>
@@ -182,7 +202,11 @@
 1519183333 /home/arash/Projects/GIFMod/src/GUI/DistributionNUnif.h
 	<vector>
 
+<<<<<<< HEAD
 1524757887 source:/home/arash/Projects/GIFMod/src/GUI/Medium.cpp
+=======
+1526433623 source:/home/arash/Projects/GIFMod/src/GUI/Medium.cpp
+>>>>>>> master
 	"stdafx.h"
 	"Medium.h"
 	"BTCSet.h"
@@ -199,7 +223,11 @@
 
 1519183342 /home/arash/Projects/GIFMod/src/GUI/targetver.h
 
+<<<<<<< HEAD
 1524576595 /home/arash/Projects/GIFMod/src/GUI/Medium.h
+=======
+1526433403 /home/arash/Projects/GIFMod/src/GUI/Medium.h
+>>>>>>> master
 	"Connection.h"
 	"MBBlock.h"
 	<vector>
@@ -222,7 +250,11 @@
 	"VTK.h"
 	"qstring.h"
 
+<<<<<<< HEAD
 1524753056 /home/arash/Projects/GIFMod/src/GUI/Connection.h
+=======
+1524925557 /home/arash/Projects/GIFMod/src/GUI/Connection.h
+>>>>>>> master
 	"StringOP.h"
 	<vector>
 	"MBBlock.h"
@@ -230,7 +262,11 @@
 	"RxnNetwork.h"
 	"Controller.h"
 
+<<<<<<< HEAD
 1524589959 /home/arash/Projects/GIFMod/src/GUI/MBBlock.h
+=======
+1524925557 /home/arash/Projects/GIFMod/src/GUI/MBBlock.h
+>>>>>>> master
 	<vector>
 	"StringOP.h"
 	"Matrix.h"
@@ -244,7 +280,11 @@
 	"EnvExchange.h"
 	"Evaporation.h"
 
+<<<<<<< HEAD
 1524750592 /home/arash/Projects/GIFMod/src/GUI/Function.h
+=======
+1524925557 /home/arash/Projects/GIFMod/src/GUI/Function.h
+>>>>>>> master
 	"BTC.h"
 	"StringOP.h"
 
@@ -332,7 +372,7 @@
 	"qdebug.h"
 	"enums.h"
 
-1519431891 /home/arash/Projects/GIFMod/src/GUI/enums.h
+1526432559 /home/arash/Projects/GIFMod/src/GUI/enums.h
 	"qcolor.h"
 
 1522197501 /home/arash/Projects/GIFMod/src/GUI/logwindow.h
@@ -512,16 +552,24 @@
 	"XString.h"
 	"StringOP.h"
 
-1524531123 source:/home/arash/Projects/GIFMod/src/GUI/MediumSet.cpp
+1526432559 source:/home/arash/Projects/GIFMod/src/GUI/MediumSet.cpp
 	"MediumSet.h"
 
+<<<<<<< HEAD
 1524753072 source:/home/arash/Projects/GIFMod/src/GUI/Connection.cpp
+=======
+1524925557 source:/home/arash/Projects/GIFMod/src/GUI/Connection.cpp
+>>>>>>> master
 	"stdafx.h"
 	"Connection.h"
 	"enums.h"
 	"Medium.h"
 
+<<<<<<< HEAD
 1524751720 source:/home/arash/Projects/GIFMod/src/GUI/MBBlock.cpp
+=======
+1526091207 source:/home/arash/Projects/GIFMod/src/GUI/MBBlock.cpp
+>>>>>>> master
 	"stdafx.h"
 	"MBBlock.h"
 	"StringOP.h"
@@ -544,7 +592,11 @@
 	"math.h"
 	<stdlib.h>
 
+<<<<<<< HEAD
 1524750567 source:/home/arash/Projects/GIFMod/src/GUI/Function.cpp
+=======
+1524925557 source:/home/arash/Projects/GIFMod/src/GUI/Function.cpp
+>>>>>>> master
 	"stdafx.h"
 	"Function.h"
 
