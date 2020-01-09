@@ -1,5 +1,6 @@
 #include <iostream>
 #include "MediumSet.h"
+#include "ModelCreator.h"
 
 using namespace std;
 
@@ -16,6 +17,7 @@ int main()
     double dz = 1;
     //CMBBlock Soil("name=Soil, a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=4000, vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0= " + numbertostring(k*3) +", V=30000, ks=0.1");
 
+    ModelCreator mCreate("/home/arash/Projects/GIFMOD_API_results/topo_sligo.txt");
     //cout<<Soil.tostring()<<endl;
 
     CMatrix Topo("/home/arash/Projects/GIFMOD_API_results/Topo_info/GSurf.txt");
