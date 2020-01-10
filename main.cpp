@@ -17,57 +17,28 @@ int main()
     double dz = 1;
     //CMBBlock Soil("name=Soil, a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=4000, vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0= " + numbertostring(k*3) +", V=30000, ks=0.1");
 
-    ModelCreator mCreate("/home/arash/Projects/GIFMOD_API_results/topo_sligo.txt");
+    ModelCreator mCreate("/home/arash/Projects/GIFMOD_API_results/topo_sligo.csv");
     //cout<<Soil.tostring()<<endl;
 
-    CMatrix Topo("/home/arash/Projects/GIFMOD_API_results/Topo_info/GSurf.txt");
-    CMatrix top_layer("/home/arash/Projects/GIFMOD_API_results/Topo_info/Layer1_B.txt");
-    CMatrix mid_layer("/home/arash/Projects/GIFMOD_API_results/Topo_info/Layer2_B.txt");
-    CMatrix bed_rock("/home/arash/Projects/GIFMOD_API_results/Topo_info/BedRock.txt");
-    top_layer.writetofile("/home/arash/Projects/GIFMOD_API_results/Topo_info/top_layer_out.txt");
-    mid_layer.writetofile("/home/arash/Projects/GIFMOD_API_results/Topo_info/mid_layer_out.txt");
-    bed_rock.writetofile("/home/arash/Projects/GIFMOD_API_results/Topo_info/bed_rock.txt");
+    //CMatrix Topo("/home/arash/Projects/GIFMOD_API_results/Topo_info/GSurf.txt");
+    //CMatrix top_layer("/home/arash/Projects/GIFMOD_API_results/Topo_info/Layer1_B.txt");
+    //CMatrix mid_layer("/home/arash/Projects/GIFMOD_API_results/Topo_info/Layer2_B.txt");
+    //CMatrix bed_rock("/home/arash/Projects/GIFMOD_API_results/Topo_info/BedRock.txt");
+    //top_layer.writetofile("/home/arash/Projects/GIFMOD_API_results/Topo_info/top_layer_out.txt");
+    //mid_layer.writetofile("/home/arash/Projects/GIFMOD_API_results/Topo_info/mid_layer_out.txt");
+    //bed_rock.writetofile("/home/arash/Projects/GIFMOD_API_results/Topo_info/bed_rock.txt");
 
     CMedium M(true);
+    mCreate.AddLayer("surface",&M,"Catchment",331,508);
+
     cout<<"Blocks..."<< endl;
 
-    for (int i=0; i<nx; i++)
-        for (int j=0; j<ny; j++)
-            {
-                #ifdef Debug_API
-                    cout << "Block:" << i << j << endl;
-                #endif // Debug_API
-                CMBBlock B1;
-                #ifdef Debug_API
-                    cout << "Block:" << i << j <<"has been created" << endl;
-                #endif // Debug_API
 
-                B1 = CMBBlock("name=Catchment(" + numbertostring(i) +"."+numbertostring(j) + "), x= " + numbertostring(i*dx) + ", y=" + numbertostring(j*dy) + ", z=" + numbertostring(Topo[i][j]) + ", a= " + numbertostring(dx*dy) + ", type=catchment, z0=" + numbertostring(Topo[i][j]) + ",nmanning=1e-6, precipitation=yes");
 
-                #ifdef Debug_API
-                    cout << "Block:" << i << j << "Assigned!" << endl;
-                #endif // Debug_API
-
-                M.AddBlock(B1);
-            }
-
-    for (int i=0; i<nx; i++)
-        for (int j=0; j<ny-1; j++)
-            {
-                CConnection C("width=" + numbertostring(dx)  + " ,d= " + numbertostring(dy) + ",name=C("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i)+"."+numbertostring(j+1)+"), nmanning=1e-6");
-                M.AddConnector("Catchment(" + numbertostring(i)+"."+numbertostring(j)+")", "Catchment(" + numbertostring(i)+"."+numbertostring(j+1)+")", C);
-            }
-
-    for (int i=0; i<nx-1; i++)
-        for (int j=0; j<ny; j++)
-            {
-                CConnection C("width=" + numbertostring(dy) + " ,d= " + numbertostring(dx) + ",name=C("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i+1)+"."+numbertostring(j)+"), nmanning=1e-6");
-                M.AddConnector("Catchment(" + numbertostring(i)+"."+numbertostring(j)+")", "Catchment(" + numbertostring(i+1)+"."+numbertostring(j)+")", C);
-            }
 
     //********************  top soil ***********************
 
-    for (int i=0; i<nx; i++)
+ /*   for (int i=0; i<nx; i++)
         for (int j=0; j<ny; j++)
             {
                 CMBBlock B1 = CMBBlock("name=TopSoil(" + numbertostring(i) +"."+numbertostring(j) + "), x= " + numbertostring(i*dx) + ", y=" + numbertostring(j*dy) + ", z=" + numbertostring(0.5*(Topo[i][j]+top_layer[i][j])) + ", a= " + numbertostring(dx*dy) + ", type=soil, theta_s=0.4, theta_r=0.1, S=" + numbertostring(dx*dy*(Topo[i][j]-top_layer[i][j])*(0.4-double(1)/double(nz)*0.2) )+" , vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0=" + numbertostring(top_layer[i][j]) +", V=" + numbertostring(dx*dy*(Topo[i][j]-top_layer[i][j])) + ", ks=20");
