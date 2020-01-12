@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{9B33529E-F21E-4DEE-A6A1-B5369B6D2E6B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GIFModAPI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;ARMA_USE_LAPACK;ARMA_USE_BLAS;GIFMOD;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Projects\VTK-bin2\Views\Core;E:\Projects\VTK-bin2\Views\Context2D;E:\Projects\VTK-bin2\IO\XML;E:\Projects\VTK-bin2\IO\Image;E:\Projects\VTK-bin2\Interaction\Widgets;E:\Projects\VTK-bin2\Interaction\Style;E:\Projects\VTK-bin2\Imaging\Core;E:\Projects\VTK-bin2\Filters\Sources;E:\Projects\VTK-bin2\Filters\Modeling;E:\Projects\VTK-bin2\Filters\General;E:\Projects\VTK-bin2\Filters\Core;E:\Projects\VTK-bin2\Common\Misc;E:\Projects\VTK-bin2\Common\ExecutionModel;E:\Projects\VTK-bin2\Common\DataModel;E:\Projects\VTK\Utilities\KWIML;E:\Projects\VTK-bin2\Utilities\KWIML;E:\Projects\VTK-bin2\Common\Core;E:\Projects\VTK-bin2\Common\Color;E:\Projects\VTK-bin2\Rendering\Core;E:\Projects\VTK-bin2\Rendering\Context2D;E:\Projects\VTK-bin2\Charts\Core;E:\Projects\VTK\Filters\General;E:\Projects\VTK\Imaging\Core;E:\Projects\VTK\IO\Image;E:\Projects\VTK\IO\XML;E:\Projects\VTK\Filters\Core;E:\Projects\VTK\Interaction\Widgets;E:\Projects\VTK\Filters\Modeling;E:\Projects\VTK\Interaction\Style;E:\Projects\VTK\Filters\Sources;E:\Projects\VTK\Views\Geovis;E:\Projects\VTK\Views\Core;E:\Projects\VTK\Views\Context2D;E:\Projects\VTK\Charts\Core;E:\Projects\VTK\Rendering\VolumeOpenGL2;E:\Projects\VTK\Rendering\VolumeOpenGL;E:\Projects\VTK\Rendering\VolumeAMR;E:\Projects\VTK\Rendering\Volume;E:\Projects\VTK\Rendering\Tk;E:\Projects\VTK\Rendering\SceneGraph;E:\Projects\VTK\Rendering\Qt;E:\Projects\VTK\Rendering\ParallelLIC;E:\Projects\VTK\Rendering\Parallel;E:\Projects\VTK\Rendering\OSPRay;E:\Projects\VTK\Rendering\OpenVR;E:\Projects\VTK\Rendering\OpenGL2;E:\Projects\VTK\Rendering\OpenGL;E:\Projects\VTK\Rendering\Oculus;E:\Projects\VTK\Rendering\Matplotlib;E:\Projects\VTK\Rendering\LOD;E:\Projects\VTK\Rendering\LICOpenGL2;E:\Projects\VTK\Rendering\LIC;E:\Projects\VTK\Rendering\Label;E:\Projects\VTK\Rendering\Image;E:\Projects\VTK\Rendering\GL2PSOpenGL2;E:\Projects\VTK\Rendering\GL2PS;E:\Projects\VTK\Rendering\FreeTypeFontConfig;E:\Projects\VTK\Rendering\FreeType;E:\Projects\VTK\Rendering\External;E:\Projects\VTK\Rendering\Core;E:\Projects\VTK\Rendering\ContextOpenGL2;E:\Projects\VTK\Rendering\ContextOpenGL;E:\Projects\VTK\Rendering\Context2D;E:\Projects\VTK\Rendering\Annotation;E:\Projects\VTK\Common\Transforms;E:\Projects\VTK\Common\System;E:\Projects\VTK\Common\Misc;E:\Projects\VTK\Common\Math;E:\Projects\VTK\Common\ExecutionModel;E:\Projects\VTK\Common\DataModel;E:\Projects\VTK\Common\Core;E:\Projects\VTK\Common\ComputationalGeometry;E:\Projects\VTK\Common\Color;E:\Gifmod\include\;E:\Gifmod\src\GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Projects\VTK-bin2\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;ARMA_USE_LAPACK;ARMA_USE_BLAS;GIFMOD;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Projects\VTK-bin2\Views\Core;E:\Projects\VTK-bin2\Views\Context2D;E:\Projects\VTK-bin2\IO\XML;E:\Projects\VTK-bin2\IO\Image;E:\Projects\VTK-bin2\Interaction\Widgets;E:\Projects\VTK-bin2\Interaction\Style;E:\Projects\VTK-bin2\Imaging\Core;E:\Projects\VTK-bin2\Filters\Sources;E:\Projects\VTK-bin2\Filters\Modeling;E:\Projects\VTK-bin2\Filters\General;E:\Projects\VTK-bin2\Filters\Core;E:\Projects\VTK-bin2\Common\Misc;E:\Projects\VTK-bin2\Common\ExecutionModel;E:\Projects\VTK-bin2\Common\DataModel;E:\Projects\VTK\Utilities\KWIML;E:\Projects\VTK-bin2\Utilities\KWIML;E:\Projects\VTK-bin2\Common\Core;E:\Projects\VTK-bin2\Common\Color;E:\Projects\VTK-bin2\Rendering\Core;E:\Projects\VTK-bin2\Rendering\Context2D;E:\Projects\VTK-bin2\Charts\Core;E:\Projects\VTK\Filters\General;E:\Projects\VTK\Imaging\Core;E:\Projects\VTK\IO\Image;E:\Projects\VTK\IO\XML;E:\Projects\VTK\Filters\Core;E:\Projects\VTK\Interaction\Widgets;E:\Projects\VTK\Filters\Modeling;E:\Projects\VTK\Interaction\Style;E:\Projects\VTK\Filters\Sources;E:\Projects\VTK\Views\Geovis;E:\Projects\VTK\Views\Core;E:\Projects\VTK\Views\Context2D;E:\Projects\VTK\Charts\Core;E:\Projects\VTK\Rendering\VolumeOpenGL2;E:\Projects\VTK\Rendering\VolumeOpenGL;E:\Projects\VTK\Rendering\VolumeAMR;E:\Projects\VTK\Rendering\Volume;E:\Projects\VTK\Rendering\Tk;E:\Projects\VTK\Rendering\SceneGraph;E:\Projects\VTK\Rendering\Qt;E:\Projects\VTK\Rendering\ParallelLIC;E:\Projects\VTK\Rendering\Parallel;E:\Projects\VTK\Rendering\OSPRay;E:\Projects\VTK\Rendering\OpenVR;E:\Projects\VTK\Rendering\OpenGL2;E:\Projects\VTK\Rendering\OpenGL;E:\Projects\VTK\Rendering\Oculus;E:\Projects\VTK\Rendering\Matplotlib;E:\Projects\VTK\Rendering\LOD;E:\Projects\VTK\Rendering\LICOpenGL2;E:\Projects\VTK\Rendering\LIC;E:\Projects\VTK\Rendering\Label;E:\Projects\VTK\Rendering\Image;E:\Projects\VTK\Rendering\GL2PSOpenGL2;E:\Projects\VTK\Rendering\GL2PS;E:\Projects\VTK\Rendering\FreeTypeFontConfig;E:\Projects\VTK\Rendering\FreeType;E:\Projects\VTK\Rendering\External;E:\Projects\VTK\Rendering\Core;E:\Projects\VTK\Rendering\ContextOpenGL2;E:\Projects\VTK\Rendering\ContextOpenGL;E:\Projects\VTK\Rendering\Context2D;E:\Projects\VTK\Rendering\Annotation;E:\Projects\VTK\Common\Transforms;E:\Projects\VTK\Common\System;E:\Projects\VTK\Common\Misc;E:\Projects\VTK\Common\Math;E:\Projects\VTK\Common\ExecutionModel;E:\Projects\VTK\Common\DataModel;E:\Projects\VTK\Common\Core;E:\Projects\VTK\Common\ComputationalGeometry;E:\Projects\VTK\Common\Color;E:\Gifmod\include\;E:\Gifmod\src\GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Projects\VTK-bin2\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Binary.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\BTC.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\BTCSet.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Buildup.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Connection.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Constituent.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Controller.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Distribution.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\DistributionNUnif.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\EnvExchange.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Evaporation.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Function.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Matrix.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Matrix_arma.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\MBBlock.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Medium.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\MediumSet.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\NormalDist.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Precipitation.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\QuickSort.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Reaction.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\RestoreInfo.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\RxnNetwork.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Sensor.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Solid_Phase.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\StringOP.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Vector.cpp" />
+    <ClCompile Include="..\..\..\Gifmod\src\GUI\Vector_arma.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\ModelCreator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Binary.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\BTC.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\BTCSet.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Buildup.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Connection.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Constituent.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Controller.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Distribution.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\DistributionNUnif.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\enums.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\EnvExchange.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Evaporation.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Function.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Matrix.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Matrix_arma.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\MBBlock.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Medium.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\MediumSet.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\NormalDist.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Precipitation.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\QuickSort.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Reaction.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\RestoreInfo.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\RxnNetwork.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Sensor.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Solid_Phase.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\StringOP.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Vector.h" />
+    <ClInclude Include="..\..\..\Gifmod\src\GUI\Vector_arma.h" />
+    <ClInclude Include="..\ModelCreator.h" />
+    <ClInclude Include="..\VTK.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
