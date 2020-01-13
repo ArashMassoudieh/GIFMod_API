@@ -34,3 +34,18 @@ prof\.txt
 profile1\.txt
 
 bin/Debug/
+
+.vs/GIFMod_API/v16/Browse.VC.db
+*.iobj
+*.ipch
+*.opendb
+
+*.db
+
+.vs/
+
+*.tlog
+
+*.idb
+
+*.ipdb
