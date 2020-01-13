@@ -34,6 +34,8 @@ prof\.txt
 profile1\.txt
 
 bin/Debug/
+
+x64/Debug/
 
 .vs/GIFMod_API/v16/Browse.VC.db
 *.iobj
