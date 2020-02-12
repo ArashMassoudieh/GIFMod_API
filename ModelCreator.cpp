@@ -17,17 +17,19 @@ ModelCreator::~ModelCreator()
 
 ModelCreator::ModelCreator(const ModelCreator& other)
 {
-    //copy ctor
+	connectors_properties = other.connectors_properties;
+	blocks_properties = other.blocks_properties;
 }
 
 ModelCreator& ModelCreator::operator=(const ModelCreator& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
+	connectors_properties = rhs.connectors_properties; 
+	blocks_properties = rhs.blocks_properties; 
     return *this;
 }
 
-ModelCreator::ModelCreator(const string &filename)
+ModelCreator::ModelCreator(const string &filename, const string &blocks_props, const string &connector_props)
 {
     ifstream file(filename);
 	if (file.good() == false)
@@ -56,7 +58,8 @@ ModelCreator::ModelCreator(const string &filename)
 			vals.push_back(ATOF(s));
 		}
 	}
-
+	connectors_properties = connector_props;
+	blocks_properties = blocks_props;
 	file.close();
 }
 
@@ -79,7 +82,7 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
                     #endif // Debug_API
 
                     B1 = CMBBlock("name=" + bodyname + "(" + numbertostring(i) +"."+numbertostring(j) + "), x= " + numbertostring(i*dx) + ", y=" + numbertostring(j*dy) + ", z=" + numbertostring(vals[i][j]) + ", a= " + numbertostring(dx*dy) + ", type="+type + ", z0=" + numbertostring(vals[i][j]));
-
+					B1.set_properties(blocks_properties);
                     #ifdef Debug_API
                         cout << "Block:" << i << j << "Assigned!" << endl;
                     #endif // Debug_API
@@ -96,7 +99,8 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
                 if (M->Block(bodyname+"(" + numbertostring(i)+"."+numbertostring(j)+")")!=nullptr && M->Block(bodyname+"(" + numbertostring(i)+"."+numbertostring(j+1)+")")!=nullptr)
                 {
                     CConnection C("width=" + numbertostring(dx)  + " ,d= " + numbertostring(dy) + ",name="+type+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i)+"."+numbertostring(j+1)+")");
-                    M->AddConnector(bodyname+"(" + numbertostring(i)+"."+numbertostring(j)+")", bodyname+"(" + numbertostring(i)+"."+numbertostring(j+1)+")", C);
+					C.set_properties(connectors_properties);
+					M->AddConnector(bodyname+"(" + numbertostring(i)+"."+numbertostring(j)+")", bodyname+"(" + numbertostring(i)+"."+numbertostring(j+1)+")", C);
                 }
             }
 
@@ -106,7 +110,8 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
                 if (M->Block(bodyname+"(" + numbertostring(i)+"."+numbertostring(j)+")")!=nullptr && M->Block(bodyname+"(" + numbertostring(i+1)+"."+numbertostring(j)+")")!=nullptr)
                 {
                     CConnection C("width=" + numbertostring(dy) + " ,d= " + numbertostring(dx) + ",name=C("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i+1)+"."+numbertostring(j)+")");
-                    M->AddConnector(bodyname+"(" + numbertostring(i)+"."+numbertostring(j)+")", bodyname+"(" + numbertostring(i+1)+"."+numbertostring(j)+")", C);
+					C.set_properties(connectors_properties);
+					M->AddConnector(bodyname+"(" + numbertostring(i)+"."+numbertostring(j)+")", bodyname+"(" + numbertostring(i+1)+"."+numbertostring(j)+")", C);
                 }
             }
     return true;

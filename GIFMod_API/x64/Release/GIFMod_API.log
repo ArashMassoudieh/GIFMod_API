@@ -1,0 +1,181 @@
+﻿  Medium.cpp
+C:\Gifmod\src\GUI\Vector.h(110,42): warning C5043: 'isfinite': exception specification does not match previous declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(401): message : see declaration of 'isfinite'
+C:\Gifmod\src\GUI\Medium.cpp(299,103): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(299,103): warning C4267:         with
+C:\Gifmod\src\GUI\Medium.cpp(299,103): warning C4267:         [
+C:\Gifmod\src\GUI\Medium.cpp(299,103): warning C4267:             _Ty=int
+C:\Gifmod\src\GUI\Medium.cpp(299,103): warning C4267:         ]
+C:\Gifmod\src\GUI\Medium.cpp(346,122): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(346,122): warning C4267:         with
+C:\Gifmod\src\GUI\Medium.cpp(346,122): warning C4267:         [
+C:\Gifmod\src\GUI\Medium.cpp(346,122): warning C4267:             _Ty=int
+C:\Gifmod\src\GUI\Medium.cpp(346,122): warning C4267:         ]
+C:\Gifmod\src\GUI\Medium.cpp(739,46): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(743,37): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(751,46): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(754,37): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(1078,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(1275,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(1284,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(1295,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(1353,7): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+C:\Gifmod\src\GUI\Medium.cpp(1373,7): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+C:\Gifmod\src\GUI\Medium.cpp(1582,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(1583,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(1584,108): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(1585,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(1588,41): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(1728,99): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(2222,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(2572,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(2692,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(2693,49): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(2960,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3041,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3126,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3241,87): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3242,42): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3265,82): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3528,84): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3802,41): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3804,66): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3808,109): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3809,125): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3932,82): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3946,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(3960,82): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Gifmod\src\GUI\Medium.cpp(4871,7): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+C:\Gifmod\src\GUI\Medium.cpp(4894,7): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+C:\Gifmod\src\GUI\Medium.cpp(5085,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+C:\Gifmod\src\GUI\Medium.cpp(5086,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\GIFMod\src\GUI\Vector.h(110,42): warning C5043: 'isfinite': exception specification does not match previous declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(401): message : see declaration of 'isfinite'
+  Generating code
+  2 of 3568 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    71 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  GIFMod_API.vcxproj -> C:\Projects\GIFMod_API\x64\Release\GIFMod_API.exe
+  Copying dlls
+  C:\Projects\Armadillo\libs\lapack-blas_lib_win64\blas_win64_MT.dll
+  C:\Projects\Armadillo\libs\lapack-blas_lib_win64\lapack_win64_MT.dll
+          2 file(s) copied.
+  C:\Projects\VTK-bin2\bin\Release\vtkalglib-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkChartsCore-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkCommonColor-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkCommonComputationalGeometry-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkCommonCore-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkCommonDataModel-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkCommonExecutionModel-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkCommonMath-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkCommonMisc-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkCommonSystem-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkCommonTransforms-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkDICOMParser-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkDomainsChemistry-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkDomainsChemistryOpenGL2-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkexoIIc-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkexpat-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersAMR-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersCore-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersExtraction-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersFlowPaths-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersGeneral-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersGeneric-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersGeometry-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersHybrid-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersHyperTree-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersImaging-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersModeling-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersParallel-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersParallelImaging-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersPoints-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersProgrammable-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersSelection-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersSMP-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersSources-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersStatistics-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersTexture-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersTopology-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkFiltersVerdict-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkfreetype-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkGeovisCore-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkgl2ps-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkglew-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkhdf5-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkhdf5_hl-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkImagingColor-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkImagingCore-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkImagingFourier-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkImagingGeneral-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkImagingHybrid-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkImagingMath-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkImagingMorphological-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkImagingSources-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkImagingStatistics-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkImagingStencil-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkInfovisCore-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkInfovisLayout-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkInteractionImage-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkInteractionStyle-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkInteractionWidgets-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOAMR-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOCore-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOEnSight-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOExodus-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOExport-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOExportOpenGL2-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOGeometry-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOImage-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOImport-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOInfovis-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOLegacy-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOLSDyna-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOMINC-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOMovie-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIONetCDF-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOParallel-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOParallelXML-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOPLY-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOSQL-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOTecplotTable-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOVideo-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOXML-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkIOXMLParser-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkjpeg-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkjsoncpp-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtklibharu-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtklibxml2-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtklz4-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkmetaio-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkNetCDF-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtknetcdf_c++.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkoggtheora-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkParallelCore-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkpng-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkproj4-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingAnnotation-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingContext2D-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingContextOpenGL2-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingCore-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingFreeType-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingGL2PSOpenGL2-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingImage-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingLabel-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingLOD-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingOpenGL2-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingVolume-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkRenderingVolumeOpenGL2-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtksys-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkTestingGenericBridge-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkTestingIOSQL-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkTestingRendering-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtktiff-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkverdict-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkViewsContext2D-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkViewsCore-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkViewsInfovis-8.1.dll
+  C:\Projects\VTK-bin2\bin\Release\vtkzlib-8.1.dll
+        116 file(s) copied.
