@@ -35,16 +35,6 @@ profile1\.txt
 
 bin/Debug/
 
-x64/Debug/
-
-x64/Release/GIFMod_API.log
-
-*.log
-
-*.tlog
-
-x64/Release/vc142.pdb
-
 .vs/GIFMod_API/v16/Browse.VC.db
 *.iobj
 *.ipch
