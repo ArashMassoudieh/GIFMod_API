@@ -1,61 +1,10 @@
-﻿  Medium.cpp
-C:\Gifmod\src\GUI\Vector.h(110,42): warning C5043: 'isfinite': exception specification does not match previous declaration
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(401): message : see declaration of 'isfinite'
-C:\Gifmod\src\GUI\Medium.cpp(299,103): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(299,103): warning C4267:         with
-C:\Gifmod\src\GUI\Medium.cpp(299,103): warning C4267:         [
-C:\Gifmod\src\GUI\Medium.cpp(299,103): warning C4267:             _Ty=int
-C:\Gifmod\src\GUI\Medium.cpp(299,103): warning C4267:         ]
-C:\Gifmod\src\GUI\Medium.cpp(346,122): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(346,122): warning C4267:         with
-C:\Gifmod\src\GUI\Medium.cpp(346,122): warning C4267:         [
-C:\Gifmod\src\GUI\Medium.cpp(346,122): warning C4267:             _Ty=int
-C:\Gifmod\src\GUI\Medium.cpp(346,122): warning C4267:         ]
-C:\Gifmod\src\GUI\Medium.cpp(739,46): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(743,37): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(751,46): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(754,37): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(1078,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(1275,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(1284,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(1295,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(1353,7): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-C:\Gifmod\src\GUI\Medium.cpp(1373,7): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-C:\Gifmod\src\GUI\Medium.cpp(1582,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(1583,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(1584,108): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(1585,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(1588,41): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(1728,99): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(2222,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(2572,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(2692,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(2693,49): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(2960,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3041,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3126,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3241,87): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3242,42): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3265,82): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3528,84): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3802,41): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3804,66): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3808,109): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3809,125): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3932,82): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3946,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(3960,82): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Gifmod\src\GUI\Medium.cpp(4871,7): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-C:\Gifmod\src\GUI\Medium.cpp(4894,7): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-C:\Gifmod\src\GUI\Medium.cpp(5085,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  main.cpp
-C:\Gifmod\src\GUI\Medium.cpp(5086,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+﻿  main.cpp
 C:\GIFMod\src\GUI\Vector.h(110,42): warning C5043: 'isfinite': exception specification does not match previous declaration
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(401): message : see declaration of 'isfinite'
   Generating code
-  2 of 3568 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+  0 of 3567 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    71 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   GIFMod_API.vcxproj -> C:\Projects\GIFMod_API\x64\Release\GIFMod_API.exe
   Copying dlls
