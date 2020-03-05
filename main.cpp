@@ -6,11 +6,7 @@ using namespace std;
 
 int main()
 {
-    
-	/// XXX Test XXX
-
-	// VTK _test 
-	//VTK_test V;
+    //VTK_test V;
     //V.TDPoints();
     //V.Point();
     int nx = 10;
@@ -46,7 +42,7 @@ int main()
 #else
     M.Precipitation_filename.push_back("/home/arash/Projects/GIFMOD_API_results/rain.txt");
 #endif
-    M.set_properties("tstart=0, tend=100, dt=0.1");
+    M.set_properties("tstart=0, tend=1, dt=0.1");
     M.f_load_inflows();
     M.set_default_params();
     M.max_dt() = 1;
@@ -55,7 +51,7 @@ int main()
     //cout<<M.Block("myBlock2")->tostring();
     M.write_details() = true;
     #ifdef USE_VTK
-    VTK_grid gr = M.VTK_get_snap_shot("z0",0,10);
+    VTK_grid gr = M.VTK_get_snap_shot("z0",0,1);
     //M.merge_to_snapshot(gr,"ks");
     M.write_grid_to_vtp_surf(gr,"C:\\Projects\\GIFMod_API_Projects\\surf.vtp");
     //M.write_grid_to_vtp_surf(gr,"/home/arash/Projects/GIFMOD_API_results/test_1.vtu");
@@ -65,11 +61,11 @@ int main()
     M.solution_method() = "Direct Solution";
     M.solve();
     #ifdef USE_VTK
-    for (double t=0; t<100; t+=1)
+    for (double t=0; t<1; t+=1)
     {
-        VTK_grid moisture = M.VTK_get_snap_shot("theta",t,10,"theta");
-		VTK_edge_grid Flow = M.VTK_get_snap_shot_edges("Q", t, 10, "Q");
-        VTK_grid depth = M.VTK_get_snap_shot("depth",t,10,"depth");
+        VTK_grid moisture = M.VTK_get_snap_shot("theta",t,1,"theta");
+		VTK_edge_grid Flow = M.VTK_get_snap_shot_edges("Q", t, 1, "Q");
+        VTK_grid depth = M.VTK_get_snap_shot("depth",t,1,"depth");
         cout<<"writing depths ..."<<endl;
         M.write_grid_to_vtp_surf(depth,"C:\\Projects\\GIFMod_API_Projects\\water_depth" + numbertostring(t)+ ".vtp");
         M.write_grid_to_text(depth,"C:\\Projects\\GIFMod_API_Projects\\water_depth" + numbertostring(t)+ ".txt");
