@@ -59,3 +59,7 @@ x64/Release/vc142.pdb
 *.idb
 
 *.ipdb
+
+GIFMod_API/x64/Release/vc142.pdb
+
+*.pdb
