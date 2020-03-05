@@ -45,12 +45,21 @@ x64/Release/GIFMod_API.log
 
 x64/Release/vc142.pdb
 
-*.db
-
+.vs/GIFMod_API/v16/Browse.VC.db
+*.iobj
+*.ipch
 *.opendb
 
-*.ipch
+*.db
 
-GIFMod_API/.vs/GIFMod_API/v16/
+.vs/
 
-x64/Release/
+*.tlog
+
+*.idb
+
+*.ipdb
+
+GIFMod_API/x64/Release/vc142.pdb
+
+*.pdb
