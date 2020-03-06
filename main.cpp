@@ -17,10 +17,13 @@ int main()
     double dz = 1;
     //CMBBlock Soil("name=Soil, a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=4000, vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0= " + numbertostring(k*3) +", V=30000, ks=0.1");
 	
+	ModelCreator mCreate;
 #ifndef Windows
-    ModelCreator mCreate("/home/arash/Projects/GIFMOD_API_results/topo_sligo.csv");
+    mCreate.AddBody("Catchment","/home/arash/Projects/GIFMOD_API_results/topo_sligo.csv");
 #else
-	ModelCreator mCreate("C:\\Projects\\GIFMod_API_Projects\\topo_sligo.csv","","nmanning=0.00001");
+	mCreate.AddBody("surface", "C:\\Projects\\GIFMod_API_Projects\\topo_sligo.csv","","nmanning=0.00001");
+	mCreate.AddBody("soil", "C:\\Projects\\GIFMod_API_Projects\\bedrock.csv", "theta=0.2, porosity=0.4, ks=0.1, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.01","");
+	mCreate.getproperties("soil", "depth", "C:\\Projects\\GIFMod_API_Projects\\depth.csv");
 #endif
     //cout<<Soil.tostring()<<endl;
 
@@ -34,7 +37,7 @@ int main()
 
     CMedium M(true);
     mCreate.AddLayer("surface",&M,"Catchment",331,508);
-
+	mCreate.AddLayer("soil", &M, "Soil", 331, 508);
     cout<<"Blocks..."<< endl;
 	
 #ifdef Windows
@@ -42,7 +45,8 @@ int main()
 #else
     M.Precipitation_filename.push_back("/home/arash/Projects/GIFMOD_API_results/rain.txt");
 #endif
-    M.set_properties("tstart=0, tend=1, dt=0.1");
+    M.set_properties("tstart=0, tend=100, dt=0.1");
+	M.outputpathname() = "C:\\Projects\\GIFMod_API_Projects\\"; 
     M.f_load_inflows();
     M.set_default_params();
     M.max_dt() = 1;
@@ -61,7 +65,7 @@ int main()
     M.solution_method() = "Direct Solution";
     M.solve();
     #ifdef USE_VTK
-    for (double t=0; t<1; t+=1)
+    for (double t=0; t<100; t+=5)
     {
         VTK_grid moisture = M.VTK_get_snap_shot("theta",t,1,"theta");
 		VTK_edge_grid Flow = M.VTK_get_snap_shot_edges("Q", t, 1, "Q");
@@ -71,8 +75,8 @@ int main()
         M.write_grid_to_text(depth,"C:\\Projects\\GIFMod_API_Projects\\water_depth" + numbertostring(t)+ ".txt");
 		M.write_grid_to_vtp_surf(Flow, "C:\\Projects\\GIFMod_API_Projects\\flow" + numbertostring(t) + ".vtp", "Q");
         //cout<<"writing moistures ..."<<endl;
-        //M.write_grid_to_vtp(moisture,"/home/arash/Projects/GIFMOD_API_results/moisture" + numbertostring(t)+ ".vtu");
-        //M.write_grid_to_text(moisture,"/home/arash/Projects/GIFMOD_API_results/moisture" + numbertostring(t)+ ".txt");
+        M.write_grid_to_vtp(moisture,"C:\\Projects\\GIFMod_API_Projects\\moisture" + numbertostring(t)+ ".vtp");
+        M.write_grid_to_text(moisture,"C:\\Projects\\GIFMod_API_Projects\\moisture" + numbertostring(t)+ ".txt");
 
     }
 
