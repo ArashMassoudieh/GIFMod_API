@@ -15,20 +15,24 @@ class ModelCreator
     public:
         ModelCreator();
         ModelCreator(const string &filename, const string &blocksproperties, const string &connectorproperties);
-        virtual ~ModelCreator();
+		bool AddBody(const string& bodyname, const string& filename, const string& blocksproperties, const string& connectorproperties);
+		virtual ~ModelCreator();
         ModelCreator(const ModelCreator& other);
         ModelCreator& operator=(const ModelCreator& other);
         bool AddLayer(const string &bodyname, CMedium *M, const string &type, double dx, double dy);
-		string connectors_properties;
-		string blocks_properties; 
+		map<string, string> connectors_properties;
+		map<string, string> blocks_properties; 
+		bool getproperties(const string &bodyname, const string &prop, const string& filename);
     protected:
 
     private:
 		
 		bool file_not_found;
 		bool error;
+		string last_error; 
 		vector<vector<CMBBlock*>> bodies;
-		vector<vector<double>> vals;
+		map<string, vector<vector<double>>> bottom_elevations;
+		map<string, map<string, vector<vector<double>>>> properties; 
 };
 
 #endif // MODELCREATOR_H
