@@ -6,6 +6,7 @@
 #include <vector>
 #include <map>
 #include "MBBlock.h"
+#include "Connection.h"
 
 using namespace std;
 
@@ -21,18 +22,19 @@ class ModelCreator
         ModelCreator& operator=(const ModelCreator& other);
         bool AddLayer(const string &bodyname, CMedium *M, const string &type, double dx, double dy);
 		map<string, string> connectors_properties;
-		map<string, string> blocks_properties; 
+		map<string, string> blocks_properties;
 		bool getproperties(const string &bodyname, const string &prop, const string& filename);
     protected:
 
     private:
-		
+
 		bool file_not_found;
 		bool error;
-		string last_error; 
-		vector<vector<CMBBlock*>> bodies;
+		string last_error;
+		map<string, vector<CMBBlock*>> bodies_block;
+		map<string, vector<CConnection*>> bodies_edge;
 		map<string, vector<vector<double>>> bottom_elevations;
-		map<string, map<string, vector<vector<double>>>> properties; 
+		map<string, map<string, vector<vector<double>>>> properties;
 };
 
 #endif // MODELCREATOR_H

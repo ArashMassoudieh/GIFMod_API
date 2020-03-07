@@ -24,14 +24,14 @@ ModelCreator::ModelCreator(const ModelCreator& other)
 ModelCreator& ModelCreator::operator=(const ModelCreator& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-	connectors_properties = rhs.connectors_properties; 
-	blocks_properties = rhs.blocks_properties; 
+	connectors_properties = rhs.connectors_properties;
+	blocks_properties = rhs.blocks_properties;
     return *this;
 }
 
 ModelCreator::ModelCreator(const string &filename, const string &blocks_props, const string &connector_props)
 {
-   
+
 }
 
 bool ModelCreator::AddBody(const string& bodyname, const string& filename, const string& blocks_props, const string& connector_props)
@@ -41,6 +41,7 @@ bool ModelCreator::AddBody(const string& bodyname, const string& filename, const
 	{
 		file_not_found = true;
 		error = true;
+		cout<<"File [" + filename + "] was not found!";
 		return false;
 	}
 
@@ -70,18 +71,19 @@ bool ModelCreator::AddBody(const string& bodyname, const string& filename, const
 
 bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &type, double dx, double dy)
 {
-    vector<CMBBlock*> body;
+    vector<CMBBlock*> block_body;
+    vector<CConnection*> connector_body;
 	if (bottom_elevations.count(bodyname) == 0)
 	{
-		this->last_error = "No body called [" + bodyname + "] has been defined!"; 
-		cout << last_error << endl; 
-		return false; 
+		this->last_error = "No body called [" + bodyname + "] has been defined!";
+		cout << last_error << endl;
+		return false;
 	}
 	for (int i=0; i<bottom_elevations[bodyname].size(); i++)
         for (int j=0; j<bottom_elevations[bodyname][i].size(); j++)
             {
                 if (bottom_elevations[bodyname][i][j]==-9999)
-                    body.push_back(nullptr);
+                    block_body.push_back(nullptr);
                 else
                 {
                     #ifdef Debug_API
@@ -99,10 +101,10 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
                     #endif // Debug_API
 
                     M->AddBlock(B1);
-                    body.push_back(M->Block(bodyname + "(" + numbertostring(i) +"."+numbertostring(j) + ")"));
+                    block_body.push_back(M->Block(bodyname + "(" + numbertostring(i) +"."+numbertostring(j) + ")"));
                 }
             }
-    bodies.push_back(body);
+    bodies_block[bodyname]=block_body;
 
      for (int i=0; i<bottom_elevations[bodyname].size(); i++)
         for (int j=0; j<bottom_elevations[bodyname][i].size()-1; j++)
@@ -112,6 +114,7 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
                     CConnection C("width=" + numbertostring(dx)  + " ,d= " + numbertostring(dy) + ",name="+bodyname+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i)+"."+numbertostring(j+1)+")");
 					C.set_properties(connectors_properties[bodyname]);
 					M->AddConnector(bodyname+"(" + numbertostring(i)+"."+numbertostring(j)+")", bodyname+"(" + numbertostring(i)+"."+numbertostring(j+1)+")", C);
+					connector_body.push_back(M->Connector(bodyname+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i)+"."+numbertostring(j+1)+")"));
                 }
             }
 
@@ -123,8 +126,10 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
                     CConnection C("width=" + numbertostring(dy) + " ,d= " + numbertostring(dx) + ",name="+bodyname+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i+1)+"."+numbertostring(j)+")");
 					C.set_properties(connectors_properties[bodyname]);
 					M->AddConnector(bodyname+"(" + numbertostring(i)+"."+numbertostring(j)+")", bodyname+"(" + numbertostring(i+1)+"."+numbertostring(j)+")", C);
+					connector_body.push_back(M->Connector(bodyname+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i+1)+"."+numbertostring(j)+")"));
                 }
             }
+    bodies_edge[bodyname]=connector_body;
 	for (map<string, vector<vector<double>>>::iterator prop = properties[bodyname].begin(); prop != properties[bodyname].end(); prop++)
 	{
 		for (int i = 0; i < prop->second.size(); i++)
@@ -135,10 +140,10 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
 					M->Block(bodyname + "(" + numbertostring(i) + "." + numbertostring(j) + ")")->set_property(prop->first, prop->second[i][j]);
 					M->Block(bodyname + "(" + numbertostring(i) + "." + numbertostring(j) + ")")->set_properties(blocks_properties[bodyname]);
 				}
-				
+
 			}
 	}
-	
+
 	{
 		for (int i = 0; i < bottom_elevations[bodyname].size(); i++)
 			for (int j = 0; j < bottom_elevations[bodyname][i].size() - 1; j++)
@@ -159,7 +164,7 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
 
 bool ModelCreator::getproperties(const string &bodyname, const string &prop, const string& filename)
 {
-	vector<vector<double>> vals; 
+	vector<vector<double>> vals;
 	ifstream file(filename);
 	if (file.good() == false)
 	{
@@ -187,9 +192,9 @@ bool ModelCreator::getproperties(const string &bodyname, const string &prop, con
 					vals.push_back(ATOF(s));
 				}
 		}
-	
-	properties[bodyname][prop] = vals; 
+
+	properties[bodyname][prop] = vals;
 	file.close();
-	
+
 	return true;
 }
