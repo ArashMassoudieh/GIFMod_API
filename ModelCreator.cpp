@@ -71,8 +71,8 @@ bool ModelCreator::AddBody(const string& bodyname, const string& filename, const
 
 bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &type, double dx, double dy)
 {
-    vector<CMBBlock*> block_body;
-    vector<CConnection*> connector_body;
+    vector<string> block_body;
+    vector<string> connector_body;
 	if (bottom_elevations.count(bodyname) == 0)
 	{
 		this->last_error = "No body called [" + bodyname + "] has been defined!";
@@ -83,7 +83,7 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
         for (int j=0; j<bottom_elevations[bodyname][i].size(); j++)
             {
                 if (bottom_elevations[bodyname][i][j]==-9999)
-                    block_body.push_back(nullptr);
+                    block_body.push_back("");
                 else
                 {
                     #ifdef Debug_API
@@ -101,10 +101,10 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
                     #endif // Debug_API
 
                     M->AddBlock(B1);
-                    block_body.push_back(M->Block(bodyname + "(" + numbertostring(i) +"."+numbertostring(j) + ")"));
+                    block_body.push_back(bodyname + "(" + numbertostring(i) +"."+numbertostring(j) + ")");
                 }
             }
-    bodies_block[bodyname]=block_body;
+    bodies_of_blocks[bodyname]=block_body;
 
      for (int i=0; i<bottom_elevations[bodyname].size(); i++)
         for (int j=0; j<bottom_elevations[bodyname][i].size()-1; j++)
@@ -114,7 +114,7 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
                     CConnection C("width=" + numbertostring(dx)  + " ,d= " + numbertostring(dy) + ",name="+bodyname+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i)+"."+numbertostring(j+1)+")");
 					C.set_properties(connectors_properties[bodyname]);
 					M->AddConnector(bodyname+"(" + numbertostring(i)+"."+numbertostring(j)+")", bodyname+"(" + numbertostring(i)+"."+numbertostring(j+1)+")", C);
-					connector_body.push_back(M->Connector(bodyname+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i)+"."+numbertostring(j+1)+")"));
+					connector_body.push_back(bodyname+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i)+"."+numbertostring(j+1)+")");
                 }
             }
 
@@ -126,10 +126,10 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
                     CConnection C("width=" + numbertostring(dy) + " ,d= " + numbertostring(dx) + ",name="+bodyname+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i+1)+"."+numbertostring(j)+")");
 					C.set_properties(connectors_properties[bodyname]);
 					M->AddConnector(bodyname+"(" + numbertostring(i)+"."+numbertostring(j)+")", bodyname+"(" + numbertostring(i+1)+"."+numbertostring(j)+")", C);
-					connector_body.push_back(M->Connector(bodyname+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i+1)+"."+numbertostring(j)+")"));
+					connector_body.push_back(bodyname+"("+numbertostring(i)+"."+numbertostring(j)+"-"+numbertostring(i+1)+"."+numbertostring(j)+")");
                 }
             }
-    bodies_edge[bodyname]=connector_body;
+    bodies_of_edges[bodyname]=connector_body;
 	for (map<string, vector<vector<double>>>::iterator prop = properties[bodyname].begin(); prop != properties[bodyname].end(); prop++)
 	{
 		for (int i = 0; i < prop->second.size(); i++)

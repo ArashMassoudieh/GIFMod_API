@@ -194,9 +194,6 @@
 				<Linker>
 					<Add option="-pg" />
 					<Add library="$(Armadillo)/libarmadillo.so" />
-					<Add library="$(Armadillo)/libarpack.so" />
-					<Add library="$(Armadillo)/libblas.so" />
-					<Add library="$(Armadillo)/liblapack.so" />
 					<Add library="$(VTK_build)/libvtkChartsCore-9.0.so" />
 					<Add library="$(VTK_build)/libvtkCommonColor-9.0.so" />
 					<Add library="$(VTK_build)/libvtkCommonComputationalGeometry-9.0.so" />
@@ -307,6 +304,9 @@
 					<Add library="$(VTK_build)/libvtkViewsCore-9.0.so" />
 					<Add library="$(VTK_build)/libvtkViewsInfovis-9.0.so" />
 					<Add library="$(VTK_build)/libvtkzlib-9.0.so" />
+					<Add library="$(Armadillo)/x86_64-linux-gnu/libarpack.so" />
+					<Add library="$(Armadillo)/x86_64-linux-gnu/libblas.so" />
+					<Add library="$(Armadillo)/x86_64-linux-gnu/liblapack.so" />
 				</Linker>
 				<Environment>
 					<Variable name="VTK" value="/usr/local/include/vtk-9.0" />

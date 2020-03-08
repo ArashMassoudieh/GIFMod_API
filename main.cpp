@@ -63,12 +63,13 @@ int main()
     M.write_details() = true;
     #ifdef USE_VTK
 
-    VTK_grid gr = M.VTK_get_snap_shot("z0",0,1);
+    VTK_grid gr = M.VTK_get_snap_shot("surface",&mCreate ,"z0",0,1);
     //M.merge_to_snapshot(gr,"ks");
     #ifdef Windows
     M.write_grid_to_vtp_surf(gr,"C:\\Projects\\GIFMod_API_Projects\\surf.vtp");
     M.write_grid_to_text(gr, "C:\\Projects\\GIFMod_API_Projects\\test_1.txt");
     #else
+    cout << "writing surf to vtp ..." << endl;
     M.write_grid_to_vtp_surf(gr,"/home/arash/Projects/GIFMOD_API_results/output/surf.vtp");
     M.write_grid_to_text(gr, "/home/arash/Projects/GIFMOD_API_results/output/surf.txt");
     #endif // Windows

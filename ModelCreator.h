@@ -24,6 +24,27 @@ class ModelCreator
 		map<string, string> connectors_properties;
 		map<string, string> blocks_properties;
 		bool getproperties(const string &bodyname, const string &prop, const string& filename);
+		vector<string> BBody(const string &bodyname)
+		{
+            if (bodies_of_blocks.count(bodyname)==0)
+            {
+                vector<string> out;
+                return out;
+            }
+            else
+                return bodies_of_blocks[bodyname];
+		}
+		vector<string> CBody(const string &bodyname)
+		{
+            if (bodies_of_edges.count(bodyname)==0)
+            {
+                vector<string> out;
+                return out;
+            }
+            else
+                return bodies_of_edges[bodyname];
+		}
+
     protected:
 
     private:
@@ -31,8 +52,8 @@ class ModelCreator
 		bool file_not_found;
 		bool error;
 		string last_error;
-		map<string, vector<CMBBlock*>> bodies_block;
-		map<string, vector<CConnection*>> bodies_edge;
+		map<string, vector<string>> bodies_of_blocks;
+		map<string, vector<string>> bodies_of_edges;
 		map<string, vector<vector<double>>> bottom_elevations;
 		map<string, map<string, vector<vector<double>>>> properties;
 };
