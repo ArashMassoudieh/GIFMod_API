@@ -71,9 +71,12 @@ int main()
     #else
     cout << "writing surf to vtp ..." << endl;
     M.write_grid_to_vtp_surf(gr,"/home/arash/Projects/GIFMOD_API_results/output/surf.vtp");
+
+    cout << "writing surf to txt ..." << endl;
     M.write_grid_to_text(gr, "/home/arash/Projects/GIFMOD_API_results/output/surf.txt");
     #endif // Windows
 
+    cout << "Solving ..." << endl;
 
     #endif // USE_VTK
     M.write_details() = false;
