@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 0 <<<<<<< HEAD
 
-1583769093 source:/home/arash/Projects/GIFMod_API/main.cpp
+1583776162 source:/home/arash/Projects/GIFMod_API/main.cpp
 	<iostream>
 	"MediumSet.h"
 	"ModelCreator.h"
@@ -611,7 +611,7 @@
 	"XString.h"
 	"StringOP.h"
 
-1526481838 source:/home/arash/Projects/GIFMod/src/GUI/MediumSet.cpp
+1583773322 source:/home/arash/Projects/GIFMod/src/GUI/MediumSet.cpp
 	"MediumSet.h"
 
 1583769221 source:/home/arash/Projects/GIFMod/src/GUI/Connection.cpp
