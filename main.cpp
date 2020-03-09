@@ -21,7 +21,7 @@ int main()
 	string outputpath = "C:\\Projects\\GIFMod_API_Projects\\outputs\\";
 #else
 	string inputpath = "/home/arash/Projects/GIFMOD_API_results/";
-	string outputpath = "/home/arash/Projects/GIFMOD_API_results/outputs_2/";
+	string outputpath = "/home/arash/Projects/GIFMOD_API_results/outputs/";
 #endif //  Windows
 
 	ModelCreator mCreate;
@@ -40,12 +40,30 @@ int main()
 	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=100, z0=0, type=pond, depth=1");
 	M.AddBlock(DownstreamBC);
 	CConnection DownStreamBC_connect("name=DSBC_c, width = 331, d=250, nmanning=0.00001");
+	CConnection DownStreamBC_connect_ss("name=DSBC_c_soil, area = 10000, d=250");
 	M.AddConnector("surface(19.1)", "DSBC", DownStreamBC_connect);
-	M.AddConnector("soil(19.1)", "DSBC", DownStreamBC_connect);
+	M.AddConnector("DSBC", "soil(19.1)", DownStreamBC_connect_ss);
 	// Creating the downstream boundary condition done!
 
 	M.Precipitation_filename.push_back(inputpath + "rain_real.txt");
     M.set_properties("tstart=40909, tend=41009, dt=0.1");
+
+    /* Observation */
+    measured_chrc outflow_surface;
+    outflow_surface.loc_type = 1;
+    outflow_surface.quan = "q";
+    outflow_surface.id.push_back("DSBC_c");
+    outflow_surface.name = "Outflow_Surface";
+    M.measured_quan().push_back(outflow_surface);
+
+    measured_chrc outflow_subsurface;
+    outflow_subsurface.loc_type = 1;
+    outflow_subsurface.quan = "q";
+    outflow_subsurface.id.push_back("DSBC_c_soil");
+    outflow_subsurface.name = "Outflow_Subsurface";
+    M.measured_quan().push_back(outflow_subsurface);
+    /* Observation */
+
 
 	M.outputpathname() = outputpath;
     M.f_load_inflows();
@@ -95,5 +113,6 @@ int main()
     #endif // USE_VTK
 
     M.Results.ANS.writetofile(string(outputpath + "output.txt"));
+    M.Results.ANS_obs.writetofile(string(outputpath + "output_obs.txt"));
 
 }
