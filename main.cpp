@@ -21,7 +21,7 @@ int main()
 	string outputpath = "C:\\Projects\\GIFMod_API_Projects\\outputs\\";
 #else
 	string inputpath = "/home/arash/Projects/GIFMOD_API_results/";
-	string outputpath = "/home/arash/Projects/GIFMOD_API_results/outputs/";
+	string outputpath = "/home/arash/Projects/GIFMOD_API_results/outputs_2/";
 #endif //  Windows
 
 	ModelCreator mCreate;
@@ -66,7 +66,7 @@ int main()
     cout << "Solving ..." << endl;
 
     #endif // USE_VTK
-    M.write_details() = false;
+    //M.write_details() = false;
     M.solution_method() = "Direct Solution";
     M.solve();
     #ifdef USE_VTK
