@@ -19,9 +19,9 @@ int main()
 #ifdef  Windows
 	string inputpath = "C:\\Projects\\GIFMod_API_Projects\\";
 	string outputpath = "C:\\Projects\\GIFMod_API_Projects\\outputs\\";
-#else 
+#else
 	string inputpath = "/home/arash/Projects/GIFMOD_API_results/";
-	string outputpath = "/home/arash/Projects/GIFMOD_API_results/output/";
+	string outputpath = "/home/arash/Projects/GIFMOD_API_results/outputs/";
 #endif //  Windows
 
 	ModelCreator mCreate;
@@ -35,17 +35,17 @@ int main()
 	mCreate.AddLayer("soil", &M, "Soil", 331, 508);
 	mCreate.ConnectBodiesVertical("infiltration",&M, "surface", "soil","",0,0.5);
     //cout<<"Blocks..."<< endl;
-	
+
 	// Creating the downstream boundary condition
-	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=100, z0=0, type=pond, depth=1"); 
+	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=100, z0=0, type=pond, depth=1");
 	M.AddBlock(DownstreamBC);
 	CConnection DownStreamBC_connect("name=DSBC_c, width = 331, d=250, nmanning=0.00001");
 	M.AddConnector("surface(19.1)", "DSBC", DownStreamBC_connect);
-	M.AddConnector("soil(19.1)", "DSBC", DownStreamBC_connect); 
+	M.AddConnector("soil(19.1)", "DSBC", DownStreamBC_connect);
 	// Creating the downstream boundary condition done!
 
-	M.Precipitation_filename.push_back(inputpath + "rain.txt");
-    M.set_properties("tstart=0, tend=100, dt=0.1");
+	M.Precipitation_filename.push_back(inputpath + "rain_real.txt");
+    M.set_properties("tstart=40909, tend=41009, dt=0.1");
 
 	M.outputpathname() = outputpath;
     M.f_load_inflows();
@@ -55,11 +55,11 @@ int main()
     #ifdef USE_VTK
     cout << "getting surface elevation ..." << endl;
     VTK_grid gr = M.VTK_get_snap_shot("surface",&mCreate ,"z0",0,1);
-    
+
 	cout << "writing surf to vtp ..." << endl;
     M.write_grid_to_vtp_surf(gr, outputpath + "surf.vtp");
     M.write_grid_to_text(gr, outputpath + "test_1.txt");
-    
+
     cout << "writing surf to txt ..." << endl;
     M.write_grid_to_text(gr, outputpath + "surf.txt");
 
@@ -71,7 +71,7 @@ int main()
     M.solve();
     #ifdef USE_VTK
     cout << "Creating Outputs" << endl;
-    for (double t=0; t<100; t+=1)
+    for (double t=40909; t<41009; t+=1)
     {
         VTK_grid moisture = M.VTK_get_snap_shot("theta",t,1,"theta");
 		VTK_edge_grid Surface_Flow = M.VTK_get_snap_shot_edges("surface", &mCreate, "Q", t, 1, "Q");
@@ -80,7 +80,7 @@ int main()
         VTK_grid depth = M.VTK_get_snap_shot("depth",t,1,"depth");
         VTK_grid Infiltration_flow_surf = Infiltration_Flow.toVTKGtid();
 
-        
+
         M.write_grid_to_vtp_surf(depth, outputpath + "water_depth" + numbertostring(t) + ".vtp");
 		M.write_grid_to_text(depth, outputpath + "water_depth" + numbertostring(t) + ".txt");
 		M.write_grid_to_vtp_surf(Surface_Flow, outputpath + "surface_flow" + numbertostring(t) + ".vtp", "Q");
@@ -89,11 +89,11 @@ int main()
 		M.write_grid_to_vtp_surf(moisture, outputpath + "moisture" + numbertostring(t) + ".vtp");
 		M.write_grid_to_vtp_surf(Infiltration_flow_surf, outputpath + "infiltration_surf" + numbertostring(t) + ".vtp");
 		M.write_grid_to_text(moisture, outputpath + "moisture" + numbertostring(t) + ".txt");
-        
+
     }
 
     #endif // USE_VTK
-    
+
     M.Results.ANS.writetofile(string(outputpath + "output.txt"));
-    
+
 }
