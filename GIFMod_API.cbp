@@ -19,10 +19,149 @@
 					<Add option="-DGIFMOD" />
 					<Add option="-DDebug_API" />
 					<Add directory="../GIFMod/src/GUI" />
+					<Add directory="GIFMod_API" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
 				</Linker>
+			</Target>
+			<Target title="Debug_Office_Linux">
+				<Option output="bin/Debug/GIFMod_API" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++0x" />
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-DAPI_version" />
+					<Add option="-DGIFMOD" />
+					<Add option="-DDebug_API" />
+					<Add directory="../GIFMod/src/GUI" />
+					<Add directory="GIFMod_API" />
+					<Add directory="Armadillo" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+					<Add library="$(Armadillo)/libarmadillo.so" />
+					<Add library="$(Armadillo)/libblas.so" />
+					<Add library="$(Armadillo)/liblapack.so" />
+					<Add library="$(VTK_build)/libvtkChartsCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonColor-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonComputationalGeometry-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonDataModel-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonExecutionModel-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonMath-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonMisc-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonSystem-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonTransforms-8.1.so" />
+					<Add library="$(VTK_build)/libvtkDICOMParser-8.1.so" />
+					<Add library="$(VTK_build)/libvtkDomainsChemistry-8.1.so" />
+					<Add library="$(VTK_build)/libvtkDomainsChemistryOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtkexpat-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersAMR-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersExtraction-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersFlowPaths-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeneral-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeneric-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeometry-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersHybrid-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersHyperTree-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersImaging-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersModeling-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersParallel-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersParallelImaging-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersPoints-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersProgrammable-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSelection-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSMP-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSources-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersStatistics-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersTexture-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersTopology-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersVerdict-8.1.so" />
+					<Add library="$(VTK_build)/libvtkfreetype-8.1.so" />
+					<Add library="$(VTK_build)/libvtkGeovisCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkgl2ps-8.1.so" />
+					<Add library="$(VTK_build)/libvtkglew-8.1.so" />
+					<Add library="$(VTK_build)/libvtkhdf5-8.1.so" />
+					<Add library="$(VTK_build)/libvtkhdf5_hl-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingColor-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingFourier-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingGeneral-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingHybrid-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingMath-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingMorphological-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingSources-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingStatistics-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingStencil-8.1.so" />
+					<Add library="$(VTK_build)/libvtkInfovisCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkInfovisLayout-8.1.so" />
+					<Add library="$(VTK_build)/libvtkInteractionImage-8.1.so" />
+					<Add library="$(VTK_build)/libvtkInteractionStyle-8.1.so" />
+					<Add library="$(VTK_build)/libvtkInteractionWidgets-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOAMR-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOEnSight-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOExodus-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOExport-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOExportOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOGeometry-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOImage-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOImport-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOInfovis-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOLegacy-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOLSDyna-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOMINC-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOMovie-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIONetCDF-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOParallel-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOParallelXML-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOPLY-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOSQL-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOTecplotTable-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOVideo-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOXML-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOXMLParser-8.1.so" />
+					<Add library="$(VTK_build)/libvtkjpeg-8.1.so" />
+					<Add library="$(VTK_build)/libvtkjsoncpp-8.1.so" />
+					<Add library="$(VTK_build)/libvtklibharu-8.1.so" />
+					<Add library="$(VTK_build)/libvtklibxml2-8.1.so" />
+					<Add library="$(VTK_build)/libvtklz4-8.1.so" />
+					<Add library="$(VTK_build)/libvtkmetaio-8.1.so" />
+					<Add library="$(VTK_build)/libvtkNetCDF-8.1.so" />
+					<Add library="$(VTK_build)/libvtknetcdfcpp-8.1.so" />
+					<Add library="$(VTK_build)/libvtkParallelCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkpng-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingAnnotation-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingContext2D-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingContextOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingFreeType-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingGL2PSOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingImage-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingLabel-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingLOD-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingVolume-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingVolumeOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtksqlite-8.1.so" />
+					<Add library="$(VTK_build)/libvtksys-8.1.so" />
+					<Add library="$(VTK_build)/libvtktiff-8.1.so" />
+					<Add library="$(VTK_build)/libvtkverdict-8.1.so" />
+					<Add library="$(VTK_build)/libvtkViewsContext2D-8.1.so" />
+					<Add library="$(VTK_build)/libvtkViewsCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkViewsInfovis-8.1.so" />
+					<Add library="$(VTK_build)/libvtkzlib-8.1.so" />
+				</Linker>
+				<Environment>
+					<Variable name="Armadillo" value="/usr/lib/x86_64-linux-gnu/" />
+					<Variable name="VTK" value="/usr/local/include/vtk-8.1" />
+					<Variable name="VTK_build" value="/usr/local/lib/" />
+				</Environment>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/GIFMod_API" prefix_auto="1" extension_auto="1" />
@@ -36,10 +175,147 @@
 					<Add option="-DAPI_version" />
 					<Add option="-DGIFMOD" />
 					<Add directory="../GIFMod/src/GUI" />
+					<Add directory="GIFMod_API" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
 				</Linker>
+			</Target>
+			<Target title="Release_Office_Linux">
+				<Option output="bin/Release/GIFMod_API" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++0x" />
+					<Add option="-pg" />
+					<Add option="-DAPI_version" />
+					<Add option="-DGIFMOD" />
+					<Add directory="../GIFMod/src/GUI" />
+					<Add directory="GIFMod_API" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+					<Add library="$(Armadillo)/libarmadillo.so" />
+					<Add library="$(Armadillo)/libblas.so" />
+					<Add library="$(Armadillo)/liblapack.so" />
+					<Add library="$(VTK_build)/libvtkChartsCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonColor-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonComputationalGeometry-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonDataModel-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonExecutionModel-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonMath-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonMisc-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonSystem-8.1.so" />
+					<Add library="$(VTK_build)/libvtkCommonTransforms-8.1.so" />
+					<Add library="$(VTK_build)/libvtkDICOMParser-8.1.so" />
+					<Add library="$(VTK_build)/libvtkDomainsChemistry-8.1.so" />
+					<Add library="$(VTK_build)/libvtkDomainsChemistryOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtkexpat-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersAMR-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersExtraction-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersFlowPaths-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeneral-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeneric-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeometry-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersHybrid-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersHyperTree-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersImaging-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersModeling-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersParallel-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersParallelImaging-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersPoints-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersProgrammable-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSelection-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSMP-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSources-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersStatistics-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersTexture-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersTopology-8.1.so" />
+					<Add library="$(VTK_build)/libvtkFiltersVerdict-8.1.so" />
+					<Add library="$(VTK_build)/libvtkfreetype-8.1.so" />
+					<Add library="$(VTK_build)/libvtkGeovisCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkgl2ps-8.1.so" />
+					<Add library="$(VTK_build)/libvtkglew-8.1.so" />
+					<Add library="$(VTK_build)/libvtkhdf5-8.1.so" />
+					<Add library="$(VTK_build)/libvtkhdf5_hl-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingColor-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingFourier-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingGeneral-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingHybrid-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingMath-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingMorphological-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingSources-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingStatistics-8.1.so" />
+					<Add library="$(VTK_build)/libvtkImagingStencil-8.1.so" />
+					<Add library="$(VTK_build)/libvtkInfovisCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkInfovisLayout-8.1.so" />
+					<Add library="$(VTK_build)/libvtkInteractionImage-8.1.so" />
+					<Add library="$(VTK_build)/libvtkInteractionStyle-8.1.so" />
+					<Add library="$(VTK_build)/libvtkInteractionWidgets-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOAMR-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOEnSight-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOExodus-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOExport-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOExportOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOGeometry-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOImage-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOImport-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOInfovis-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOLegacy-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOLSDyna-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOMINC-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOMovie-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIONetCDF-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOParallel-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOParallelXML-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOPLY-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOSQL-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOTecplotTable-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOVideo-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOXML-8.1.so" />
+					<Add library="$(VTK_build)/libvtkIOXMLParser-8.1.so" />
+					<Add library="$(VTK_build)/libvtkjpeg-8.1.so" />
+					<Add library="$(VTK_build)/libvtkjsoncpp-8.1.so" />
+					<Add library="$(VTK_build)/libvtklibharu-8.1.so" />
+					<Add library="$(VTK_build)/libvtklibxml2-8.1.so" />
+					<Add library="$(VTK_build)/libvtklz4-8.1.so" />
+					<Add library="$(VTK_build)/libvtkmetaio-8.1.so" />
+					<Add library="$(VTK_build)/libvtkNetCDF-8.1.so" />
+					<Add library="$(VTK_build)/libvtknetcdfcpp-8.1.so" />
+					<Add library="$(VTK_build)/libvtkParallelCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkpng-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingAnnotation-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingContext2D-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingContextOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingFreeType-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingGL2PSOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingImage-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingLabel-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingLOD-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingVolume-8.1.so" />
+					<Add library="$(VTK_build)/libvtkRenderingVolumeOpenGL2-8.1.so" />
+					<Add library="$(VTK_build)/libvtksqlite-8.1.so" />
+					<Add library="$(VTK_build)/libvtksys-8.1.so" />
+					<Add library="$(VTK_build)/libvtktiff-8.1.so" />
+					<Add library="$(VTK_build)/libvtkverdict-8.1.so" />
+					<Add library="$(VTK_build)/libvtkViewsContext2D-8.1.so" />
+					<Add library="$(VTK_build)/libvtkViewsCore-8.1.so" />
+					<Add library="$(VTK_build)/libvtkViewsInfovis-8.1.so" />
+					<Add library="$(VTK_build)/libvtkzlib-8.1.so" />
+				</Linker>
+				<Environment>
+					<Variable name="Armadillo" value="/usr/lib/x86_64-linux-gnu/" />
+					<Variable name="VTK" value="/usr/local/include/vtk-8.1" />
+					<Variable name="VTK_build" value="/usr/local/lib/" />
+				</Environment>
 			</Target>
 			<Target title="Debug_Laptop">
 				<Option output="bin/Debug/GIFMod_API" prefix_auto="1" extension_auto="1" />
