@@ -10,6 +10,12 @@
 
 using namespace std;
 
+struct _location
+{
+    int i,j;
+    string name = "";
+};
+
 class CMedium;
 class ModelCreator
 {
@@ -24,11 +30,11 @@ class ModelCreator
 		map<string, string> connectors_properties;
 		map<string, string> blocks_properties;
 		bool getproperties(const string &bodyname, const string &prop, const string& filename);
-		vector<string> BBody(const string &bodyname)
+		vector<_location> BBody(const string &bodyname)
 		{
             if (bodies_of_blocks.count(bodyname)==0)
             {
-                vector<string> out;
+                vector<_location> out;
                 return out;
             }
             else
@@ -44,6 +50,8 @@ class ModelCreator
             else
                 return bodies_of_edges[bodyname];
 		}
+		bool ConnectBodiesVertical(const string &newconnectorbodyname, CMedium *M, const string &sourcebody, const string &targetbody, const string &connector_properties, double sourcebodycoeffientinlenght=0.5, double targetbodycoefficientinlength=0.5);
+
 
     protected:
 
@@ -52,7 +60,7 @@ class ModelCreator
 		bool file_not_found;
 		bool error;
 		string last_error;
-		map<string, vector<string>> bodies_of_blocks;
+		map<string, vector<_location>> bodies_of_blocks;
 		map<string, vector<string>> bodies_of_edges;
 		map<string, vector<vector<double>>> bottom_elevations;
 		map<string, map<string, vector<vector<double>>>> properties;

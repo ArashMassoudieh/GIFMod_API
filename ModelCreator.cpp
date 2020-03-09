@@ -71,7 +71,7 @@ bool ModelCreator::AddBody(const string& bodyname, const string& filename, const
 
 bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &type, double dx, double dy)
 {
-    vector<string> block_body;
+    vector<_location> block_body;
     vector<string> connector_body;
 	if (bottom_elevations.count(bodyname) == 0)
 	{
@@ -83,7 +83,10 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
         for (int j=0; j<bottom_elevations[bodyname][i].size(); j++)
             {
                 if (bottom_elevations[bodyname][i][j]==-9999)
-                    block_body.push_back("");
+                {
+                    //_location loc;
+                    //block_body.push_back(loc);
+                }
                 else
                 {
                     #ifdef Debug_API
@@ -101,7 +104,12 @@ bool ModelCreator::AddLayer(const string &bodyname, CMedium *M, const string &ty
                     #endif // Debug_API
 
                     M->AddBlock(B1);
-                    block_body.push_back(bodyname + "(" + numbertostring(i) +"."+numbertostring(j) + ")");
+                    _location loc;
+                    loc.i = i;
+                    loc.j = j;
+                    loc.name = bodyname + "(" + numbertostring(i) +"."+numbertostring(j) + ")";
+                    block_body.push_back(loc);
+
                 }
             }
     bodies_of_blocks[bodyname]=block_body;
@@ -197,4 +205,43 @@ bool ModelCreator::getproperties(const string &bodyname, const string &prop, con
 	file.close();
 
 	return true;
+}
+
+bool ModelCreator::ConnectBodiesVertical(const string &newconnectorbodyname, CMedium *M, const string &sourcebody, const string &targetbody, const string &connector_properties, double sourcebodycoeffientinlenght, double targetbodycoefficientinlength)
+{
+    if (bodies_of_blocks.count(sourcebody)==0)
+    {
+        cout << "No body called [" + sourcebody + "] exists!" << endl;
+        return false;
+    }
+
+    if (bodies_of_blocks.count(targetbody)==0)
+    {
+        cout << "No body called [" + targetbody + "] exists!" << endl;
+        return false;
+    }
+    if (BBody(sourcebody).size() != BBody(targetbody).size())
+    {
+        cout<< "The size of bodies [" + sourcebody + "] and [" +targetbody + "] must be equal!" << endl;
+        return false;
+    }
+    vector<string> connector_body;
+    for (int i=0; i<BBody(sourcebody).size(); i++)
+    {
+        if (BBody(sourcebody)[i].name!="" && BBody(targetbody)[i].name!="")
+        {
+            CMBBlock* SourceBlock = M->Block(BBody(sourcebody)[i].name);
+            CMBBlock* TargetBlock = M->Block(BBody(targetbody)[i].name);
+            int ii = BBody(targetbody)[i].i;
+            int jj = BBody(targetbody)[i].j;
+            double area = 0.5*(SourceBlock->get_property("area") + TargetBlock->get_property("area"));
+            double length = SourceBlock->get_property("depth")*sourcebodycoeffientinlenght + TargetBlock->get_property("depth")*targetbodycoefficientinlength;
+            CConnection C("area=" + numbertostring(area) + " ,d= " + numbertostring(length) + ",name="+newconnectorbodyname+"("+numbertostring(ii)+"."+numbertostring(jj)+")");
+            C.set_properties(connector_properties);
+            M->AddConnector(SourceBlock->ID, TargetBlock->ID, C);
+            connector_body.push_back(newconnectorbodyname+"("+numbertostring(ii)+"."+numbertostring(jj)+")");
+        }
+    }
+    bodies_of_edges[newconnectorbodyname] = connector_body;
+    return true;
 }
