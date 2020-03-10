@@ -69,3 +69,5 @@ x64/Release/
 GIFMod_API/x64/Release/
 
 bin/Release/
+
+*.vtu
