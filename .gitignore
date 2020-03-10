@@ -34,8 +34,6 @@ prof\.txt
 profile1\.txt
 
 bin/Debug/
-
-x64/Debug/
 
 .vs/GIFMod_API/v16/Browse.VC.db
 *.iobj
@@ -51,5 +49,23 @@ x64/Debug/
 *.idb
 
 *.ipdb
+
+GIFMod_API/x64/Release/vc142.pdb
+
+*.pdb
 
-GIFMod_API/x64/Debug/GIFMod_API.vcxproj.FileListAbsolute.txt
+flows.txt
+
+*.txt
+
+*.log
+
+*.ilk
+
+x64/Debug/
+
+x64/Release/
+
+GIFMod_API/x64/Release/
+
+bin/Release/
