@@ -40,13 +40,13 @@ int main()
 	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=100, z0=0, type=pond, depth=1");
 	M.AddBlock(DownstreamBC);
 	CConnection DownStreamBC_connect("name=DSBC_c, width = 331, d=250, nmanning=0.00001");
-	CConnection DownStreamBC_connect_ss("name=DSBC_c_soil, area = 10000, d=250");
+	CConnection DownStreamBC_connect_ss("name=DSBC_c_soil, area = 10000, d=250, ks=0.1");
 	M.AddConnector("surface(19.1)", "DSBC", DownStreamBC_connect);
 	M.AddConnector("DSBC", "soil(19.1)", DownStreamBC_connect_ss);
 	// Creating the downstream boundary condition done!
 
 	M.Precipitation_filename.push_back(inputpath + "rain_real.txt");
-    M.set_properties("tstart=40909, tend=41009, dt=0.1");
+    M.set_properties("tstart=40909, tend=40929, dt=0.1");
 
     /* Observation */
     measured_chrc outflow_surface;
@@ -76,7 +76,7 @@ int main()
 
 	cout << "writing surf to vtp ..." << endl;
     M.write_grid_to_vtp_surf(gr, outputpath + "surf.vtp");
-    M.write_grid_to_text(gr, outputpath + "test_1.txt");
+    M.write_grid_to_text(gr, outputpath + "surf.txt");
 
     cout << "writing surf to txt ..." << endl;
     M.write_grid_to_text(gr, outputpath + "surf.txt");
@@ -89,7 +89,7 @@ int main()
     M.solve();
     #ifdef USE_VTK
     cout << "Creating Outputs" << endl;
-    for (double t=40909; t<41009; t+=1)
+    for (double t=40909; t<40929; t+=1)
     {
         VTK_grid moisture = M.VTK_get_snap_shot("theta",t,1,"theta");
 		VTK_edge_grid Surface_Flow = M.VTK_get_snap_shot_edges("surface", &mCreate, "Q", t, 1, "Q");

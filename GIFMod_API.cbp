@@ -163,6 +163,145 @@
 					<Variable name="VTK_build" value="/usr/local/lib/" />
 				</Environment>
 			</Target>
+			<Target title="Debug_Home_Linux">
+				<Option output="bin/Debug/GIFMod_API" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++0x" />
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-DAPI_version" />
+					<Add option="-DGIFMOD" />
+					<Add option="-DDebug_API" />
+					<Add directory="../GIFMod/src/GUI" />
+					<Add directory="GIFMod_API" />
+					<Add directory="Armadillo" />
+					<Add directory="$(VTK)" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+					<Add library="$(Armadillo)/libarmadillo.so" />
+					<Add library="$(Armadillo)/x86_64-linux-gnu/libblas.so" />
+					<Add library="$(Armadillo)/x86_64-linux-gnu/liblapack.so" />
+					<Add library="$(VTK_build)/libvtkChartsCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonColor-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonComputationalGeometry-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonDataModel-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonExecutionModel-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonMath-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonMisc-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonSystem-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonTransforms-9.0.so" />
+					<Add library="$(VTK_build)/libvtkDICOMParser-9.0.so" />
+					<Add library="$(VTK_build)/libvtkDomainsChemistry-9.0.so" />
+					<Add library="$(VTK_build)/libvtkDomainsChemistryOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtkexpat-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersAMR-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersExtraction-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersFlowPaths-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeneral-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeneric-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeometry-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersHybrid-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersHyperTree-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersImaging-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersModeling-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersParallel-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersParallelImaging-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersPoints-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersProgrammable-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSelection-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSMP-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSources-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersStatistics-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersTexture-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersTopology-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersVerdict-9.0.so" />
+					<Add library="$(VTK_build)/libvtkfreetype-9.0.so" />
+					<Add library="$(VTK_build)/libvtkGeovisCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkgl2ps-9.0.so" />
+					<Add library="$(VTK_build)/libvtkglew-9.0.so" />
+					<Add library="$(VTK_build)/libvtkhdf5-9.0.so" />
+					<Add library="$(VTK_build)/libvtkhdf5_hl-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingColor-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingFourier-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingGeneral-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingHybrid-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingMath-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingMorphological-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingSources-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingStatistics-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingStencil-9.0.so" />
+					<Add library="$(VTK_build)/libvtkInfovisCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkInfovisLayout-9.0.so" />
+					<Add library="$(VTK_build)/libvtkInteractionImage-9.0.so" />
+					<Add library="$(VTK_build)/libvtkInteractionStyle-9.0.so" />
+					<Add library="$(VTK_build)/libvtkInteractionWidgets-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOAMR-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOEnSight-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOExodus-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOExport-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOExportOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOGeometry-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOImage-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOImport-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOInfovis-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOLegacy-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOLSDyna-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOMINC-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOMovie-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIONetCDF-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOParallel-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOParallelXML-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOPLY-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOSQL-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOTecplotTable-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOVideo-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOXML-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOXMLParser-9.0.so" />
+					<Add library="$(VTK_build)/libvtkjpeg-9.0.so" />
+					<Add library="$(VTK_build)/libvtkjsoncpp-9.0.so" />
+					<Add library="$(VTK_build)/libvtklibharu-9.0.so" />
+					<Add library="$(VTK_build)/libvtklibxml2-9.0.so" />
+					<Add library="$(VTK_build)/libvtklz4-9.0.so" />
+					<Add library="$(VTK_build)/libvtkmetaio-9.0.so" />
+					<Add library="$(VTK_build)/libvtkNetCDF-9.0.so" />
+					<Add library="$(VTK_build)/libvtknetcdfcpp-9.0.so" />
+					<Add library="$(VTK_build)/libvtkParallelCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkpng-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingAnnotation-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingContext2D-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingContextOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingFreeType-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingGL2PSOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingImage-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingLabel-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingLOD-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingVolume-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingVolumeOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtksqlite-9.0.so" />
+					<Add library="$(VTK_build)/libvtksys-9.0.so" />
+					<Add library="$(VTK_build)/libvtktiff-9.0.so" />
+					<Add library="$(VTK_build)/libvtkverdict-9.0.so" />
+					<Add library="$(VTK_build)/libvtkViewsContext2D-9.0.so" />
+					<Add library="$(VTK_build)/libvtkViewsCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkViewsInfovis-9.0.so" />
+					<Add library="$(VTK_build)/libvtkzlib-9.0.so" />
+				</Linker>
+				<Environment>
+					<Variable name="Armadillo" value="/usr/lib/" />
+					<Variable name="VTK" value="/usr/local/include/vtk-9.0" />
+					<Variable name="VTK_build" value="/usr/local/lib/" />
+				</Environment>
+			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/GIFMod_API" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
@@ -314,6 +453,143 @@
 				<Environment>
 					<Variable name="Armadillo" value="/usr/lib/x86_64-linux-gnu/" />
 					<Variable name="VTK" value="/usr/local/include/vtk-8.1" />
+					<Variable name="VTK_build" value="/usr/local/lib/" />
+				</Environment>
+			</Target>
+			<Target title="Release_Home_Linux">
+				<Option output="bin/Release/GIFMod_API" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++0x" />
+					<Add option="-pg" />
+					<Add option="-DAPI_version" />
+					<Add option="-DGIFMOD" />
+					<Add directory="../GIFMod/src/GUI" />
+					<Add directory="GIFMod_API" />
+					<Add directory="$(VTK)" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+					<Add library="$(Armadillo)/libarmadillo.so" />
+					<Add library="$(Armadillo)/x86_64-linux-gnu/libblas.so" />
+					<Add library="$(Armadillo)/x86_64-linux-gnu/liblapack.so" />
+					<Add library="$(VTK_build)/libvtkChartsCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonColor-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonComputationalGeometry-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonDataModel-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonExecutionModel-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonMath-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonMisc-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonSystem-9.0.so" />
+					<Add library="$(VTK_build)/libvtkCommonTransforms-9.0.so" />
+					<Add library="$(VTK_build)/libvtkDICOMParser-9.0.so" />
+					<Add library="$(VTK_build)/libvtkDomainsChemistry-9.0.so" />
+					<Add library="$(VTK_build)/libvtkDomainsChemistryOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtkexpat-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersAMR-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersExtraction-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersFlowPaths-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeneral-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeneric-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersGeometry-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersHybrid-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersHyperTree-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersImaging-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersModeling-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersParallel-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersParallelImaging-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersPoints-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersProgrammable-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSelection-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSMP-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersSources-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersStatistics-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersTexture-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersTopology-9.0.so" />
+					<Add library="$(VTK_build)/libvtkFiltersVerdict-9.0.so" />
+					<Add library="$(VTK_build)/libvtkfreetype-9.0.so" />
+					<Add library="$(VTK_build)/libvtkGeovisCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkgl2ps-9.0.so" />
+					<Add library="$(VTK_build)/libvtkglew-9.0.so" />
+					<Add library="$(VTK_build)/libvtkhdf5-9.0.so" />
+					<Add library="$(VTK_build)/libvtkhdf5_hl-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingColor-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingFourier-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingGeneral-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingHybrid-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingMath-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingMorphological-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingSources-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingStatistics-9.0.so" />
+					<Add library="$(VTK_build)/libvtkImagingStencil-9.0.so" />
+					<Add library="$(VTK_build)/libvtkInfovisCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkInfovisLayout-9.0.so" />
+					<Add library="$(VTK_build)/libvtkInteractionImage-9.0.so" />
+					<Add library="$(VTK_build)/libvtkInteractionStyle-9.0.so" />
+					<Add library="$(VTK_build)/libvtkInteractionWidgets-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOAMR-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOEnSight-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOExodus-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOExport-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOExportOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOGeometry-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOImage-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOImport-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOInfovis-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOLegacy-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOLSDyna-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOMINC-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOMovie-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIONetCDF-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOParallel-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOParallelXML-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOPLY-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOSQL-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOTecplotTable-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOVideo-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOXML-9.0.so" />
+					<Add library="$(VTK_build)/libvtkIOXMLParser-9.0.so" />
+					<Add library="$(VTK_build)/libvtkjpeg-9.0.so" />
+					<Add library="$(VTK_build)/libvtkjsoncpp-9.0.so" />
+					<Add library="$(VTK_build)/libvtklibharu-9.0.so" />
+					<Add library="$(VTK_build)/libvtklibxml2-9.0.so" />
+					<Add library="$(VTK_build)/libvtklz4-9.0.so" />
+					<Add library="$(VTK_build)/libvtkmetaio-9.0.so" />
+					<Add library="$(VTK_build)/libvtkNetCDF-9.0.so" />
+					<Add library="$(VTK_build)/libvtknetcdfcpp-9.0.so" />
+					<Add library="$(VTK_build)/libvtkParallelCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkpng-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingAnnotation-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingContext2D-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingContextOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingFreeType-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingGL2PSOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingImage-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingLabel-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingLOD-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingVolume-9.0.so" />
+					<Add library="$(VTK_build)/libvtkRenderingVolumeOpenGL2-9.0.so" />
+					<Add library="$(VTK_build)/libvtksqlite-9.0.so" />
+					<Add library="$(VTK_build)/libvtksys-9.0.so" />
+					<Add library="$(VTK_build)/libvtktiff-9.0.so" />
+					<Add library="$(VTK_build)/libvtkverdict-9.0.so" />
+					<Add library="$(VTK_build)/libvtkViewsContext2D-9.0.so" />
+					<Add library="$(VTK_build)/libvtkViewsCore-9.0.so" />
+					<Add library="$(VTK_build)/libvtkViewsInfovis-9.0.so" />
+					<Add library="$(VTK_build)/libvtkzlib-9.0.so" />
+				</Linker>
+				<Environment>
+					<Variable name="Armadillo" value="/usr/lib/" />
+					<Variable name="VTK" value="/usr/local/include/vtk-9.0" />
 					<Variable name="VTK_build" value="/usr/local/lib/" />
 				</Environment>
 			</Target>
