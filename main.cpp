@@ -17,8 +17,8 @@ int main()
     double dz = 1;
     //CMBBlock Soil("name=Soil, a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=4000, vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0= " + numbertostring(k*3) +", V=30000, ks=0.1");
 #ifdef  Windows
-	string inputpath = "C:\\Projects\\GIFMod_API_Projects\\";
-	string outputpath = "C:\\Projects\\GIFMod_API_Projects\\outputs\\";
+	string inputpath = "E:\\Projects\\GIFMod_API_Projects\\";
+	string outputpath = "E:\\Projects\\GIFMod_API_Projects\\outputs\\";
 #else
 	string inputpath = "/home/arash/Projects/GIFMOD_API_results/";
 	string outputpath = "/home/arash/Projects/GIFMOD_API_results/outputs/";
@@ -37,7 +37,7 @@ int main()
     //cout<<"Blocks..."<< endl;
 
 	// Creating the downstream boundary condition
-	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=100, z0=0, type=pond, depth=1");
+	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=1000000000, z0=0, type=pond, depth=1");
 	M.AddBlock(DownstreamBC);
 	CConnection DownStreamBC_connect("name=DSBC_c, width = 331, d=250, nmanning=0.00001");
 	CConnection DownStreamBC_connect_ss("name=DSBC_c_soil, area = 10000, d=250, ks=0.1");
@@ -62,6 +62,13 @@ int main()
     outflow_subsurface.id.push_back("DSBC_c_soil");
     outflow_subsurface.name = "Outflow_Subsurface";
     M.measured_quan().push_back(outflow_subsurface);
+
+    measured_chrc outflow_cummulative;
+    outflow_subsurface.loc_type = 0;
+    outflow_subsurface.quan = "s";
+    outflow_subsurface.id.push_back("DSBC");
+    outflow_subsurface.name = "Storage_Outflow";
+    M.measured_quan().push_back(outflow_cummulative);
     /* Observation */
 
 
