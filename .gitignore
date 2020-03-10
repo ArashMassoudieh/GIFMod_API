@@ -128,3 +128,5 @@ GIFMod_API/x64/Release/
 
 bin/Release/
 >>>>>>> 3c07a5b0b95d1cd7f0583fcbb33c3d5f7596b40a
+
+*.depend
