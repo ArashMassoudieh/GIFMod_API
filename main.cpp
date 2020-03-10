@@ -17,8 +17,8 @@ int main()
     double dz = 1;
     //CMBBlock Soil("name=Soil, a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=4000, vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0= " + numbertostring(k*3) +", V=30000, ks=0.1");
 #ifdef  Windows
-	string inputpath = "C:\\Projects\\GIFMod_API_Projects\\";
-	string outputpath = "C:\\Projects\\GIFMod_API_Projects\\outputs\\";
+	string inputpath = "E:\\Projects\\GIFMod_API_Projects\\";
+	string outputpath = "E:\\Projects\\GIFMod_API_Projects\\outputs\\";
 #else
 	string inputpath = "/home/arash/Projects/GIFMOD_API_results/";
 	string outputpath = "/home/arash/Projects/GIFMOD_API_results/outputs/";
@@ -70,6 +70,12 @@ int main()
     outflow_storage.name = "Outflow_Storage";
     M.measured_quan().push_back(outflow_storage);
 
+    measured_chrc outflow_head;
+    outflow_head.loc_type = 0;
+    outflow_head.quan = "h";
+    outflow_head.id.push_back("soil(19.1)");
+    outflow_head.name = "Outflow_Head";
+    M.measured_quan().push_back(outflow_head);
     /* Observation */
 
 
