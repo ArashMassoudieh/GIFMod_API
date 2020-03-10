@@ -37,7 +37,7 @@ int main()
     //cout<<"Blocks..."<< endl;
 
 	// Creating the downstream boundary condition
-	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=100, z0=0, type=pond, depth=1");
+	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=100000, z0=0, type=pond, depth=1");
 	M.AddBlock(DownstreamBC);
 	CConnection DownStreamBC_connect("name=DSBC_c, width = 331, d=250, nmanning=0.00001");
 	CConnection DownStreamBC_connect_ss("name=DSBC_c_soil, area = 10000, d=250, ks=0.1");
@@ -62,6 +62,14 @@ int main()
     outflow_subsurface.id.push_back("DSBC_c_soil");
     outflow_subsurface.name = "Outflow_Subsurface";
     M.measured_quan().push_back(outflow_subsurface);
+
+    measured_chrc outflow_storage;
+    outflow_storage.loc_type = 0;
+    outflow_storage.quan = "s";
+    outflow_storage.id.push_back("DSBC");
+    outflow_storage.name = "Outflow_Storage";
+    M.measured_quan().push_back(outflow_storage);
+
     /* Observation */
 
 
@@ -91,11 +99,11 @@ int main()
     cout << "Creating Outputs" << endl;
     for (double t=40909; t<40929; t+=1)
     {
-        VTK_grid moisture = M.VTK_get_snap_shot("theta",t,1,"theta");
+        VTK_grid moisture = M.VTK_get_snap_shot("soil", &mCreate, "theta",t,1,"theta");
 		VTK_edge_grid Surface_Flow = M.VTK_get_snap_shot_edges("surface", &mCreate, "Q", t, 1, "Q");
 		VTK_edge_grid Subsurface_Flow = M.VTK_get_snap_shot_edges("soil", &mCreate, "Q", t, 1, "Q");
 		VTK_edge_grid Infiltration_Flow = M.VTK_get_snap_shot_edges("infiltration", &mCreate, "Q", t, 1, "Q");
-        VTK_grid depth = M.VTK_get_snap_shot("depth",t,1,"depth");
+        VTK_grid depth = M.VTK_get_snap_shot("surface", &mCreate, "depth",t,1,"depth");
         VTK_grid Infiltration_flow_surf = Infiltration_Flow.toVTKGtid();
 
 
