@@ -37,7 +37,7 @@ int main()
     //cout<<"Blocks..."<< endl;
 
 	// Creating the downstream boundary condition
-	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=100000, z0=0, type=pond, depth=1");
+	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=100000, z0=0, type=pond, h0=1");
 	M.AddBlock(DownstreamBC);
 	CConnection DownStreamBC_connect("name=DSBC_c, width = 331, d=250, nmanning=0.00001");
 	CConnection DownStreamBC_connect_ss("name=DSBC_c_soil, area = 10000, d=250, ks=0.1");
