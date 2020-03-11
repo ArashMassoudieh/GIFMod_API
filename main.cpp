@@ -21,7 +21,7 @@ int main()
 	string outputpath = "E:\\Projects\\GIFMod_API_Projects\\outputs\\";
 #else
 	string inputpath = "/home/arash/Projects/GIFMOD_API_results/";
-	string outputpath = "/home/arash/Projects/GIFMOD_API_results/outputs/";
+	string outputpath = "/home/arash/Projects/GIFMOD_API_results/outputs_2/";
 #endif //  Windows
 
 	ModelCreator mCreate;
@@ -37,16 +37,17 @@ int main()
     //cout<<"Blocks..."<< endl;
 
 	// Creating the downstream boundary condition
-	CMBBlock DownstreamBC("name=DSBC, hs_relationship=16, area=100000, z0=0, type=pond, s=100000");
+	CMBBlock DownstreamBC("name=DSBC, hs_relationship=15.7315, area=100000, z0=0, type=pond, s=100000");
+	DownstreamBC.set_property("Precipitation","no");
 	M.AddBlock(DownstreamBC);
 	CConnection DownStreamBC_connect("name=DSBC_c, width = 331, d=250, nmanning=0.00001");
-	CConnection DownStreamBC_connect_ss("name=DSBC_c_soil, area = 10000, d=250, ks=0.1");
+	CConnection DownStreamBC_connect_ss("name=DSBC_c_soil, area = 10000, d=250, ks=0.5");
 	M.AddConnector("surface(19.1)", "DSBC", DownStreamBC_connect);
 	M.AddConnector("DSBC", "soil(19.1)", DownStreamBC_connect_ss);
 	// Creating the downstream boundary condition done!
 
 	M.Precipitation_filename.push_back(inputpath + "rain_real.txt");
-    M.set_properties("tstart=40909, tend=41272, dt=0.1");
+    M.set_properties("tstart=40909, tend=41250, dt=0.1");
 
     /* Observation */
     measured_chrc outflow_surface;
@@ -70,15 +71,29 @@ int main()
     outflow_storage.name = "Outflow_Storage";
     M.measured_quan().push_back(outflow_storage);
 
+    measured_chrc outflow_bc_head;
+    outflow_bc_head.loc_type = 0;
+    outflow_bc_head.quan = "h";
+    outflow_bc_head.id.push_back("DSBC");
+    outflow_bc_head.name = "Outflow_BC_head";
+    M.measured_quan().push_back(outflow_bc_head);
+
     measured_chrc outflow_head;
     outflow_head.loc_type = 0;
     outflow_head.quan = "h";
     outflow_head.id.push_back("soil(19.1)");
     outflow_head.name = "Outflow_Head";
     M.measured_quan().push_back(outflow_head);
+
+    measured_chrc outflow_surface_head;
+    outflow_surface_head.loc_type = 0;
+    outflow_surface_head.quan = "h";
+    outflow_surface_head.id.push_back("surface(19.1)");
+    outflow_surface_head.name = "Outflow_Surface_Head";
+    M.measured_quan().push_back(outflow_surface_head);
     /* Observation */
 
-
+    M.check_oscillation() = false;
 	M.outputpathname() = outputpath;
     M.f_load_inflows();
     M.set_default_params();
@@ -103,7 +118,7 @@ int main()
     M.solve();
     #ifdef USE_VTK
     cout << "Creating Outputs" << endl;
-    for (double t=40909; t<41272; t+=1)
+    for (double t=40909; t<41250; t+=1)
     {
         VTK_grid moisture = M.VTK_get_snap_shot("soil", &mCreate, "theta",t,1,"theta");
 		VTK_edge_grid Surface_Flow = M.VTK_get_snap_shot_edges("surface", &mCreate, "Q", t, 1, "Q");
