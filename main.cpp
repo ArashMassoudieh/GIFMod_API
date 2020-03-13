@@ -42,11 +42,11 @@ int main()
 
     cout<<"Downstream boundary condition"<<endl;
 	// Creating the downstream boundary condition
-	CMBBlock DownstreamBC("name=DSBC, hs_relationship=15.7315, area=100000, z0=0, type=pond, s=100000");
+	CMBBlock DownstreamBC("name=DSBC, hs_relationship=15.7315, area=10000000, z0=0, type=pond, s=10000000");
 	DownstreamBC.set_property("Precipitation","no");
 	M.AddBlock(DownstreamBC);
 	CConnection DownStreamBC_connect("name=DSBC_c, width = 331, d=250, nmanning=0.00001");
-	CConnection DownStreamBC_connect_ss("name=DSBC_c_soil, area = 10000, d=250, ks=0.5");
+	CConnection DownStreamBC_connect_ss("name=DSBC_c_soil, area = 100000, d=250, ks=0.5");
 	M.AddConnector("surface(19.1)", "DSBC", DownStreamBC_connect);
 	M.AddConnector("DSBC", "topsoil(19.1)", DownStreamBC_connect_ss);
 	// Creating the downstream boundary condition done!
@@ -99,7 +99,7 @@ int main()
     outflow_surface_head.name = "Outflow_Surface_Head";
     M.measured_quan().push_back(outflow_surface_head);
     /* Observation */
-
+    cout << M.Connector("DSBC_c_soil")->tostring() << endl; 
     cout<<"Solver Settings"<<endl;
     M.check_oscillation() = false;
 	M.outputpathname() = outputpath;
@@ -133,7 +133,8 @@ int main()
         VTK_grid head_topsoil = M.VTK_get_snap_shot("topsoil", &mCreate, "h", t, 10, "h");
         VTK_grid head_deepsoil = M.VTK_get_snap_shot("deepsoil", &mCreate, "h", t, 10, "h");
 		VTK_edge_grid Surface_Flow = M.VTK_get_snap_shot_edges("surface", &mCreate, "Q", t, 10, "Q");
-		VTK_edge_grid Subsurface_Flow = M.VTK_get_snap_shot_edges("soil", &mCreate, "Q", t, 10, "Q");
+		VTK_edge_grid Subsurface_Flow_Top = M.VTK_get_snap_shot_edges("topsoil", &mCreate, "Q", t, 10, "Q");
+        VTK_edge_grid Subsurface_Flow_Deep = M.VTK_get_snap_shot_edges("deepsoil", &mCreate, "Q", t, 10, "Q");
 		VTK_edge_grid Infiltration_Flow = M.VTK_get_snap_shot_edges("infiltration", &mCreate, "Q", t, 10, "Q");
 		VTK_edge_grid Percolation_Flow = M.VTK_get_snap_shot_edges("percolation", &mCreate, "Q", t, 10, "Q");
         VTK_grid depth = M.VTK_get_snap_shot("surface", &mCreate, "depth",t,10,"depth");
@@ -144,7 +145,8 @@ int main()
         M.write_grid_to_vtp_surf(depth, outputpath + "water_depth" + numbertostring(t) + ".vtp");
 		M.write_grid_to_text(depth, outputpath + "water_depth" + numbertostring(t) + ".txt");
 		M.write_grid_to_vtp_surf(Surface_Flow, outputpath + "surface_flow" + numbertostring(t) + ".vtp", "Q");
-		M.write_grid_to_vtp_surf(Subsurface_Flow, outputpath + "subsurface_flow" + numbertostring(t) + ".vtp", "Q");
+		M.write_grid_to_vtp_surf(Subsurface_Flow_Top, outputpath + "subsurface_flow_top" + numbertostring(t) + ".vtp", "Q");
+        M.write_grid_to_vtp_surf(Subsurface_Flow_Deep, outputpath + "subsurface_flow_deep" + numbertostring(t) + ".vtp", "Q");
 		M.write_grid_to_vtp_surf(Infiltration_Flow, outputpath + "infiltration_flow" + numbertostring(t) + ".vtp", "Q");
 		M.write_grid_to_vtp_surf(moisture_topsoil, outputpath + "moisture_topsoil" + numbertostring(t) + ".vtp");
 		M.write_grid_to_vtp_surf(moisture_deepsoil, outputpath + "moisture_deepsoil" + numbertostring(t) + ".vtp");
