@@ -28,7 +28,7 @@ int main()
 
     mCreate.AddBody(string("surface"),string(inputpath + "topo_sligo.csv"),"","nmanning=0.00001");
     mCreate.AddBody("topsoil", inputpath + "topsoilbottom_1.csv", "theta=0.35, porosity=0.4, ks=0.1, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.01","");
-    mCreate.AddBody("deepsoil", inputpath + "bedrock.csv", "theta=0.35, porosity=0.4, ks=0.003, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.01","");
+    mCreate.AddBody("deepsoil", inputpath + "bedrock.csv", "theta=0.395, porosity=0.4, ks=0.003, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.01","");
 	mCreate.getproperties("topsoil", "depth", inputpath + "topsoildepth_1.csv");
 	mCreate.getproperties("deepsoil", "depth", inputpath + "deepsoildepth_1.csv");
 
@@ -130,6 +130,8 @@ int main()
     {
         VTK_grid moisture_topsoil = M.VTK_get_snap_shot("topsoil", &mCreate, "theta",t,10,"theta");
         VTK_grid moisture_deepsoil = M.VTK_get_snap_shot("deepsoil", &mCreate, "theta",t,10,"theta");
+        VTK_grid head_topsoil = M.VTK_get_snap_shot("topsoil", &mCreate, "h", t, 10, "h");
+        VTK_grid head_deepsoil = M.VTK_get_snap_shot("deepsoil", &mCreate, "h", t, 10, "h");
 		VTK_edge_grid Surface_Flow = M.VTK_get_snap_shot_edges("surface", &mCreate, "Q", t, 10, "Q");
 		VTK_edge_grid Subsurface_Flow = M.VTK_get_snap_shot_edges("soil", &mCreate, "Q", t, 10, "Q");
 		VTK_edge_grid Infiltration_Flow = M.VTK_get_snap_shot_edges("infiltration", &mCreate, "Q", t, 10, "Q");
@@ -149,6 +151,8 @@ int main()
 		M.write_grid_to_vtp_surf(Infiltration_flow_surf, outputpath + "infiltration_surf" + numbertostring(t) + ".vtp");
 		M.write_grid_to_vtp_surf(Percolation_flow_surf, outputpath + "percolation_surf" + numbertostring(t) + ".vtp");
 		M.write_grid_to_text(moisture_topsoil, outputpath + "moisture_topsoil" + numbertostring(t) + ".txt");
+        M.write_grid_to_vtp_surf(head_topsoil, outputpath + "head_topsoil" + numbertostring(t) + ".vtp");
+        M.write_grid_to_vtp_surf(head_deepsoil, outputpath + "head_deepsoil" + numbertostring(t) + ".vtp");
 
     }
 
