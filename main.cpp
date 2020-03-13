@@ -46,7 +46,7 @@ int main()
 	// Creating the downstream boundary condition done!
 
 	M.Precipitation_filename.push_back(inputpath + "rain_real.txt");
-    M.set_properties("tstart=40909, tend=41272, dt=0.1");
+    M.set_properties("tstart=40909, tend=40929, dt=0.1");
 
     /* Observation */
     measured_chrc outflow_surface;
@@ -103,7 +103,7 @@ int main()
     M.solve();
     #ifdef USE_VTK
     cout << "Creating Outputs" << endl;
-    for (double t=40909; t<41272; t+=1)
+    for (double t=40909; t<40929; t+=1)
     {
         VTK_grid moisture = M.VTK_get_snap_shot("soil", &mCreate, "theta",t,1,"theta");
 		VTK_edge_grid Surface_Flow = M.VTK_get_snap_shot_edges("surface", &mCreate, "Q", t, 1, "Q");
