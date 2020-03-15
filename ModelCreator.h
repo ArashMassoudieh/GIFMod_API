@@ -7,14 +7,11 @@
 #include <map>
 #include "MBBlock.h"
 #include "Connection.h"
+#include "Body.h"
 
 using namespace std;
 
-struct _location
-{
-    int i,j;
-    string name = "";
-};
+
 
 class CMedium;
 class ModelCreator
@@ -60,10 +57,11 @@ class ModelCreator
 		bool file_not_found;
 		bool error;
 		string last_error;
-		map<string, vector<_location>> bodies_of_blocks;
-		map<string, vector<string>> bodies_of_edges;
-		map<string, vector<vector<double>>> bottom_elevations;
-		map<string, map<string, vector<vector<double>>>> properties;
+		map<string, Body> Bodies;
+		//map<string, vector<_location>> bodies_of_blocks;
+		//map<string, vector<string>> bodies_of_edges;
+		//map<string, vector<vector<double>>> bottom_elevations;
+		//map<string, map<string, vector<vector<double>>>> properties;
 };
 
 #endif // MODELCREATOR_H

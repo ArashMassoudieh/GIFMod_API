@@ -20,6 +20,7 @@
 					<Add option="-DDebug_API" />
 					<Add directory="../GIFMod/src/GUI" />
 					<Add directory="GIFMod_API" />
+					<Add directory="GIFMod_API/GIFMod_API" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
@@ -40,6 +41,7 @@
 					<Add directory="../GIFMod/src/GUI" />
 					<Add directory="GIFMod_API" />
 					<Add directory="Armadillo" />
+					<Add directory="GIFMod_API/GIFMod_API" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
@@ -179,6 +181,7 @@
 					<Add directory="GIFMod_API" />
 					<Add directory="Armadillo" />
 					<Add directory="$(VTK)" />
+					<Add directory="GIFMod_API/GIFMod_API" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
@@ -315,6 +318,7 @@
 					<Add option="-DGIFMOD" />
 					<Add directory="../GIFMod/src/GUI" />
 					<Add directory="GIFMod_API" />
+					<Add directory="GIFMod_API/GIFMod_API" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
@@ -333,6 +337,7 @@
 					<Add option="-DGIFMOD" />
 					<Add directory="../GIFMod/src/GUI" />
 					<Add directory="GIFMod_API" />
+					<Add directory="GIFMod_API/GIFMod_API" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
@@ -470,6 +475,7 @@
 					<Add directory="../GIFMod/src/GUI" />
 					<Add directory="GIFMod_API" />
 					<Add directory="$(VTK)" />
+					<Add directory="GIFMod_API/GIFMod_API" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
@@ -607,6 +613,7 @@
 					<Add option="-DDebug_API" />
 					<Add directory="../GIFMod/src/GUI" />
 					<Add directory="$(VTK)" />
+					<Add directory="GIFMod_API/GIFMod_API" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
@@ -742,6 +749,7 @@
 					<Add option="-DGIFMOD" />
 					<Add directory="../GIFMod/src/GUI" />
 					<Add directory="$(VTK)" />
+					<Add directory="GIFMod_API/GIFMod_API" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
@@ -949,6 +957,8 @@
 		<Unit filename="../GIFMod/src/GUI/Vector_arma.h" />
 		<Unit filename="../GIFMod/src/GUI/utility_funcs.cpp" />
 		<Unit filename="../GIFMod/src/GUI/utility_funcs.h" />
+		<Unit filename="Body.cpp" />
+		<Unit filename="Body.h" />
 		<Unit filename="ModelCreator.cpp" />
 		<Unit filename="ModelCreator.h" />
 		<Unit filename="VTK.h" />

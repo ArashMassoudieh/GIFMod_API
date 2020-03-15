@@ -6,16 +6,7 @@ using namespace std;
 
 int main()
 {
-    //VTK_test V;
-    //V.TDPoints();
-    //V.Point();
-    int nx = 10;
-    int ny = 10;
-    int nz = 3;
-    double dx = 100;
-    double dy = 100;
-    double dz = 1;
-    //CMBBlock Soil("name=Soil, a=10000, type=soil, theta_s=0.4, theta_r=0.1, S=4000, vg_n=3, vg_m=0.667, vg_alpha=1, lambda=0.5, z0= " + numbertostring(k*3) +", V=30000, ks=0.1");
+
 #ifdef  Windows
 	string inputpath = "E:\\Projects\\GIFMod_API_Projects\\";
 	string outputpath = "E:\\Projects\\GIFMod_API_Projects\\outputs_2\\";
@@ -27,10 +18,10 @@ int main()
 	ModelCreator mCreate;
 
     mCreate.AddBody(string("surface"),string(inputpath + "topo_sligo.csv"),"","nmanning=0.00001");
-    mCreate.AddBody("topsoil", inputpath + "topsoilbottom_1.csv", "theta=0.35, porosity=0.4, ks=0.1, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.01","");
-    mCreate.AddBody("deepsoil", inputpath + "bedrock.csv", "theta=0.395, porosity=0.4, ks=0.003, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.01","");
-	mCreate.getproperties("topsoil", "depth", inputpath + "topsoildepth_1.csv");
-	mCreate.getproperties("deepsoil", "depth", inputpath + "deepsoildepth_1.csv");
+    mCreate.AddBody("topsoil", inputpath + "topsoilbottom.csv", "theta=0.35, porosity=0.4, ks=0.1, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.001","");
+    mCreate.AddBody("deepsoil", inputpath + "bedrock.csv", "theta=0.395, porosity=0.4, ks=0.003, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.001","");
+	mCreate.getproperties("topsoil", "depth", inputpath + "topsoildepth.csv");
+	mCreate.getproperties("deepsoil", "depth", inputpath + "deepsoildepth.csv");
 
     CMedium M(true);
     mCreate.AddLayer("surface",&M,"Catchment",331,508);
@@ -99,7 +90,7 @@ int main()
     outflow_surface_head.name = "Outflow_Surface_Head";
     M.measured_quan().push_back(outflow_surface_head);
     /* Observation */
-    cout << M.Connector("DSBC_c_soil")->tostring() << endl; 
+    cout << M.Connector("DSBC_c_soil")->tostring() << endl;
     cout<<"Solver Settings"<<endl;
     M.check_oscillation() = false;
 	M.outputpathname() = outputpath;
