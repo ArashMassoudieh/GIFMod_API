@@ -89,6 +89,13 @@ int main()
     outflow_surface_head.id.push_back("surface(19.1)");
     outflow_surface_head.name = "Outflow_Surface_Head";
     M.measured_quan().push_back(outflow_surface_head);
+
+    measured_chrc outflow_soil_moisture;
+    outflow_soil_moisture.loc_type = 0;
+    outflow_soil_moisture.quan = "theta";
+    outflow_soil_moisture.id.push_back("topsoil(19.1)");
+    outflow_soil_moisture.name = "Outflow_Soil_Moisture";
+    M.measured_quan().push_back(outflow_soil_moisture);
     /* Observation */
     cout << M.Connector("DSBC_c_soil")->tostring() << endl;
     cout<<"Solver Settings"<<endl;
