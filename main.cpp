@@ -18,10 +18,10 @@ int main()
 	ModelCreator mCreate;
 
     mCreate.AddBody(string("surface"),string(inputpath + "topo_sligo.csv"),"","nmanning=0.00001");
-    mCreate.AddBody("topsoil", inputpath + "topsoilbottom.csv", "theta=0.35, porosity=0.4, ks=0.1, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.001","");
+    mCreate.AddBody("topsoil", inputpath + "topsoilbottom_1.csv", "theta=0.35, porosity=0.4, ks=0.1, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.001","");
     mCreate.AddBody("deepsoil", inputpath + "bedrock.csv", "theta=0.395, porosity=0.4, ks=0.003, theta_s=0.4, theta_r=0.05, vg_alpha=3.6, vg_n=1.56, lambda=0.5, storativity=0.001","");
-	mCreate.getproperties("topsoil", "depth", inputpath + "topsoildepth.csv");
-	mCreate.getproperties("deepsoil", "depth", inputpath + "deepsoildepth.csv");
+	mCreate.getproperties("topsoil", "depth", inputpath + "topsoildepth_1.csv");
+	mCreate.getproperties("deepsoil", "depth", inputpath + "deepsoildepth_1.csv");
 
     CMedium M(true);
     mCreate.AddLayer("surface",&M,"Catchment",331,508);

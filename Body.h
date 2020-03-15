@@ -1,6 +1,11 @@
 #ifndef BODY_H
 #define BODY_H
 
+#include <string>
+#include <vector>
+#include <map>
+
+using namespace std; 
 struct _location
 {
     int i,j;
@@ -18,6 +23,8 @@ class Body
 		vector<string> bodies_of_edges;
 		vector<vector<double>> bottom_elevations;
 		map<string, vector<vector<double>>> properties;
+        string connectors_properties;
+        string blocks_properties;
     protected:
 
     private:

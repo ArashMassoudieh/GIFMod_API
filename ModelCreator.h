@@ -24,28 +24,28 @@ class ModelCreator
         ModelCreator(const ModelCreator& other);
         ModelCreator& operator=(const ModelCreator& other);
         bool AddLayer(const string &bodyname, CMedium *M, const string &type, double dx, double dy);
-		map<string, string> connectors_properties;
-		map<string, string> blocks_properties;
+		//map<string, string> connectors_properties;
+		//map<string, string> blocks_properties;
 		bool getproperties(const string &bodyname, const string &prop, const string& filename);
 		vector<_location> BBody(const string &bodyname)
 		{
-            if (bodies_of_blocks.count(bodyname)==0)
+            if (BBodies.count(bodyname)==0)
             {
                 vector<_location> out;
                 return out;
             }
             else
-                return bodies_of_blocks[bodyname];
+                return BBodies[bodyname].bodies_of_blocks;
 		}
 		vector<string> CBody(const string &bodyname)
 		{
-            if (bodies_of_edges.count(bodyname)==0)
+            if (CBodies.count(bodyname)==0)
             {
                 vector<string> out;
                 return out;
             }
             else
-                return bodies_of_edges[bodyname];
+                return CBodies[bodyname].bodies_of_edges;
 		}
 		bool ConnectBodiesVertical(const string &newconnectorbodyname, CMedium *M, const string &sourcebody, const string &targetbody, const string &connector_properties, double sourcebodycoeffientinlenght=0.5, double targetbodycoefficientinlength=0.5);
 
@@ -57,7 +57,8 @@ class ModelCreator
 		bool file_not_found;
 		bool error;
 		string last_error;
-		map<string, Body> Bodies;
+		map<string, Body> BBodies;
+        map<string, Body> CBodies;
 		//map<string, vector<_location>> bodies_of_blocks;
 		//map<string, vector<string>> bodies_of_edges;
 		//map<string, vector<vector<double>>> bottom_elevations;

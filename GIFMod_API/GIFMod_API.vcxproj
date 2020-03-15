@@ -207,6 +207,7 @@ copy "$(VTK_build)\bin\Release\*.dll" $(OutDir)</Command>
     <ClCompile Include="..\..\..\Gifmod\src\GUI\utility_funcs.cpp" />
     <ClCompile Include="..\..\..\Gifmod\src\GUI\Vector.cpp" />
     <ClCompile Include="..\..\..\Gifmod\src\GUI\Vector_arma.cpp" />
+    <ClCompile Include="..\Body.cpp" />
     <ClCompile Include="..\main.cpp" />
     <ClCompile Include="..\ModelCreator.cpp" />
   </ItemGroup>
@@ -244,6 +245,7 @@ copy "$(VTK_build)\bin\Release\*.dll" $(OutDir)</Command>
     <ClInclude Include="..\..\..\Gifmod\src\GUI\utility_funcs.h" />
     <ClInclude Include="..\..\..\Gifmod\src\GUI\Vector.h" />
     <ClInclude Include="..\..\..\Gifmod\src\GUI\Vector_arma.h" />
+    <ClInclude Include="..\Body.h" />
     <ClInclude Include="..\ModelCreator.h" />
     <ClInclude Include="..\VTK.h" />
   </ItemGroup>
