@@ -29,6 +29,8 @@ class Body
         Body& operator-=(double &v);
         Body& operator/=(double &v);
         Body& operator*=(double &v);
+        bool AddtoProperty(const string &prop, double x);
+        bool MultiplyProperty(const string &prop, double x);
     protected:
 
     private:
@@ -38,4 +40,5 @@ Body operator+(Body v1, double d);
 Body operator-(Body v1, double d);
 Body operator/(Body v1, double d);
 Body operator*(Body v1, double d);
+
 #endif // BODY_H

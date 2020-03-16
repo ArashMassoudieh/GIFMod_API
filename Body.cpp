@@ -1,4 +1,5 @@
 #include "Body.h"
+#include <iostream>
 
 Body::Body()
 {
@@ -87,4 +88,34 @@ Body operator/(Body v1, double d)
 Body operator*(Body v1, double d)
 {
 	return v1 *= d;
+}
+
+bool Body::AddtoProperty(const string &prop, double x)
+{
+    if (properties.count(prop)==0)
+    {
+        cout << "Property [" + prop + "] was not found" << endl;
+        return false;
+    }
+    for (int i=0; i<properties[prop].size(); i++)
+        for (int j=0; j<properties[prop][i].size(); j++)
+            if (properties[prop][i][j]!=-9999)
+                properties[prop][i][j] += x;
+
+    return true;
+}
+
+bool Body::MultiplyProperty(const string &prop, double x)
+{
+     if (properties.count(prop)==0)
+    {
+        cout << "Property [" + prop + "] was not found" << endl;
+        return false;
+    }
+    for (int i=0; i<properties[prop].size(); i++)
+        for (int j=0; j<properties[prop][i].size(); j++)
+            if (properties[prop][i][j]!=-9999)
+                properties[prop][i][j] *= x;
+
+    return true;
 }
