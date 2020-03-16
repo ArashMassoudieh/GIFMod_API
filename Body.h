@@ -5,7 +5,7 @@
 #include <vector>
 #include <map>
 
-using namespace std; 
+using namespace std;
 struct _location
 {
     int i,j;
@@ -25,9 +25,17 @@ class Body
 		map<string, vector<vector<double>>> properties;
         string connectors_properties;
         string blocks_properties;
+        Body& operator+=(double &v);
+        Body& operator-=(double &v);
+        Body& operator/=(double &v);
+        Body& operator*=(double &v);
     protected:
 
     private:
 };
 
+Body operator+(Body v1, double d);
+Body operator-(Body v1, double d);
+Body operator/(Body v1, double d);
+Body operator*(Body v1, double d);
 #endif // BODY_H
