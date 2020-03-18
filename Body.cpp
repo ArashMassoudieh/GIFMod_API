@@ -34,7 +34,7 @@ Body& Body::operator=(const Body& rhs)
     return *this;
 }
 
-Body& Body::operator+=(double &v)
+Body& Body::operator+=(const double &v)
 {
 	for (int i=0; i<bottom_elevations.size(); ++i)
         for (int j=0; j<bottom_elevations[i].size(); ++j)
@@ -43,7 +43,7 @@ Body& Body::operator+=(double &v)
 	return *this;
 }
 
-Body& Body::operator-=(double &v)
+Body& Body::operator-=(const double &v)
 {
 	for (int i=0; i<bottom_elevations.size(); ++i)
         for (int j=0; j<bottom_elevations[i].size(); ++j)
@@ -52,7 +52,7 @@ Body& Body::operator-=(double &v)
 	return *this;
 }
 
-Body& Body::operator/=(double &v)
+Body& Body::operator/=(const double &v)
 {
 	for (int i=0; i<bottom_elevations.size(); ++i)
         for (int j=0; j<bottom_elevations[i].size(); ++j)
@@ -61,7 +61,7 @@ Body& Body::operator/=(double &v)
 	return *this;
 }
 
-Body& Body::operator*=(double &v)
+Body& Body::operator*=(const double &v)
 {
 	for (int i=0; i<bottom_elevations.size(); ++i)
         for (int j=0; j<bottom_elevations[i].size(); ++j)

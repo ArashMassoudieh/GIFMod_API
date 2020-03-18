@@ -25,10 +25,10 @@ class Body
 		map<string, vector<vector<double>>> properties;
         string connectors_properties;
         string blocks_properties;
-        Body& operator+=(double &v);
-        Body& operator-=(double &v);
-        Body& operator/=(double &v);
-        Body& operator*=(double &v);
+        Body& operator+=(const double &v);
+        Body& operator-=(const double &v);
+        Body& operator/=(const double &v);
+        Body& operator*=(const double &v);
         bool AddtoProperty(const string &prop, double x);
         bool MultiplyProperty(const string &prop, double x);
     protected:

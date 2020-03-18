@@ -48,7 +48,8 @@ class ModelCreator
                 return CBodies[bodyname].bodies_of_edges;
 		}
 		bool ConnectBodiesVertical(const string &newconnectorbodyname, CMedium *M, const string &sourcebody, const string &targetbody, const string &connector_properties, double sourcebodycoeffientinlenght=0.5, double targetbodycoefficientinlength=0.5);
-
+        map<string, Body> BBodies;
+        map<string, Body> CBodies;
 
     protected:
 
@@ -57,8 +58,7 @@ class ModelCreator
 		bool file_not_found;
 		bool error;
 		string last_error;
-		map<string, Body> BBodies;
-        map<string, Body> CBodies;
+
 		//map<string, vector<_location>> bodies_of_blocks;
 		//map<string, vector<string>> bodies_of_edges;
 		//map<string, vector<vector<double>>> bottom_elevations;
